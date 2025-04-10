@@ -3,7 +3,7 @@ import Link from "next/link"
 
 export default function Hero() {
     return (
-        <div className="relative h-[90vh] w-full overflow-hidden">
+        <div className="relative h-[90vh] w-full overflow-hidden mb-16">
             {/* Background Image with Overlay */}
             <div
                 className="absolute inset-0 bg-cover bg-center bg-no-repeat"

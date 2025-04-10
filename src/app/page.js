@@ -1,11 +1,13 @@
 import Hero from "@/components/hero/Hero";
-import HomeServices from "@/components/home-container/home-items/FindGallery";
+import FindGallery from "@/components/home-container/home-items/FindGallery";
+import NearbyRestaurants from "@/components/home-container/home-items/NearbyRestaurants";
 
 export default function Home() {
   return (
     <>
       <Hero /> 
-      <HomeServices />
+      <FindGallery />
+      <NearbyRestaurants/>
     </>
   );
 }
