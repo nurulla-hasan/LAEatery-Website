@@ -1,5 +1,6 @@
 "use client";
 
+import Navbar from "@/components/navbar/Navbar";
 import { usePathname } from "next/navigation";
 
 export default function RootLayoutClient({ children }) {
@@ -12,7 +13,7 @@ export default function RootLayoutClient({ children }) {
   return (
     <>
       {!hideNavbar && (
-        <div className="bg-green-500 text-black p-2">Navbar</div>
+        <Navbar/>
       )}
       {children}
     </>

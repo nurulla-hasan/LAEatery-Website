@@ -1,14 +1,14 @@
 import HomeContainer from "../HomeContainer";
 
 
-const HomeServices = () => {
+const FindGallery = () => {
     return (
         <>
             <HomeContainer>
-                <h1>This is Nurrala Service Conta</h1>
+                xfvxdfvdxf
             </HomeContainer>
         </>
     );
 };
 
-export default HomeServices;
+export default FindGallery;

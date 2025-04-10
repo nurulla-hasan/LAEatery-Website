@@ -1,7 +1,10 @@
 import "./globals.css";
 import { Toaster } from "react-hot-toast";
-
+import { Inter } from "next/font/google";
 import RootLayoutClient from "./RootLayoutClient";
+
+const inter = Inter({ subsets: ["latin"] });
+
 
 
 export const metadata = {
@@ -11,10 +14,11 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
+    <html>
       <body
-        // className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${inter.className}`}
       >
+        
         <Toaster />
         <RootLayoutClient>{children}</RootLayoutClient>
       </body>
