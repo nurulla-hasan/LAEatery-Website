@@ -14,11 +14,13 @@ export default function RootLayoutClient({ children }) {
   return (
     <>
       {!hideNavbar && (
-        <Navbar/>
+        <Navbar />
       )}
-      {children}
+      <div className="min-h-[calc(100vh-88px)]">
+        {children}
+      </div>
       {!hideNavbar && (
-        <Footer/>
+        <Footer />
       )}
     </>
   );

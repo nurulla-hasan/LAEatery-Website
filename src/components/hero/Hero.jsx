@@ -32,7 +32,7 @@ export default function Hero() {
                         {/* CTA Button */}
                         <div className="mt-10">
                             <Link
-                                href="/discover"
+                                href="/find"
                                 className="inline-block border-[2px] rounded-sm border-[#888888a4] px-6 py-2 text-gray-300 text-[12px] transition-colors hover:bg-white hover:text-black"
                             >
                                 Find Now
