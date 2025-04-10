@@ -1,5 +1,6 @@
 "use client";
 
+import Footer from "@/components/footer/Footer";
 import Navbar from "@/components/navbar/Navbar";
 import { usePathname } from "next/navigation";
 
@@ -16,6 +17,9 @@ export default function RootLayoutClient({ children }) {
         <Navbar/>
       )}
       {children}
+      {!hideNavbar && (
+        <Footer/>
+      )}
     </>
   );
 }

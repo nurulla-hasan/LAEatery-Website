@@ -5,7 +5,8 @@ const FindGallery = () => {
     return (
         <>
             <HomeContainer>
-                xfvxdfvdxf
+
+                
             </HomeContainer>
         </>
     );
