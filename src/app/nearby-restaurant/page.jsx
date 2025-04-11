@@ -25,9 +25,6 @@ const NearbyRestaurant = () => {
         toast.success("Your Filtered restaurant")
     }
 
-
-
-
     return (
         <>
             <div className="my-16">
@@ -201,7 +198,7 @@ const NearbyRestaurant = () => {
                                 </div>
 
                                 {/* Apply button */}
-                                <button onClick={handleFilterApply} className="w-full py-3 bg-black text-white font-medium rounded hover:bg-gray-200 transition-colors cursor-pointer">
+                                <button onClick={handleFilterApply} className="w-full py-3 bg-black text-white font-medium rounded hover:bg-gray-900 transition-colors cursor-pointer">
                                     Apply
                                 </button>
                             </div>

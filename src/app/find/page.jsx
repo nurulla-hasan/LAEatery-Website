@@ -23,7 +23,7 @@ const FindPage = () => {
             <div className="text-white text-sm mb-4">Showing 58 results</div>
 
             {/* Restaurant grid */}
-            <div className="h-[108vh] overflow-auto scrl-hide rounded-xl">
+            <div className="h-[94vh] overflow-auto scrl-hide rounded-xl">
               {/* Card Component Hare */}
               <FindCard />
             </div>

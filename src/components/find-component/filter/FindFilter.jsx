@@ -23,7 +23,7 @@ const FindFilter = () => {
 
     return (
         <>
-            <div className="bg-[#242424] h-[108vh] overflow-auto scrl-hide rounded-xl p-5">
+            <div className="bg-[#242424] md:h-[94vh] overflow-auto scrl-hide rounded-xl p-5">
                 {/* Neighborhood filter - Collapsible */}
                 <div className="mb-6">
                     <button
@@ -90,9 +90,9 @@ const FindFilter = () => {
                 </div>
 
                 {/* Vibe filter - Collapsible */}
-                <div className="mb-6">
+                <div className="">
                     <button
-                        className="flex items-center justify-between w-full text-white text-md font-medium mb-5"
+                        className="flex items-center justify-between w-full text-white text-md font-medium mb-"
                         onClick={() => toggleSection("vibe")}
                     >
                         <span>Vibe</span>
@@ -104,7 +104,7 @@ const FindFilter = () => {
                     </button>
 
                     {expandedSections.vibe && (
-                        <div className="space-y-4">
+                        <div className="space-y-4 mt-5">
                             {vibes.map((item) => (
                                 <div key={item.id} className="flex items-center">
                                     <input
