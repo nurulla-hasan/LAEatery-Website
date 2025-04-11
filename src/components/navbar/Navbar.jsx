@@ -6,7 +6,7 @@ import { usePathname, useRouter } from "next/navigation"
 
 
 export default function Navbar() {
-  const [isLoggedIn, setIsLoggedIn] = useState(true)
+  const [isLoggedIn, setIsLoggedIn] = useState(false)
   const [user, setUser] = useState(null)
   const [isMenuOpen, setIsMenuOpen] = useState(false)
   const [searchQuery, setSearchQuery] = useState("")

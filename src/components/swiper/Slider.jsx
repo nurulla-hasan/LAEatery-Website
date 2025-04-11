@@ -106,10 +106,6 @@ const Slider = () => {
           </SwiperSlide>
         ))}
       </Swiper>
-
-      {/* Optional Slider Buttons (custom navigation) */}
-      {/* <div className="slider-prev-button">Prev</div>
-      <div className="slider-next-button">Next</div> */}
     </>
   )
 }

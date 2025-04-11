@@ -1,9 +1,17 @@
 import "./globals.css";
 import { Toaster } from "react-hot-toast";
-import { Inter } from "next/font/google";
 import RootLayoutClient from "./RootLayoutClient";
+import { Inter, Poltawski_Nowy } from 'next/font/google'
 
-const inter = Inter({ subsets: ["latin"] });
+const inter = Inter({
+  subsets: ['latin'],
+  variable: '--font-inter',
+})
+
+const poltawski = Poltawski_Nowy({
+  subsets: ['latin'],
+  variable: '--font-poltawski',
+})
 
 
 
@@ -14,13 +22,12 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html>
-      <body
-        className={`${inter.className}`}
-      >
-        
+    <html lang="en" >
+      <body>
         <Toaster />
-        <RootLayoutClient>{children}</RootLayoutClient>
+        <div className={`${inter.variable} ${poltawski.variable} bg-black`}>
+          <RootLayoutClient>{children}</RootLayoutClient>
+        </div>
       </body>
     </html>
   );

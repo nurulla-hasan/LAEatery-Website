@@ -7,11 +7,13 @@ import VibeSection from "@/components/home-container/home-items/VibeSection";
 export default function Home() {
   return (
     <>
-      <Hero /> 
-      <FindGallery />
-      <NearbyRestaurants/>
-      <VibeSection/>
-      <CuisineSection/>
+      <div>
+        <Hero />
+        <FindGallery />
+        <NearbyRestaurants />
+        <VibeSection />
+        <CuisineSection />
+      </div>
     </>
   );
 }

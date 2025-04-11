@@ -20,7 +20,7 @@ export default function Hero() {
                 <div className="container max-w-7xl mx-auto px-4 sm:px-6 lg:px-12">
                     <div className="max-w-3xl">
                         {/* Main Heading */}
-                        <h1 className="font-serif text-3xl font-bold leading-tight text-white md:text-5xl lg:text-5xl">
+                        <h1 className="font-poltawski font-extrabold text-3xl leading-tight text-white md:text-5xl lg:text-5xl">
                             Find LA's Hottest Restaurants <span className="block mt-2">— Before They Blow Up</span>
                         </h1>
 

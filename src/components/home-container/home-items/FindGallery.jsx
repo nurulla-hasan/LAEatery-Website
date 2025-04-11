@@ -8,7 +8,7 @@ const FindGallery = () => {
         <section className="bg-black text-white py-16">
             <HomeContainer>
                 <div className="text-center mb-16">
-                    <h2 className="text-3xl md:text-4xl font-bold mb-6 font-serif">What You'll Find on LAEatery</h2>
+                    <h2 className="text-3xl md:text-4xl font-extrabold mb-6 font-poltawski">What You'll Find on LAEatery</h2>
                     <p className="text-gray-300 max-w-lg mx-auto md:text-[16px] text-sm">
                         Here's how LAEatery helps you navigate the city's buzzing dining scene.
                     </p>

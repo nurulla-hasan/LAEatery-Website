@@ -1,11 +1,11 @@
 import React from 'react';
 
-const RestaurantPage = () => {
+const MapPage = () => {
     return (
-        <div>
+        <div className=''>
             
         </div>
     );
 };
 
-export default RestaurantPage;
+export default MapPage;

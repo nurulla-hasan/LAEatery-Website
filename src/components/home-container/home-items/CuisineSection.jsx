@@ -21,7 +21,7 @@ const CuisineSection = () => {
 
             {/* Content */}
             <div className="relative z-10 p-5 md:p-10">
-              <h2 className="text-3xl md:text-4xl font-serif font-bold text-white mb-4">
+              <h2 className="text-3xl md:text-4xl font-poltawski font-extrabold text-white mb-4">
               Crave by Cuisine
               </h2>
               <p className="text-gray-200 mb-8">
