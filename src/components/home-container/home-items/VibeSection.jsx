@@ -28,7 +28,7 @@ const VibeSection = () => {
                 Curated experiences for every moment — chill brunches, loud nights, and everything in between.
               </p>
               <Link
-                href="#"
+                href="/vibe"
                 className="inline-block px-7 py-3 border border-[#ffffffa1] text-xs rounded-sm text-white hover:bg-white hover:text-black transition-colors duration-300"
               >
                 Explore by Vibe

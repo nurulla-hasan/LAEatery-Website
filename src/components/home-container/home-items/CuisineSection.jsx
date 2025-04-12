@@ -28,7 +28,7 @@ const CuisineSection = () => {
               From spicy street tacos to elegant sushi platters — discover your favorite flavors.
               </p>
               <Link
-                href="#"
+                href="/cuisine"
                 className="inline-block px-7 py-3 border border-[#ffffffa1] text-xs rounded-sm text-white hover:bg-white hover:text-black transition-colors duration-300"
               >
                 Explore Cuisines
