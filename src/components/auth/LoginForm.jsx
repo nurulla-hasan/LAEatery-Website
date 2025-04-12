@@ -44,8 +44,8 @@ const LoginForm = () => {
               id="email"
               type="email"
               placeholder="Enter your email"
-              className={`w-full px-3 py-2 border rounded-sm text-black text-xs bg-gray-300 ${errors.email ? "border-red-500" : "border-black"
-                } rounded-md focus:outline-none cursor-pointer`}
+              className={`w-full px-3 py-2 border  text-black text-xs bg-gray-300 ${errors.email ? "border-red-500" : "border-black"
+                }  focus:outline-none cursor-pointer`}
               {...register("email", {
                 required: "Email is required",
                 pattern: {
@@ -66,8 +66,8 @@ const LoginForm = () => {
                 id="password"
                 type={showPassword ? "text" : "password"}
                 placeholder="********"
-                className={`w-full px-3 py-2 border rounded-sm text-black text-xs bg-gray-300 ${errors.password ? "border-red-500" : "border-black"
-                  } rounded-md focus:outline-none cursor-pointer`}
+                className={`w-full px-3 py-2 border  text-black text-xs bg-gray-300 ${errors.password ? "border-red-500" : "border-black"
+                  }  focus:outline-none cursor-pointer`}
                 {...register("password", {
                   required: "Password is required",
                 })}
@@ -104,7 +104,7 @@ const LoginForm = () => {
 
           <button
             type="submit"
-            className="w-full bg-black border border-gray-400 text-white py-2 text-xs px-4 rounded-sm hover:bg-gray-800 transition duration-200 cursor-pointer"
+            className="w-full bg-black border border-gray-400 text-white py-2 text-xs px-4  hover:bg-gray-800 transition duration-200 cursor-pointer"
           >
             Sign in
           </button>

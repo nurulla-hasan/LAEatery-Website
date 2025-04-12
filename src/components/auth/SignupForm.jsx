@@ -40,7 +40,7 @@ const SignupForm = () => {
               id="fullName"
               type="text"
               placeholder="Enter your name"
-              className={`w-full px-3 py-2 border rounded-md text-black text-xs bg-gray-300 ${
+              className={`w-full px-3 py-2 border  text-black text-xs bg-gray-300 ${
                 errors.fullName ? "border-red-500" : "border-black"
               } focus:outline-none cursor-pointer`}
               {...register("fullName", { required: "Full name is required" })}
@@ -57,7 +57,7 @@ const SignupForm = () => {
               id="email"
               type="email"
               placeholder="Enter your email"
-              className={`w-full px-3 py-2 border rounded-md text-black text-xs bg-gray-300 ${
+              className={`w-full px-3 py-2 border  text-black text-xs bg-gray-300 ${
                 errors.email ? "border-red-500" : "border-black"
               } focus:outline-none cursor-pointer`}
               {...register("email", {
@@ -81,7 +81,7 @@ const SignupForm = () => {
                 id="password"
                 type={showPassword ? "text" : "password"}
                 placeholder="********"
-                className={`w-full px-3 py-2 border rounded-md text-black text-xs bg-gray-300 ${
+                className={`w-full px-3 py-2 border  text-black text-xs bg-gray-300 ${
                   errors.password ? "border-red-500" : "border-black"
                 } focus:outline-none cursor-pointer`}
                 {...register("password", {
@@ -113,7 +113,7 @@ const SignupForm = () => {
                 id="confirmPassword"
                 type={showConfirmPassword ? "text" : "password"}
                 placeholder="********"
-                className={`w-full px-3 py-2 border rounded-md text-black text-xs bg-gray-300 ${
+                className={`w-full px-3 py-2 border  text-black text-xs bg-gray-300 ${
                   errors.confirmPassword ? "border-red-500" : "border-black"
                 } focus:outline-none cursor-pointer`}
                 {...register("confirmPassword", {
@@ -135,7 +135,7 @@ const SignupForm = () => {
           {/* Submit */}
           <button
             type="submit"
-            className="w-full bg-black border border-gray-400 text-white py-2 text-xs px-4 rounded-sm hover:bg-gray-800 transition duration-200 cursor-pointer"
+            className="w-full bg-black border border-gray-400 text-white py-2 text-xs px-4  hover:bg-gray-800 transition duration-200 cursor-pointer"
           >
             Sign up
           </button>

@@ -1,5 +1,4 @@
 "use client"
-
 import { useState } from 'react'
 import { Heart } from 'lucide-react'
 import Image from 'next/image'

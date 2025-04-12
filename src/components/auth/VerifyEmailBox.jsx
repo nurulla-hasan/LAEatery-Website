@@ -80,7 +80,7 @@ const VerifyEmailForm = () => {
                 onChange={(e) => handleChange(index, e.target.value)}
                 onKeyDown={(e) => handleKeyDown(index, e)}
                 onPaste={index === 0 ? handlePaste : undefined}
-                className="w-10 h-12 text-center border border-gray-400 rounded-2xl text-lg text-black font-medium bg-gray-300 focus:outline-none focus:border-black"
+                className="w-10 h-10 text-center border border-gray-400 rounded-xs text-lg text-black font-medium bg-gray-300 focus:outline-none focus:border-black"
               />
             ))}
           </div>
@@ -88,7 +88,7 @@ const VerifyEmailForm = () => {
           <button
             type="submit"
             disabled={isSubmitting || code.join("").length !== 5}
-            className="w-full bg-black border border-gray-400 disabled:cursor-not-allowed text-white py-2 text-xs px-4 rounded-sm hover:bg-gray-800 transition duration-200 cursor-pointer disabled:opacity-70"
+            className="w-full bg-black border border-gray-400 disabled:cursor-not-allowed text-white py-2 text-xs px-4  hover:bg-gray-800 transition duration-200 cursor-pointer disabled:opacity-70"
           >
             {isSubmitting ? "Verifying..." : "Verify"}
           </button>

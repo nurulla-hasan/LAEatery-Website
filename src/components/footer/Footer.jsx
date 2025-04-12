@@ -123,22 +123,22 @@ const Footer = () => {
                             <h3 className="text-md font-semibold">Quick Links</h3>
                             <ul className="space-y-5 text-sm text-gray-300">
                                 <li>
-                                    <Link href="#" className="hover:text-white transition-colors">
+                                    <Link href="/about-us" className="hover:text-white transition-colors">
                                         About Us
                                     </Link>
                                 </li>
                                 <li>
-                                    <Link href="#" className="hover:text-white transition-colors">
+                                    <Link href="/nearby-restaurant" className="hover:text-white transition-colors">
                                         Explore Restaurants
                                     </Link>
                                 </li>
                                 <li>
-                                    <Link href="#" className="hover:text-white transition-colors">
+                                    <Link href="/vibe" className="hover:text-white transition-colors">
                                         Vibe Guide
                                     </Link>
                                 </li>
                                 <li>
-                                    <Link href="#" className="hover:text-white transition-colors">
+                                    <Link href="/cuisine" className="hover:text-white transition-colors">
                                         Cuisine Types
                                     </Link>
                                 </li>
@@ -150,27 +150,27 @@ const Footer = () => {
                             <h3 className="text-md font-semibold">Help & Legal</h3>
                             <ul className="space-y-5 text-sm text-gray-300">
                                 <li>
-                                    <Link href="#" className="hover:text-white transition-colors">
+                                    <Link href="/FAQs" className="hover:text-white transition-colors">
                                         FAQs
                                     </Link>
                                 </li>
                                 <li>
-                                    <Link href="#" className="hover:text-white transition-colors">
+                                    <Link href="/help-&-support" className="hover:text-white transition-colors">
                                         Help & Support
                                     </Link>
                                 </li>
                                 <li>
-                                    <Link href="#" className="hover:text-white transition-colors">
+                                    <Link href="/accessibility" className="hover:text-white transition-colors">
                                         Accessibility
                                     </Link>
                                 </li>
                                 <li>
-                                    <Link href="#" className="hover:text-white transition-colors">
+                                    <Link href="/terms-&-condition" className="hover:text-white transition-colors">
                                         Terms & Conditions
                                     </Link>
                                 </li>
                                 <li>
-                                    <Link href="#" className="hover:text-white transition-colors">
+                                    <Link href="/privacy-policy" className="hover:text-white transition-colors">
                                         Privacy Policy
                                     </Link>
                                 </li>

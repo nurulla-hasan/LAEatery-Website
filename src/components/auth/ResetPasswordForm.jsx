@@ -19,13 +19,6 @@ const ResetPasswordForm = () => {
   } = useForm();
 
   const password = watch("password", "");
-  const confirmPassword = watch("confirmPassword", "");
-
-  const isDisabled =
-    isSubmitting ||
-    password.length < 8 ||
-    confirmPassword.length < 8 ||
-    password !== confirmPassword;
 
   const onSubmit = async (data) => {
     setIsSubmitting(true);
@@ -58,7 +51,7 @@ const ResetPasswordForm = () => {
                 id="password"
                 type={showPassword ? "text" : "password"}
                 placeholder="••••••••"
-                className={`w-full px-3 py-2 border rounded-md text-black text-xs bg-gray-300 ${errors.password ? "border-red-500" : "border-black"
+                className={`w-full px-3 py-2 border  text-black text-xs bg-gray-300 ${errors.password ? "border-red-500" : "border-black"
                   } focus:outline-none cursor-pointer`}
                 {...register("password", {
                   required: "Password is required",
@@ -93,7 +86,7 @@ const ResetPasswordForm = () => {
                 id="confirmPassword"
                 type={showConfirmPassword ? "text" : "password"}
                 placeholder="••••••••"
-                className={`w-full px-3 py-2 border rounded-md text-black text-xs bg-gray-300 ${errors.confirmPassword ? "border-red-500" : "border-black"
+                className={`w-full px-3 py-2 border  text-black text-xs bg-gray-300 ${errors.confirmPassword ? "border-red-500" : "border-black"
                   } focus:outline-none cursor-pointer`}
                 {...register("confirmPassword", {
                   required: "Please confirm your password",
@@ -117,8 +110,8 @@ const ResetPasswordForm = () => {
 
           <button
             type="submit"
-            disabled={isDisabled}
-            className="w-full bg-black border disabled:cursor-not-allowed border-gray-400 text-white py-2 text-xs px-4 rounded-sm hover:bg-gray-800 transition duration-200 cursor-pointer disabled:opacity-70"
+            disabled={isSubmitting}
+            className="w-full bg-black border disabled:cursor-not-allowed border-gray-400 text-white py-2 text-xs px-4  hover:bg-gray-800 transition duration-200 cursor-pointer disabled:opacity-70"
           >
             {isSubmitting ? "Processing..." : "Reset Password"}
           </button>

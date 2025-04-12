@@ -42,7 +42,7 @@ const ForgotPasswordForm = () => {
               id="email"
               type="email"
               placeholder="Enter your email"
-              className={`w-full px-3 py-2 border rounded-md text-black text-xs bg-gray-300 ${
+              className={`w-full px-3 py-2 border  text-black text-xs bg-gray-300 ${
                 errors.email ? "border-red-500" : "border-black"
               } focus:outline-none cursor-pointer`}
               {...register("email", {
@@ -60,7 +60,7 @@ const ForgotPasswordForm = () => {
           <button
             type="submit"
             disabled={isSubmitting}
-            className="w-full bg-black border border-gray-400 text-white py-2 text-xs px-4 rounded-sm hover:bg-gray-800 transition duration-200 cursor-pointer disabled:opacity-70"
+            className="w-full bg-black border border-gray-400 text-white py-2 text-xs px-4  hover:bg-gray-800 transition duration-200 cursor-pointer disabled:opacity-70"
           >
             {isSubmitting ? "Sending..." : "Continue"}
           </button>

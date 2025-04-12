@@ -23,7 +23,7 @@ const FindFilter = () => {
 
     return (
         <>
-            <div className="bg-[#242424] md:h-[94vh] overflow-auto scrl-hide rounded-xl p-5">
+            <div className="bg-[#1e1e1e]  border border-[#333] md:h-[94vh] overflow-auto scrl-hide rounded-xl p-5">
                 {/* Neighborhood filter - Collapsible */}
                 <div className="mb-6">
                     <button
