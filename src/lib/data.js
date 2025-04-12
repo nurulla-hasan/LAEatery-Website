@@ -127,3 +127,46 @@ export const restaurantData = [
 ]
 
 // Filter categories
+export const neighborhoods = [
+    { id: "downtown", label: "Downtown LA (DTLA)" },
+    { id: "west-hollywood", label: "West Hollywood", checked: false },
+    { id: "santa-monica", label: "Santa Monica", checked: false },
+    { id: "venice", label: "Venice", checked: false },
+    { id: "silver-lake", label: "Silver Lake", checked: false },
+    { id: "hollywood", label: "Hollywood", checked: false },
+    { id: "beverly-hills", label: "Beverly Hills", checked: false },
+    { id: "koreatown", label: "Koreatown (K-Town)", checked: false },
+    { id: "echo-park", label: "Echo Park", checked: false },
+    { id: "culver-city", label: "Culver City", checked: false },
+    { id: "los-feliz", label: "Los Feliz", checked: false },
+    { id: "brentwood", label: "Brentwood", checked: false },
+    { id: "malibu", label: "Malibu", checked: false },
+    { id: "highland-park", label: "Highland Park", checked: false },
+    { id: "pasadena", label: "Pasadena", checked: false },
+]
+
+export const cuisines = [
+    { id: "italian", label: "Italian", checked: false },
+    { id: "japanese", label: "Japanese", checked: false },
+    { id: "mexican", label: "Mexican", checked: false },
+    { id: "chinese", label: "Chinese", checked: false },
+    { id: "indian", label: "Indian", checked: false },
+    { id: "french", label: "French", checked: false },
+    { id: "thai", label: "Thai", checked: false },
+    { id: "mediterranean", label: "Mediterranean", checked: false },
+    { id: "korean", label: "Korean", checked: false },
+    { id: "vegetarian", label: "Vegetarian", checked: false },
+]
+
+export const vibes = [
+    { id: "romantic", label: "Romantic", checked: false },
+    { id: "trendy", label: "Trendy", checked: false },
+    { id: "family-friendly", label: "Family Friendly", checked: false },
+    { id: "outdoor-seating", label: "Outdoor Seating", checked: false },
+    { id: "casual", label: "Casual", checked: false },
+    { id: "luxury", label: "Luxury / Fine Dining", checked: false },
+    { id: "late-night", label: "Late-Night", checked: false },
+    { id: "live-music", label: "Live Music", checked: false },
+    { id: "pet-friendly", label: "Pet-Friendly", checked: false },
+    { id: "group-friendly", label: "Group-Friendly", checked: false },
+]
