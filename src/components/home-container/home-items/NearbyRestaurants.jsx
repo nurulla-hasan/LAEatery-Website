@@ -14,7 +14,7 @@ const NearbyRestaurants = () => {
   return (
     <section className="bg-black text-white py-16">
       <HomeContainer>
-        <div className="flex gap-2 flex-col md:flex-row justify-between md:items-center mb- md:mb-8">
+        <div className="flex gap-2 flex-col md:flex-row justify-between md:items-center mb-4 md:mb-8">
           <h2 className="text-3xl font-medium font-serif">Nearby Restaurant</h2>
           <div className="flex justify-between items-end gap-4">
             <Link href="/nearby-restaurant" className="text-white text-sm hover:text-gray-300 transition-colors ">
