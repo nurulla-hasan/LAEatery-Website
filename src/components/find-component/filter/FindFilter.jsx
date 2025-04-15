@@ -23,18 +23,18 @@ const FindFilter = () => {
 
     return (
         <>
-            <div className="bg-[#1e1e1e]  border border-[#333] md:h-[94vh] overflow-auto scrl-hide rounded-xl p-5">
+            <div className="bg-white  border md:h-[94vh] overflow-auto scrl-hide rounded-xl p-5">
                 {/* Neighborhood filter - Collapsible */}
                 <div className="mb-6">
                     <button
-                        className="flex items-center justify-between w-full text-white text-md font-medium mb-5"
+                        className="flex items-center justify-between w-full text-[#333333] text-md font-medium mb-5"
                         onClick={() => toggleSection("neighborhood")}
                     >
                         <span>Neighborhood</span>
                         {expandedSections.neighborhood ? (
-                            <ChevronUp className="h-5 w-5 text-gray-400 cursor-pointer" />
+                            <ChevronUp className="h-5 w-5 text-[#333333] cursor-pointer" />
                         ) : (
-                            <ChevronDown className="h-5 w-5 text-gray-400 cursor-pointer" />
+                            <ChevronDown className="h-5 w-5 text-[#333333] cursor-pointer" />
                         )}
                     </button>
 
@@ -45,9 +45,9 @@ const FindFilter = () => {
                                     <input
                                         type="checkbox"
                                         id={`neighborhood-${item.id}`}
-                                        className="h-4 w-4 rounded border-gray-600 text-white focus:ring-0 cursor-pointer"
+                                        className="h-4 w-4 rounded border-gray-600 text-[#333333] focus:ring-0 cursor-pointer"
                                     />
-                                    <label htmlFor={`neighborhood-${item.id}`} className="ml-2 text-sm text-gray-300">
+                                    <label htmlFor={`neighborhood-${item.id}`} className="ml-2 text-sm text-[#333333]">
                                         {item.label}
                                     </label>
                                 </div>
@@ -59,14 +59,14 @@ const FindFilter = () => {
                 {/* Cuisine filter - Collapsible */}
                 <div className="mb-6">
                     <button
-                        className="flex items-center justify-between w-full text-white text-md font-medium mb-5"
+                        className="flex items-center justify-between w-full text-[#333333] text-md font-medium mb-5"
                         onClick={() => toggleSection("cuisine")}
                     >
                         <span>Cuisine</span>
                         {expandedSections.cuisine ? (
-                            <ChevronUp className="h-5 w-5 text-gray-400 cursor-pointer" />
+                            <ChevronUp className="h-5 w-5 text-[#333333] cursor-pointer" />
                         ) : (
-                            <ChevronDown className="h-5 w-5 text-gray-400 cursor-pointer" />
+                            <ChevronDown className="h-5 w-5 text-[#333333] cursor-pointer" />
                         )}
                     </button>
 
@@ -80,7 +80,7 @@ const FindFilter = () => {
                                         defaultChecked={item.checked}
                                         className="h-4 w-4 rounded border-gray-600 text-white focus:ring-0 cursor-pointer"
                                     />
-                                    <label htmlFor={`cuisine-${item.id}`} className="ml-2 text-sm text-gray-300">
+                                    <label htmlFor={`cuisine-${item.id}`} className="ml-2 text-sm text-[#333333]">
                                         {item.label}
                                     </label>
                                 </div>
@@ -92,14 +92,14 @@ const FindFilter = () => {
                 {/* Vibe filter - Collapsible */}
                 <div className="">
                     <button
-                        className="flex items-center justify-between w-full text-white text-md font-medium mb-"
+                        className="flex items-center justify-between w-full text-[#333333] text-md font-medium mb-"
                         onClick={() => toggleSection("vibe")}
                     >
                         <span>Vibe</span>
                         {expandedSections.vibe ? (
-                            <ChevronUp className="h-5 w-5 text-gray-400 cursor-pointer" />
+                            <ChevronUp className="h-5 w-5 text-[#333333] cursor-pointer" />
                         ) : (
-                            <ChevronDown className="h-5 w-5 text-gray-400 cursor-pointer" />
+                            <ChevronDown className="h-5 w-5 text-[#333333] cursor-pointer" />
                         )}
                     </button>
 
@@ -113,7 +113,7 @@ const FindFilter = () => {
                                         defaultChecked={item.checked}
                                         className="h-4 w-4 rounded border-gray-600 text-white focus:ring-0 cursor-pointer"
                                     />
-                                    <label htmlFor={`vibe-${item.id}`} className="ml-2 text-sm text-gray-300">
+                                    <label htmlFor={`vibe-${item.id}`} className="ml-2 text-sm text-[#333333]">
                                         {item.label}
                                     </label>
                                 </div>

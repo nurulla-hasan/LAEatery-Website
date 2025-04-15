@@ -13,7 +13,7 @@ const FindPage = () => {
         <div className="flex flex-col md:flex-row my-10 gap-5">
           {/* Left sidebar - Filters */}
           <div className=" w-full md:w-[30%] overflow-y-auto">
-            <h2 className="text-white text-sm font-medium mb-4">Filter By</h2>
+            <h2 className="text-[#333333] text-sm font-medium mb-4">Filter By</h2>
 
             {/* Fine Filter Compo Here */}
             <FindFilter />
@@ -21,7 +21,7 @@ const FindPage = () => {
 
           {/* Right content - Restaurant listings */}
           <div className="w-full overflow-y-auto">
-            <div className="text-white text-sm mb-4">Showing 58 results</div>
+            <div className="text-[#333333] text-sm mb-4">Showing 58 results</div>
 
             {/* Restaurant grid */}
             <div className="h-[94vh] overflow-auto scrl-hide rounded-xl">

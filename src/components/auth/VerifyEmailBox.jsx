@@ -60,11 +60,11 @@ const VerifyEmailForm = () => {
 
   return (
     <div className="flex items-center justify-center min-h-screen p-3 text-white">
-      <div className="border backdrop-blur-xl bg-white/10 p-14 rounded-2xl w-full max-w-md">
-        <h1 className="text-2xl font-semibold text-center text-gray-100 mb-4">
+      <div className="border bg-[#FEFEFEE5] p-14 rounded-2xl w-full max-w-md">
+        <h1 className="text-2xl font-semibold text-center text-[#333333] mb-4">
           Check Your Email
         </h1>
-        <p className="text-center text-gray-300 mb-16 text-xs">
+        <p className="text-center text-[#333333] mb-16 text-xs">
           We sent a code to your email address. Please enter the 5-digit code.
         </p>
 
@@ -80,7 +80,7 @@ const VerifyEmailForm = () => {
                 onChange={(e) => handleChange(index, e.target.value)}
                 onKeyDown={(e) => handleKeyDown(index, e)}
                 onPaste={index === 0 ? handlePaste : undefined}
-                className="w-10 h-10 text-center border border-gray-400 rounded-xs text-lg text-black font-medium bg-gray-300 focus:outline-none focus:border-black"
+                className="w-10 h-10 text-center border border-[#5C5C5C] rounded-xl text-lg text-[#5C5C5C] font-medium focus:outline-none focus:border-black"
               />
             ))}
           </div>
@@ -94,11 +94,11 @@ const VerifyEmailForm = () => {
           </button>
         </form>
 
-        <div className="mt-16 text-center text-sm text-gray-300">
+        <div className="mt-16 text-center text-sm text-[#333333]">
           Didn’t receive the code?{" "}
           <button
             onClick={handleResend}
-            className="text-gray-100 font-medium hover:underline cursor-pointer"
+            className="text-[#0A0A0A] font-medium hover:underline cursor-pointer"
           >
             Resend
           </button>

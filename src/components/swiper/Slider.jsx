@@ -40,7 +40,7 @@ const Slider = () => {
       >
         {restaurantData.map((restaurant) => (
           <SwiperSlide key={restaurant.id}>
-            <div className="bg-[#242424] overflow-hidden transition-transform hover:scale-[1.02] duration-300 rounded-xl">
+            <div className="bg-white overflow-hidden transition-transform hover:scale-[1.02] duration-300 rounded-xl">
               <div className="relative w-full h-[200px]">
                 <Image
                   src={restaurant.image || "/placeholder.svg"}
@@ -52,8 +52,8 @@ const Slider = () => {
                   onClick={() => toggleFavorite(restaurant.id)}
                   className={`absolute top-3 right-3 p-2 rounded-full cursor-pointer transition-all duration-300 ${
                     favorites.includes(restaurant.id)
-                      ? "bg-white text-red-500"
-                      : "bg-black/50 text-white"
+                      ? "bg-white/50 text-black backdrop-blur-sm"
+                      : "bg-white/50 text-black backdrop-blur-sm"
                   }`}
                   aria-label={
                     favorites.includes(restaurant.id)
@@ -66,9 +66,9 @@ const Slider = () => {
               </div>
 
               <div className="p-4">
-                <h3 className="text-md font-medium mb-3">{restaurant.name}</h3>
+                <h3 className="text-md text-[#333333] font-medium mb-3">{restaurant.name}</h3>
 
-                <div className="flex items-center mb-3 text-sm text-gray-300">
+                <div className="flex items-center mb-3 text-sm text-[#333333]">
                   <svg className="w-5 h-5 text-yellow-400 mr-1" fill="currentColor" viewBox="0 0 20 20">
                     <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
                   </svg>
@@ -79,7 +79,7 @@ const Slider = () => {
                   ))}
                 </div>
 
-                <div className="flex items-center text-gray-200 text-xs mb-2">
+                <div className="flex items-center text-[#333333] text-xs mb-2">
                   <svg className="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2"
                       d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
@@ -89,7 +89,7 @@ const Slider = () => {
                   {restaurant.location}
                 </div>
 
-                <div className="flex items-center text-gray-200 text-xs mb-4">
+                <div className="flex items-center text-[#333333] text-xs mb-4">
                   <svg className="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2"
                       d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
@@ -97,7 +97,7 @@ const Slider = () => {
                   Open: {restaurant.hours}
                 </div>
 
-                <button className="w-full text-sm py-2 bg-white text-black font-medium rounded hover:bg-gray-200 transition-colors cursor-pointer">
+                <button className="w-full text-sm py-2 bg-black text-white font-medium rounded hover:bg-gray-700 transition-colors cursor-pointer">
                   Book Now
                 </button>
               </div>

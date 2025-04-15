@@ -60,7 +60,7 @@ const NearbyRestaurant = () => {
                                 </button>
                             </div>
 
-                            <div className=" h-[75vh] overflow-auto scrl-hide">
+                            <div className=" h-[82vh] overflow-auto scrl-hide">
                                 {/* Neighborhood filter */}
                                 <FilterCompo title="Neighborhood" data={neighborhoods} />
 

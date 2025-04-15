@@ -26,23 +26,23 @@ const ForgotPasswordForm = () => {
 
   return (
     <div className="flex items-center justify-center min-h-screen p-3 text-white">
-      <div className="border backdrop-blur-xl p-14 rounded-2xl w-full max-w-md">
-        <h1 className="text-2xl font-semibold text-center text-gray-100 mb-2">Forgot Password?</h1>
-        <p className="text-center text-gray-300 mb-6 text-sm">
+      <div className="border bg-[#FEFEFEE5] p-14 rounded-2xl w-full max-w-md">
+        <h1 className="text-2xl font-semibold text-center text-[#333333] mb-2">Forgot Password?</h1>
+        <p className="text-center text-[#333333] mb-6 text-sm">
           Please enter your email to get verification code
         </p>
 
         <form onSubmit={handleSubmit(onSubmit)}>
           {/* Email Field */}
           <div className="mb-6">
-            <label htmlFor="email" className="block text-xs font-medium text-gray-300 mb-1">
+            <label htmlFor="email" className="block text-xs font-medium text-[#333333] mb-1">
               Email address
             </label>
             <input
               id="email"
               type="email"
               placeholder="Enter your email"
-              className={`w-full px-3 py-2 border  text-black text-xs bg-gray-300 ${
+              className={`w-full px-3 py-2 border text-[#5C5C5C] text-xs bg-white rounded-sm ${
                 errors.email ? "border-red-500" : "border-black"
               } focus:outline-none cursor-pointer`}
               {...register("email", {

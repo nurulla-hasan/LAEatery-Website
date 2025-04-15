@@ -2,6 +2,7 @@ import "./globals.css";
 import { Toaster } from "react-hot-toast";
 import RootLayoutClient from "./RootLayoutClient";
 import { Inter, Poltawski_Nowy } from 'next/font/google'
+import { ThemeProvider } from "@/context/ThemeContext";
 
 const inter = Inter({
   subsets: ['latin'],
@@ -22,12 +23,14 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" >
+    <html lang="en">
       <body>
         <Toaster />
-        <div className={`${inter.variable} ${poltawski.variable} bg-black`}>
-          <RootLayoutClient>{children}</RootLayoutClient>
-        </div>
+        <ThemeProvider>
+          <div className={`${inter.variable} ${poltawski.variable} bg-[#E9E7E3]`}>
+            <RootLayoutClient>{children}</RootLayoutClient>
+          </div>
+        </ThemeProvider>
       </body>
     </html>
   );
