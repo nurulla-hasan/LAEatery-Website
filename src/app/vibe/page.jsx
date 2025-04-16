@@ -2,8 +2,8 @@
 import HomeContainer from "@/components/home-container/HomeContainer"
 import FilterCompo from "@/components/shared/filterCompo/FilterCompo";
 import RestaurantCard from "@/components/shared/restaurant-Card/RestaurantCard"
-import { vibeRestaurantData } from '@/lib/data';
-import { vibes } from "@/lib/data"
+import { vibeRestaurantData, vibes } from "@/lib/data"
+
 
 const VibePage = () => {
 
@@ -16,18 +16,22 @@ const VibePage = () => {
                         <h2 className="text-[#333333] text-sm font-medium mb-4">Filter By</h2>
 
                         {/* Fine Filter Compo Here */}
-                        <FilterCompo title="Vibe" data={vibes}/>
+                        <FilterCompo title="Vibe" data={vibes} />
                     </div>
 
                     {/* Right content - Restaurant listings */}
                     <div className="w-full overflow-y-auto">
-                        <div className="text-[#333333] text-sm mb-4">Showing 58 results</div>
+                        <div className="text-[#333333] text-sm mb-4">Showing {vibeRestaurantData.length} results</div>
 
                         {/* Restaurant grid */}
                         <div className="h-[100vh] overflow-auto scrl-hide rounded-xl">
                             {/* Card Component Hare */}
                             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 ">
-                                <RestaurantCard vibeRestaurantData={vibeRestaurantData} />
+                                {
+                                    vibeRestaurantData?.map((restaurant, index) => (
+                                        <RestaurantCard key={index} path={"vibe"} data={restaurant} />
+                                    ))
+                                }
                             </div>
                         </div>
                     </div>

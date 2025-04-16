@@ -36,7 +36,7 @@ export default function Navbar() {
   return (
 
     <nav className="w-full bg-[#E9E7E3] py-2 md:py-5">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-7xl mx-auto px-4 md:px-0">
         <div className="flex items-center justify-between md:h-16">
           {/* Logo */}
           <div className="flex-shrink-0">
@@ -51,7 +51,7 @@ export default function Navbar() {
 
           {/* <div> */}
           {/* Navigation Links - Desktop */}
-          <div className="hidden md:flex items-center justify-center gap-10 bg-white py-3 px-8 rounded-2xl">
+          <div className="hidden md:flex items-center justify-center gap-10 bg-white py-3 px-8 rounded-[22px]">
             <div className="flex space-x-8">
               {navLinks.map((link, index) => (
                 <NavLink key={index} href={link.href} title={link.title} />

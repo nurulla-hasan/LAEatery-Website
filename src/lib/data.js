@@ -25,247 +25,43 @@ export const features = [
 
 export const allRestaurantData = [
     {
-        id: 1,
-        name: "The Velvet Fork",
-        image: "/image/nearby (1).png",
-        rating: 4.8,
-        reviews: 248,
-        tags: ["Trending", "Rooftop", "Romantic"],
-        location: "West Hollywood, Los Angeles",
-        coordinates: {
-            lat: 34.0900,
-            lng: -118.3617
-        },
-        neighborhood: "West Hollywood, Los Angeles",
-        hours: "09:00 AM - 10:00 PM (Mon-Fri)",
-        priceRange: "$35",
-        trendScore: 91,
-        bookedThisWeek: "34x",
-        contactInfo: {
-            address: "4517 Washington Ave, Manchester, Kentucky 39495",
-            phone: "(307) 555-0133",
-            email: "velvet.fork@example.com",
-            website: "http://www.thevelvetfork.com",
-        },
-        description:
-            "Luxe Bistro is a chic Italian-fusion restaurant located in the heart of Downtown Los Angeles. Known for its skyline views, curated cocktails, and vibrant ambiance, it's a go-to spot for golden hour gatherings, intimate dinners, and weekend vibes.",
-        extendedDescription:
-            "Whether you're savoring flame-charred octopus tacos or sipping mezcal under the stars, Luxe Bistro delivers a distinctly LA dining experience — bold, flavorful, and unforgettable. The restaurant's seasonal menu changes quarterly, ensuring the freshest ingredients and innovative dishes year-round.",
-        mapLocation: "/image/map-location.png",
-    },
-    {
-        id: 2,
-        name: "Paloma Kitchen",
-        image: "/image/nearby (2).png",
-        rating: 4.8,
-        reviews: 248,
-        tags: ["Rooftop", "Italian"],
-        location: "Beverly Crest, Los Angeles",
-        neighborhood: "Beverly Crest, Los Angeles",
-        hours: "09:00 AM - 11:00 PM",
-        priceRange: "$$$",
-        trendScore: 87,
-        bookedThisWeek: "28x",
-        contactInfo: {
-            address: "8721 Sunset Blvd, Beverly Hills, CA 90210",
-            phone: "(213) 555-8899",
-            email: "info@palomakitchen.com",
-            website: "http://www.palomakitchen.com",
-        },
-        description:
-            "Paloma Kitchen offers authentic Italian cuisine with a modern twist, set in a charming rooftop environment with panoramic views of Los Angeles.",
-        extendedDescription:
-            "Chef Maria Rossi brings her family recipes from Tuscany, creating a menu that celebrates traditional flavors with contemporary presentation. The restaurant's wine list features exclusive Italian imports and local California selections.",
-        mapLocation: "/image/map-location.png",
-    },
-    {
-        id: 3,
-        name: "Paloma Kitchen",
-        image: "/image/nearby (3).png",
-        rating: 4.8,
-        reviews: 248,
-        tags: ["Rooftop", "Italian"],
-        location: "Beverly Crest, Los Angeles",
-        neighborhood: "Beverly Crest, Los Angeles",
-        hours: "09:00 AM - 11:00 PM",
-        priceRange: "$$$",
-        trendScore: 87,
-        bookedThisWeek: "28x",
-        contactInfo: {
-            address: "8721 Sunset Blvd, Beverly Hills, CA 90210",
-            phone: "(213) 555-8899",
-            email: "info@palomakitchen.com",
-            website: "http://www.palomakitchen.com",
-        },
-        description:
-            "Paloma Kitchen offers authentic Italian cuisine with a modern twist, set in a charming rooftop environment with panoramic views of Los Angeles.",
-        extendedDescription:
-            "Chef Maria Rossi brings her family recipes from Tuscany, creating a menu that celebrates traditional flavors with contemporary presentation. The restaurant's wine list features exclusive Italian imports and local California selections.",
-        mapLocation: "/image/map-location.png",
-    },
-    {
-        id: 4,
-        name: "Paloma Kitchen",
-        image: "/image/nearby (4).png",
-        rating: 4.8,
-        reviews: 248,
-        tags: ["Rooftop", "Italian"],
-        location: "Beverly Crest, Los Angeles",
-        neighborhood: "Beverly Crest, Los Angeles",
-        hours: "09:00 AM - 11:00 PM",
-        priceRange: "$$$",
-        trendScore: 87,
-        bookedThisWeek: "28x",
-        contactInfo: {
-            address: "8721 Sunset Blvd, Beverly Hills, CA 90210",
-            phone: "(213) 555-8899",
-            email: "info@palomakitchen.com",
-            website: "http://www.palomakitchen.com",
-        },
-        description:
-            "Paloma Kitchen offers authentic Italian cuisine with a modern twist, set in a charming rooftop environment with panoramic views of Los Angeles.",
-        extendedDescription:
-            "Chef Maria Rossi brings her family recipes from Tuscany, creating a menu that celebrates traditional flavors with contemporary presentation. The restaurant's wine list features exclusive Italian imports and local California selections.",
-        mapLocation: "/image/map-location.png",
-    },
-    {
-        id: 5,
-        name: "Paloma Kitchen",
-        image: "/image/nearby (1).png",
-        rating: 4.8,
-        reviews: 248,
-        tags: ["Rooftop", "Italian"],
-        location: "Beverly Crest, Los Angeles",
-        neighborhood: "Beverly Crest, Los Angeles",
-        hours: "09:00 AM - 11:00 PM",
-        priceRange: "$$$",
-        trendScore: 87,
-        bookedThisWeek: "28x",
-        contactInfo: {
-            address: "8721 Sunset Blvd, Beverly Hills, CA 90210",
-            phone: "(213) 555-8899",
-            email: "info@palomakitchen.com",
-            website: "http://www.palomakitchen.com",
-        },
-        description:
-            "Paloma Kitchen offers authentic Italian cuisine with a modern twist, set in a charming rooftop environment with panoramic views of Los Angeles.",
-        extendedDescription:
-            "Chef Maria Rossi brings her family recipes from Tuscany, creating a menu that celebrates traditional flavors with contemporary presentation. The restaurant's wine list features exclusive Italian imports and local California selections.",
-        mapLocation: "/image/map-location.png",
-    },
-    {
-        id: 6,
-        name: "Paloma Kitchen",
-        image: "/image/nearby (2).png",
-        rating: 4.8,
-        reviews: 248,
-        tags: ["Rooftop", "Italian"],
-        location: "Beverly Crest, Los Angeles",
-        neighborhood: "Beverly Crest, Los Angeles",
-        hours: "09:00 AM - 11:00 PM",
-        priceRange: "$$$",
-        trendScore: 87,
-        bookedThisWeek: "28x",
-        contactInfo: {
-            address: "8721 Sunset Blvd, Beverly Hills, CA 90210",
-            phone: "(213) 555-8899",
-            email: "info@palomakitchen.com",
-            website: "http://www.palomakitchen.com",
-        },
-        description:
-            "Paloma Kitchen offers authentic Italian cuisine with a modern twist, set in a charming rooftop environment with panoramic views of Los Angeles.",
-        extendedDescription:
-            "Chef Maria Rossi brings her family recipes from Tuscany, creating a menu that celebrates traditional flavors with contemporary presentation. The restaurant's wine list features exclusive Italian imports and local California selections.",
-        mapLocation: "/image/map-location.png",
-    },
-    {
-        id: 7,
-        name: "Paloma Kitchen",
-        image: "/image/nearby (3).png",
-        rating: 4.8,
-        reviews: 248,
-        tags: ["Rooftop", "Italian"],
-        location: "Beverly Crest, Los Angeles",
-        neighborhood: "Beverly Crest, Los Angeles",
-        hours: "09:00 AM - 11:00 PM",
-        priceRange: "$$$",
-        trendScore: 87,
-        bookedThisWeek: "28x",
-        contactInfo: {
-            address: "8721 Sunset Blvd, Beverly Hills, CA 90210",
-            phone: "(213) 555-8899",
-            email: "info@palomakitchen.com",
-            website: "http://www.palomakitchen.com",
-        },
-        description:
-            "Paloma Kitchen offers authentic Italian cuisine with a modern twist, set in a charming rooftop environment with panoramic views of Los Angeles.",
-        extendedDescription:
-            "Chef Maria Rossi brings her family recipes from Tuscany, creating a menu that celebrates traditional flavors with contemporary presentation. The restaurant's wine list features exclusive Italian imports and local California selections.",
-        mapLocation: "/image/map-location.png",
-    },
-    {
-        id: 8,
-        name: "Paloma Kitchen",
-        image: "/image/nearby (4).png",
-        rating: 4.8,
-        reviews: 248,
-        tags: ["Rooftop", "Italian"],
-        location: "Beverly Crest, Los Angeles",
-        neighborhood: "Beverly Crest, Los Angeles",
-        hours: "09:00 AM - 11:00 PM",
-        priceRange: "$$$",
-        trendScore: 87,
-        bookedThisWeek: "28x",
-        contactInfo: {
-            address: "8721 Sunset Blvd, Beverly Hills, CA 90210",
-            phone: "(213) 555-8899",
-            email: "info@palomakitchen.com",
-            website: "http://www.palomakitchen.com",
-        },
-        description:
-            "Paloma Kitchen offers authentic Italian cuisine with a modern twist, set in a charming rooftop environment with panoramic views of Los Angeles.",
-        extendedDescription:
-            "Chef Maria Rossi brings her family recipes from Tuscany, creating a menu that celebrates traditional flavors with contemporary presentation. The restaurant's wine list features exclusive Italian imports and local California selections.",
-        mapLocation: "/image/map-location.png",
-    },
-    {
-        id: 9,
-        name: "Paloma Kitchen",
-        image: "/image/nearby (1).png",
-        rating: 4.8,
-        reviews: 248,
-        tags: ["Rooftop", "Italian"],
-        location: "Beverly Crest, Los Angeles",
-        neighborhood: "Beverly Crest, Los Angeles",
-        hours: "09:00 AM - 11:00 PM",
-        priceRange: "$$$",
-        trendScore: 87,
-        bookedThisWeek: "28x",
-        contactInfo: {
-            address: "8721 Sunset Blvd, Beverly Hills, CA 90210",
-            phone: "(213) 555-8899",
-            email: "info@palomakitchen.com",
-            website: "http://www.palomakitchen.com",
-        },
-        description:
-            "Paloma Kitchen offers authentic Italian cuisine with a modern twist, set in a charming rooftop environment with panoramic views of Los Angeles.",
-        extendedDescription:
-            "Chef Maria Rossi brings her family recipes from Tuscany, creating a menu that celebrates traditional flavors with contemporary presentation. The restaurant's wine list features exclusive Italian imports and local California selections.",
-        mapLocation: "/image/map-location.png",
-    },
-]
-export const vibeRestaurantData = [
-    {
         id: "1",
-        name: "The Velvet Fork",
+        name: "Paloma Kitchen",
         image: "/image/nearby (1).png",
+        gallery: [
+            "/image/gallery (1).png",
+            "/image/gallery (2).png",
+            "/image/gallery (3).png",
+            "/image/gallery (4).png",
+            "/image/gallery (5).png",
+            "/image/gallery (6).png",
+            "/image/gallery (7).png",
+            "/image/gallery (8).png",
+        ],
+        dishes:[
+            {
+                title: "Charred Octopus Tacos",
+                description: "Tender Spanish octopus, flame-charred for a smoky finish, laid over soft blue corn tortillas. Topped with mango-habanero salsa, pickled onions, micro cilantro, and a drizzle of cilantro aioli.",
+                image: "/image/dishes (1).png"
+            },
+            {
+                title: "Truffle Yuca Fries",
+                description: "Crispy golden yuca, double-fried for crunch, tossed with white truffle oil and sea salt. Served with a side of smoked paprika aioli and cilantro chimichurri.",
+                image: "/image/dishes (2).png"
+            },
+            {
+                title: "Smoked Pineapple Mezcalita",
+                description: "A smoky, sweet, and spicy cocktail made with artisanal mezcal, fresh pineapple juice, lime, agave nectar, & a tajín rim. Garnished with a grilled pineapple slice and a sprig of mint.",
+                image: "/image/dishes (3).png"
+            }
+        ],
         rating: 4.8,
         reviews: 248,
         tags: [
             { label: "Trending", icon: "🔥" },
             { label: "Rooftop", icon: "🏨" },
             { label: "Romantic", icon: "💖" },
-          ],
+        ],
         locationImage: "/image/location-image.png",
         location: "West Hollywood, Los Angeles",
         coordinates: {
@@ -291,213 +87,43 @@ export const vibeRestaurantData = [
     },
     {
         id: "2",
-        name: "Paloma Kitchen",
+        name: "The Drizzle Room",
         image: "/image/nearby (2).png",
+        gallery: [
+            "/image/gallery (1).png",
+            "/image/gallery (2).png",
+            "/image/gallery (3).png",
+            "/image/gallery (4).png",
+            "/image/gallery (5).png",
+            "/image/gallery (6).png",
+            "/image/gallery (7).png",
+            "/image/gallery (8).png",
+        ],
+        dishes:[
+            {
+                title: "Charred Octopus Tacos",
+                description: "Tender Spanish octopus, flame-charred for a smoky finish, laid over soft blue corn tortillas. Topped with mango-habanero salsa, pickled onions, micro cilantro, and a drizzle of cilantro aioli.",
+                image: "/image/dishes (1).png"
+            },
+            {
+                title: "Truffle Yuca Fries",
+                description: "Crispy golden yuca, double-fried for crunch, tossed with white truffle oil and sea salt. Served with a side of smoked paprika aioli and cilantro chimichurri.",
+                image: "/image/dishes (2).png"
+            },
+            {
+                title: "Smoked Pineapple Mezcalita",
+                description: "A smoky, sweet, and spicy cocktail made with artisanal mezcal, fresh pineapple juice, lime, agave nectar, & a tajín rim. Garnished with a grilled pineapple slice and a sprig of mint.",
+                image: "/image/dishes (3).png"
+            }
+        ],
         rating: 4.8,
         reviews: 248,
-        tags: ["Rooftop", "Italian"],
-        location: "Beverly Crest, Los Angeles",
-        neighborhood: "Beverly Crest, Los Angeles",
-        hours: "09:00 AM - 11:00 PM",
-        priceRange: "$$$",
-        trendScore: 87,
-        bookedThisWeek: "28x",
-        contactInfo: {
-            address: "8721 Sunset Blvd, Beverly Hills, CA 90210",
-            phone: "(213) 555-8899",
-            email: "info@palomakitchen.com",
-            website: "http://www.palomakitchen.com",
-        },
-        description:
-            "Paloma Kitchen offers authentic Italian cuisine with a modern twist, set in a charming rooftop environment with panoramic views of Los Angeles.",
-        extendedDescription:
-            "Chef Maria Rossi brings her family recipes from Tuscany, creating a menu that celebrates traditional flavors with contemporary presentation. The restaurant's wine list features exclusive Italian imports and local California selections.",
-        mapLocation: "/image/map-location.png",
-    },
-    {
-        id: "3",
-        name: "Paloma Kitchen",
-        image: "/image/nearby (3).png",
-        rating: 4.8,
-        reviews: 248,
-        tags: ["Rooftop", "Italian"],
-        location: "Beverly Crest, Los Angeles",
-        neighborhood: "Beverly Crest, Los Angeles",
-        hours: "09:00 AM - 11:00 PM",
-        priceRange: "$$$",
-        trendScore: 87,
-        bookedThisWeek: "28x",
-        contactInfo: {
-            address: "8721 Sunset Blvd, Beverly Hills, CA 90210",
-            phone: "(213) 555-8899",
-            email: "info@palomakitchen.com",
-            website: "http://www.palomakitchen.com",
-        },
-        description:
-            "Paloma Kitchen offers authentic Italian cuisine with a modern twist, set in a charming rooftop environment with panoramic views of Los Angeles.",
-        extendedDescription:
-            "Chef Maria Rossi brings her family recipes from Tuscany, creating a menu that celebrates traditional flavors with contemporary presentation. The restaurant's wine list features exclusive Italian imports and local California selections.",
-        mapLocation: "/image/map-location.png",
-    },
-    {
-        id: "4",
-        name: "Paloma Kitchen",
-        image: "/image/nearby (4).png",
-        rating: 4.8,
-        reviews: 248,
-        tags: ["Rooftop", "Italian"],
-        location: "Beverly Crest, Los Angeles",
-        neighborhood: "Beverly Crest, Los Angeles",
-        hours: "09:00 AM - 11:00 PM",
-        priceRange: "$$$",
-        trendScore: 87,
-        bookedThisWeek: "28x",
-        contactInfo: {
-            address: "8721 Sunset Blvd, Beverly Hills, CA 90210",
-            phone: "(213) 555-8899",
-            email: "info@palomakitchen.com",
-            website: "http://www.palomakitchen.com",
-        },
-        description:
-            "Paloma Kitchen offers authentic Italian cuisine with a modern twist, set in a charming rooftop environment with panoramic views of Los Angeles.",
-        extendedDescription:
-            "Chef Maria Rossi brings her family recipes from Tuscany, creating a menu that celebrates traditional flavors with contemporary presentation. The restaurant's wine list features exclusive Italian imports and local California selections.",
-        mapLocation: "/image/map-location.png",
-    },
-    {
-        id: "5",
-        name: "Paloma Kitchen",
-        image: "/image/nearby (1).png",
-        rating: 4.8,
-        reviews: 248,
-        tags: ["Rooftop", "Italian"],
-        location: "Beverly Crest, Los Angeles",
-        neighborhood: "Beverly Crest, Los Angeles",
-        hours: "09:00 AM - 11:00 PM",
-        priceRange: "$$$",
-        trendScore: 87,
-        bookedThisWeek: "28x",
-        contactInfo: {
-            address: "8721 Sunset Blvd, Beverly Hills, CA 90210",
-            phone: "(213) 555-8899",
-            email: "info@palomakitchen.com",
-            website: "http://www.palomakitchen.com",
-        },
-        description:
-            "Paloma Kitchen offers authentic Italian cuisine with a modern twist, set in a charming rooftop environment with panoramic views of Los Angeles.",
-        extendedDescription:
-            "Chef Maria Rossi brings her family recipes from Tuscany, creating a menu that celebrates traditional flavors with contemporary presentation. The restaurant's wine list features exclusive Italian imports and local California selections.",
-        mapLocation: "/image/map-location.png",
-    },
-    {
-        id: "6",
-        name: "Paloma Kitchen",
-        image: "/image/nearby (2).png",
-        rating: 4.8,
-        reviews: 248,
-        tags: ["Rooftop", "Italian"],
-        location: "Beverly Crest, Los Angeles",
-        neighborhood: "Beverly Crest, Los Angeles",
-        hours: "09:00 AM - 11:00 PM",
-        priceRange: "$$$",
-        trendScore: 87,
-        bookedThisWeek: "28x",
-        contactInfo: {
-            address: "8721 Sunset Blvd, Beverly Hills, CA 90210",
-            phone: "(213) 555-8899",
-            email: "info@palomakitchen.com",
-            website: "http://www.palomakitchen.com",
-        },
-        description:
-            "Paloma Kitchen offers authentic Italian cuisine with a modern twist, set in a charming rooftop environment with panoramic views of Los Angeles.",
-        extendedDescription:
-            "Chef Maria Rossi brings her family recipes from Tuscany, creating a menu that celebrates traditional flavors with contemporary presentation. The restaurant's wine list features exclusive Italian imports and local California selections.",
-        mapLocation: "/image/map-location.png",
-    },
-    {
-        id: "7",
-        name: "Paloma Kitchen",
-        image: "/image/nearby (3).png",
-        rating: 4.8,
-        reviews: 248,
-        tags: ["Rooftop", "Italian"],
-        location: "Beverly Crest, Los Angeles",
-        neighborhood: "Beverly Crest, Los Angeles",
-        hours: "09:00 AM - 11:00 PM",
-        priceRange: "$$$",
-        trendScore: 87,
-        bookedThisWeek: "28x",
-        contactInfo: {
-            address: "8721 Sunset Blvd, Beverly Hills, CA 90210",
-            phone: "(213) 555-8899",
-            email: "info@palomakitchen.com",
-            website: "http://www.palomakitchen.com",
-        },
-        description:
-            "Paloma Kitchen offers authentic Italian cuisine with a modern twist, set in a charming rooftop environment with panoramic views of Los Angeles.",
-        extendedDescription:
-            "Chef Maria Rossi brings her family recipes from Tuscany, creating a menu that celebrates traditional flavors with contemporary presentation. The restaurant's wine list features exclusive Italian imports and local California selections.",
-        mapLocation: "/image/map-location.png",
-    },
-    {
-        id: "8",
-        name: "Paloma Kitchen",
-        image: "/image/nearby (4).png",
-        rating: 4.8,
-        reviews: 248,
-        tags: ["Rooftop", "Italian"],
-        location: "Beverly Crest, Los Angeles",
-        neighborhood: "Beverly Crest, Los Angeles",
-        hours: "09:00 AM - 11:00 PM",
-        priceRange: "$$$",
-        trendScore: 87,
-        bookedThisWeek: "28x",
-        contactInfo: {
-            address: "8721 Sunset Blvd, Beverly Hills, CA 90210",
-            phone: "(213) 555-8899",
-            email: "info@palomakitchen.com",
-            website: "http://www.palomakitchen.com",
-        },
-        description:
-            "Paloma Kitchen offers authentic Italian cuisine with a modern twist, set in a charming rooftop environment with panoramic views of Los Angeles.",
-        extendedDescription:
-            "Chef Maria Rossi brings her family recipes from Tuscany, creating a menu that celebrates traditional flavors with contemporary presentation. The restaurant's wine list features exclusive Italian imports and local California selections.",
-        mapLocation: "/image/map-location.png",
-    },
-    {
-        id: "9",
-        name: "Paloma Kitchen",
-        image: "/image/nearby (1).png",
-        rating: 4.8,
-        reviews: 248,
-        tags: ["Rooftop", "Italian"],
-        location: "Beverly Crest, Los Angeles",
-        neighborhood: "Beverly Crest, Los Angeles",
-        hours: "09:00 AM - 11:00 PM",
-        priceRange: "$$$",
-        trendScore: 87,
-        bookedThisWeek: "28x",
-        contactInfo: {
-            address: "8721 Sunset Blvd, Beverly Hills, CA 90210",
-            phone: "(213) 555-8899",
-            email: "info@palomakitchen.com",
-            website: "http://www.palomakitchen.com",
-        },
-        description:
-            "Paloma Kitchen offers authentic Italian cuisine with a modern twist, set in a charming rooftop environment with panoramic views of Los Angeles.",
-        extendedDescription:
-            "Chef Maria Rossi brings her family recipes from Tuscany, creating a menu that celebrates traditional flavors with contemporary presentation. The restaurant's wine list features exclusive Italian imports and local California selections.",
-        mapLocation: "/image/map-location.png",
-    },
-]
-export const cuiseneRestaurantData = [
-    {
-        id: 1,
-        name: "The Velvet Fork",
-        image: "/image/nearby (1).png",
-        rating: 4.8,
-        reviews: 248,
-        tags: ["Trending", "Rooftop", "Romantic"],
+        tags: [
+            { label: "Rooftop", icon: "🔥" },
+            { label: "Italian", icon: "🏨" },
+            { label: "Romantic", icon: "💖" },
+        ],
+        locationImage: "/image/location-image.png",
         location: "West Hollywood, Los Angeles",
         coordinates: {
             lat: 34.0900,
@@ -521,206 +147,1369 @@ export const cuiseneRestaurantData = [
         mapLocation: "/image/map-location.png",
     },
     {
-        id: 2,
-        name: "Paloma Kitchen",
-        image: "/image/nearby (2).png",
-        rating: 4.8,
-        reviews: 248,
-        tags: ["Rooftop", "Italian"],
-        location: "Beverly Crest, Los Angeles",
-        neighborhood: "Beverly Crest, Los Angeles",
-        hours: "09:00 AM - 11:00 PM",
-        priceRange: "$$$",
-        trendScore: 87,
-        bookedThisWeek: "28x",
-        contactInfo: {
-            address: "8721 Sunset Blvd, Beverly Hills, CA 90210",
-            phone: "(213) 555-8899",
-            email: "info@palomakitchen.com",
-            website: "http://www.palomakitchen.com",
-        },
-        description:
-            "Paloma Kitchen offers authentic Italian cuisine with a modern twist, set in a charming rooftop environment with panoramic views of Los Angeles.",
-        extendedDescription:
-            "Chef Maria Rossi brings her family recipes from Tuscany, creating a menu that celebrates traditional flavors with contemporary presentation. The restaurant's wine list features exclusive Italian imports and local California selections.",
-        mapLocation: "/image/map-location.png",
-    },
-    {
-        id: 3,
-        name: "Paloma Kitchen",
+        id: "3",
+        name: "Baja & Bloom",
         image: "/image/nearby (3).png",
+        gallery: [
+            "/image/gallery (1).png",
+            "/image/gallery (2).png",
+            "/image/gallery (3).png",
+            "/image/gallery (4).png",
+            "/image/gallery (5).png",
+            "/image/gallery (6).png",
+            "/image/gallery (7).png",
+            "/image/gallery (8).png",
+        ],
+        dishes:[
+            {
+                title: "Charred Octopus Tacos",
+                description: "Tender Spanish octopus, flame-charred for a smoky finish, laid over soft blue corn tortillas. Topped with mango-habanero salsa, pickled onions, micro cilantro, and a drizzle of cilantro aioli.",
+                image: "/image/dishes (1).png"
+            },
+            {
+                title: "Truffle Yuca Fries",
+                description: "Crispy golden yuca, double-fried for crunch, tossed with white truffle oil and sea salt. Served with a side of smoked paprika aioli and cilantro chimichurri.",
+                image: "/image/dishes (2).png"
+            },
+            {
+                title: "Smoked Pineapple Mezcalita",
+                description: "A smoky, sweet, and spicy cocktail made with artisanal mezcal, fresh pineapple juice, lime, agave nectar, & a tajín rim. Garnished with a grilled pineapple slice and a sprig of mint.",
+                image: "/image/dishes (3).png"
+            }
+        ],
         rating: 4.8,
         reviews: 248,
-        tags: ["Rooftop", "Italian"],
-        location: "Beverly Crest, Los Angeles",
-        neighborhood: "Beverly Crest, Los Angeles",
-        hours: "09:00 AM - 11:00 PM",
-        priceRange: "$$$",
-        trendScore: 87,
-        bookedThisWeek: "28x",
+        tags: [
+            { label: "Trending", icon: "🔥" },
+            { label: "Rooftop", icon: "🏨" },
+            { label: "Romantic", icon: "💖" },
+        ],
+        locationImage: "/image/location-image.png",
+        location: "West Hollywood, Los Angeles",
+        coordinates: {
+            lat: 34.0900,
+            lng: -118.3617
+        },
+        neighborhood: "West Hollywood, Los Angeles",
+        hours: "09:00 AM - 10:00 PM (Mon-Fri)",
+        priceRange: "$35",
+        trendScore: 91,
+        bookedThisWeek: "34x",
         contactInfo: {
-            address: "8721 Sunset Blvd, Beverly Hills, CA 90210",
-            phone: "(213) 555-8899",
-            email: "info@palomakitchen.com",
-            website: "http://www.palomakitchen.com",
+            address: "4517 Washington Ave, Manchester, Kentucky 39495",
+            phone: "(307) 555-0133",
+            email: "velvet.fork@example.com",
+            website: "http://www.thevelvetfork.com",
         },
         description:
-            "Paloma Kitchen offers authentic Italian cuisine with a modern twist, set in a charming rooftop environment with panoramic views of Los Angeles.",
+            "Luxe Bistro is a chic Italian-fusion restaurant located in the heart of Downtown Los Angeles. Known for its skyline views, curated cocktails, and vibrant ambiance, it's a go-to spot for golden hour gatherings, intimate dinners, and weekend vibes.",
         extendedDescription:
-            "Chef Maria Rossi brings her family recipes from Tuscany, creating a menu that celebrates traditional flavors with contemporary presentation. The restaurant's wine list features exclusive Italian imports and local California selections.",
+            "Whether you're savoring flame-charred octopus tacos or sipping mezcal under the stars, Luxe Bistro delivers a distinctly LA dining experience — bold, flavorful, and unforgettable. The restaurant's seasonal menu changes quarterly, ensuring the freshest ingredients and innovative dishes year-round.",
         mapLocation: "/image/map-location.png",
     },
     {
-        id: 4,
-        name: "Paloma Kitchen",
+        id: "4",
+        name: "The Velvet Fork",
         image: "/image/nearby (4).png",
+        gallery: [
+            "/image/gallery (1).png",
+            "/image/gallery (2).png",
+            "/image/gallery (3).png",
+            "/image/gallery (4).png",
+            "/image/gallery (5).png",
+            "/image/gallery (6).png",
+            "/image/gallery (7).png",
+            "/image/gallery (8).png",
+        ],
+        dishes:[
+            {
+                title: "Charred Octopus Tacos",
+                description: "Tender Spanish octopus, flame-charred for a smoky finish, laid over soft blue corn tortillas. Topped with mango-habanero salsa, pickled onions, micro cilantro, and a drizzle of cilantro aioli.",
+                image: "/image/dishes (1).png"
+            },
+            {
+                title: "Truffle Yuca Fries",
+                description: "Crispy golden yuca, double-fried for crunch, tossed with white truffle oil and sea salt. Served with a side of smoked paprika aioli and cilantro chimichurri.",
+                image: "/image/dishes (2).png"
+            },
+            {
+                title: "Smoked Pineapple Mezcalita",
+                description: "A smoky, sweet, and spicy cocktail made with artisanal mezcal, fresh pineapple juice, lime, agave nectar, & a tajín rim. Garnished with a grilled pineapple slice and a sprig of mint.",
+                image: "/image/dishes (3).png"
+            }
+        ],
         rating: 4.8,
         reviews: 248,
-        tags: ["Rooftop", "Italian"],
-        location: "Beverly Crest, Los Angeles",
-        neighborhood: "Beverly Crest, Los Angeles",
-        hours: "09:00 AM - 11:00 PM",
-        priceRange: "$$$",
-        trendScore: 87,
-        bookedThisWeek: "28x",
+        tags: [
+            { label: "Trending", icon: "🔥" },
+            { label: "Rooftop", icon: "🏨" },
+            { label: "Romantic", icon: "💖" },
+        ],
+        locationImage: "/image/location-image.png",
+        location: "West Hollywood, Los Angeles",
+        coordinates: {
+            lat: 34.0900,
+            lng: -118.3617
+        },
+        neighborhood: "West Hollywood, Los Angeles",
+        hours: "09:00 AM - 10:00 PM (Mon-Fri)",
+        priceRange: "$35",
+        trendScore: 91,
+        bookedThisWeek: "34x",
         contactInfo: {
-            address: "8721 Sunset Blvd, Beverly Hills, CA 90210",
-            phone: "(213) 555-8899",
-            email: "info@palomakitchen.com",
-            website: "http://www.palomakitchen.com",
+            address: "4517 Washington Ave, Manchester, Kentucky 39495",
+            phone: "(307) 555-0133",
+            email: "velvet.fork@example.com",
+            website: "http://www.thevelvetfork.com",
         },
         description:
-            "Paloma Kitchen offers authentic Italian cuisine with a modern twist, set in a charming rooftop environment with panoramic views of Los Angeles.",
+            "Luxe Bistro is a chic Italian-fusion restaurant located in the heart of Downtown Los Angeles. Known for its skyline views, curated cocktails, and vibrant ambiance, it's a go-to spot for golden hour gatherings, intimate dinners, and weekend vibes.",
         extendedDescription:
-            "Chef Maria Rossi brings her family recipes from Tuscany, creating a menu that celebrates traditional flavors with contemporary presentation. The restaurant's wine list features exclusive Italian imports and local California selections.",
+            "Whether you're savoring flame-charred octopus tacos or sipping mezcal under the stars, Luxe Bistro delivers a distinctly LA dining experience — bold, flavorful, and unforgettable. The restaurant's seasonal menu changes quarterly, ensuring the freshest ingredients and innovative dishes year-round.",
         mapLocation: "/image/map-location.png",
     },
     {
-        id: 5,
+        id: "5",
         name: "Paloma Kitchen",
         image: "/image/nearby (1).png",
+        gallery: [
+            "/image/gallery (1).png",
+            "/image/gallery (2).png",
+            "/image/gallery (3).png",
+            "/image/gallery (4).png",
+            "/image/gallery (5).png",
+            "/image/gallery (6).png",
+            "/image/gallery (7).png",
+            "/image/gallery (8).png",
+        ],
+        dishes:[
+            {
+                title: "Charred Octopus Tacos",
+                description: "Tender Spanish octopus, flame-charred for a smoky finish, laid over soft blue corn tortillas. Topped with mango-habanero salsa, pickled onions, micro cilantro, and a drizzle of cilantro aioli.",
+                image: "/image/dishes (1).png"
+            },
+            {
+                title: "Truffle Yuca Fries",
+                description: "Crispy golden yuca, double-fried for crunch, tossed with white truffle oil and sea salt. Served with a side of smoked paprika aioli and cilantro chimichurri.",
+                image: "/image/dishes (2).png"
+            },
+            {
+                title: "Smoked Pineapple Mezcalita",
+                description: "A smoky, sweet, and spicy cocktail made with artisanal mezcal, fresh pineapple juice, lime, agave nectar, & a tajín rim. Garnished with a grilled pineapple slice and a sprig of mint.",
+                image: "/image/dishes (3).png"
+            }
+        ],
         rating: 4.8,
         reviews: 248,
-        tags: ["Rooftop", "Italian"],
-        location: "Beverly Crest, Los Angeles",
-        neighborhood: "Beverly Crest, Los Angeles",
-        hours: "09:00 AM - 11:00 PM",
-        priceRange: "$$$",
-        trendScore: 87,
-        bookedThisWeek: "28x",
+        tags: [
+            { label: "Trending", icon: "🔥" },
+            { label: "Rooftop", icon: "🏨" },
+            { label: "Romantic", icon: "💖" },
+        ],
+        locationImage: "/image/location-image.png",
+        location: "West Hollywood, Los Angeles",
+        coordinates: {
+            lat: 34.0900,
+            lng: -118.3617
+        },
+        neighborhood: "West Hollywood, Los Angeles",
+        hours: "09:00 AM - 10:00 PM (Mon-Fri)",
+        priceRange: "$35",
+        trendScore: 91,
+        bookedThisWeek: "34x",
         contactInfo: {
-            address: "8721 Sunset Blvd, Beverly Hills, CA 90210",
-            phone: "(213) 555-8899",
-            email: "info@palomakitchen.com",
-            website: "http://www.palomakitchen.com",
+            address: "4517 Washington Ave, Manchester, Kentucky 39495",
+            phone: "(307) 555-0133",
+            email: "velvet.fork@example.com",
+            website: "http://www.thevelvetfork.com",
         },
         description:
-            "Paloma Kitchen offers authentic Italian cuisine with a modern twist, set in a charming rooftop environment with panoramic views of Los Angeles.",
+            "Luxe Bistro is a chic Italian-fusion restaurant located in the heart of Downtown Los Angeles. Known for its skyline views, curated cocktails, and vibrant ambiance, it's a go-to spot for golden hour gatherings, intimate dinners, and weekend vibes.",
         extendedDescription:
-            "Chef Maria Rossi brings her family recipes from Tuscany, creating a menu that celebrates traditional flavors with contemporary presentation. The restaurant's wine list features exclusive Italian imports and local California selections.",
+            "Whether you're savoring flame-charred octopus tacos or sipping mezcal under the stars, Luxe Bistro delivers a distinctly LA dining experience — bold, flavorful, and unforgettable. The restaurant's seasonal menu changes quarterly, ensuring the freshest ingredients and innovative dishes year-round.",
         mapLocation: "/image/map-location.png",
     },
     {
-        id: 6,
-        name: "Paloma Kitchen",
+        id: "6",
+        name: "The Drizzle Room",
         image: "/image/nearby (2).png",
+        gallery: [
+            "/image/gallery (1).png",
+            "/image/gallery (2).png",
+            "/image/gallery (3).png",
+            "/image/gallery (4).png",
+            "/image/gallery (5).png",
+            "/image/gallery (6).png",
+            "/image/gallery (7).png",
+            "/image/gallery (8).png",
+        ],
+        dishes:[
+            {
+                title: "Charred Octopus Tacos",
+                description: "Tender Spanish octopus, flame-charred for a smoky finish, laid over soft blue corn tortillas. Topped with mango-habanero salsa, pickled onions, micro cilantro, and a drizzle of cilantro aioli.",
+                image: "/image/dishes (1).png"
+            },
+            {
+                title: "Truffle Yuca Fries",
+                description: "Crispy golden yuca, double-fried for crunch, tossed with white truffle oil and sea salt. Served with a side of smoked paprika aioli and cilantro chimichurri.",
+                image: "/image/dishes (2).png"
+            },
+            {
+                title: "Smoked Pineapple Mezcalita",
+                description: "A smoky, sweet, and spicy cocktail made with artisanal mezcal, fresh pineapple juice, lime, agave nectar, & a tajín rim. Garnished with a grilled pineapple slice and a sprig of mint.",
+                image: "/image/dishes (3).png"
+            }
+        ],
         rating: 4.8,
         reviews: 248,
-        tags: ["Rooftop", "Italian"],
-        location: "Beverly Crest, Los Angeles",
-        neighborhood: "Beverly Crest, Los Angeles",
-        hours: "09:00 AM - 11:00 PM",
-        priceRange: "$$$",
-        trendScore: 87,
-        bookedThisWeek: "28x",
+        tags: [
+            { label: "Rooftop", icon: "🔥" },
+            { label: "Italian", icon: "🏨" },
+            { label: "Romantic", icon: "💖" },
+        ],
+        locationImage: "/image/location-image.png",
+        location: "West Hollywood, Los Angeles",
+        coordinates: {
+            lat: 34.0900,
+            lng: -118.3617
+        },
+        neighborhood: "West Hollywood, Los Angeles",
+        hours: "09:00 AM - 10:00 PM (Mon-Fri)",
+        priceRange: "$35",
+        trendScore: 91,
+        bookedThisWeek: "34x",
         contactInfo: {
-            address: "8721 Sunset Blvd, Beverly Hills, CA 90210",
-            phone: "(213) 555-8899",
-            email: "info@palomakitchen.com",
-            website: "http://www.palomakitchen.com",
+            address: "4517 Washington Ave, Manchester, Kentucky 39495",
+            phone: "(307) 555-0133",
+            email: "velvet.fork@example.com",
+            website: "http://www.thevelvetfork.com",
         },
         description:
-            "Paloma Kitchen offers authentic Italian cuisine with a modern twist, set in a charming rooftop environment with panoramic views of Los Angeles.",
+            "Luxe Bistro is a chic Italian-fusion restaurant located in the heart of Downtown Los Angeles. Known for its skyline views, curated cocktails, and vibrant ambiance, it's a go-to spot for golden hour gatherings, intimate dinners, and weekend vibes.",
         extendedDescription:
-            "Chef Maria Rossi brings her family recipes from Tuscany, creating a menu that celebrates traditional flavors with contemporary presentation. The restaurant's wine list features exclusive Italian imports and local California selections.",
+            "Whether you're savoring flame-charred octopus tacos or sipping mezcal under the stars, Luxe Bistro delivers a distinctly LA dining experience — bold, flavorful, and unforgettable. The restaurant's seasonal menu changes quarterly, ensuring the freshest ingredients and innovative dishes year-round.",
         mapLocation: "/image/map-location.png",
     },
     {
-        id: 7,
-        name: "Paloma Kitchen",
+        id: "7",
+        name: "Baja & Bloom",
         image: "/image/nearby (3).png",
+        gallery: [
+            "/image/gallery (1).png",
+            "/image/gallery (2).png",
+            "/image/gallery (3).png",
+            "/image/gallery (4).png",
+            "/image/gallery (5).png",
+            "/image/gallery (6).png",
+            "/image/gallery (7).png",
+            "/image/gallery (8).png",
+        ],
+        dishes:[
+            {
+                title: "Charred Octopus Tacos",
+                description: "Tender Spanish octopus, flame-charred for a smoky finish, laid over soft blue corn tortillas. Topped with mango-habanero salsa, pickled onions, micro cilantro, and a drizzle of cilantro aioli.",
+                image: "/image/dishes (1).png"
+            },
+            {
+                title: "Truffle Yuca Fries",
+                description: "Crispy golden yuca, double-fried for crunch, tossed with white truffle oil and sea salt. Served with a side of smoked paprika aioli and cilantro chimichurri.",
+                image: "/image/dishes (2).png"
+            },
+            {
+                title: "Smoked Pineapple Mezcalita",
+                description: "A smoky, sweet, and spicy cocktail made with artisanal mezcal, fresh pineapple juice, lime, agave nectar, & a tajín rim. Garnished with a grilled pineapple slice and a sprig of mint.",
+                image: "/image/dishes (3).png"
+            }
+        ],
         rating: 4.8,
         reviews: 248,
-        tags: ["Rooftop", "Italian"],
-        location: "Beverly Crest, Los Angeles",
-        neighborhood: "Beverly Crest, Los Angeles",
-        hours: "09:00 AM - 11:00 PM",
-        priceRange: "$$$",
-        trendScore: 87,
-        bookedThisWeek: "28x",
+        tags: [
+            { label: "Trending", icon: "🔥" },
+            { label: "Rooftop", icon: "🏨" },
+            { label: "Romantic", icon: "💖" },
+        ],
+        locationImage: "/image/location-image.png",
+        location: "West Hollywood, Los Angeles",
+        coordinates: {
+            lat: 34.0900,
+            lng: -118.3617
+        },
+        neighborhood: "West Hollywood, Los Angeles",
+        hours: "09:00 AM - 10:00 PM (Mon-Fri)",
+        priceRange: "$35",
+        trendScore: 91,
+        bookedThisWeek: "34x",
         contactInfo: {
-            address: "8721 Sunset Blvd, Beverly Hills, CA 90210",
-            phone: "(213) 555-8899",
-            email: "info@palomakitchen.com",
-            website: "http://www.palomakitchen.com",
+            address: "4517 Washington Ave, Manchester, Kentucky 39495",
+            phone: "(307) 555-0133",
+            email: "velvet.fork@example.com",
+            website: "http://www.thevelvetfork.com",
         },
         description:
-            "Paloma Kitchen offers authentic Italian cuisine with a modern twist, set in a charming rooftop environment with panoramic views of Los Angeles.",
+            "Luxe Bistro is a chic Italian-fusion restaurant located in the heart of Downtown Los Angeles. Known for its skyline views, curated cocktails, and vibrant ambiance, it's a go-to spot for golden hour gatherings, intimate dinners, and weekend vibes.",
         extendedDescription:
-            "Chef Maria Rossi brings her family recipes from Tuscany, creating a menu that celebrates traditional flavors with contemporary presentation. The restaurant's wine list features exclusive Italian imports and local California selections.",
+            "Whether you're savoring flame-charred octopus tacos or sipping mezcal under the stars, Luxe Bistro delivers a distinctly LA dining experience — bold, flavorful, and unforgettable. The restaurant's seasonal menu changes quarterly, ensuring the freshest ingredients and innovative dishes year-round.",
         mapLocation: "/image/map-location.png",
     },
     {
-        id: 8,
-        name: "Paloma Kitchen",
+        id: "8",
+        name: "The Velvet Fork",
         image: "/image/nearby (4).png",
+        gallery: [
+            "/image/gallery (1).png",
+            "/image/gallery (2).png",
+            "/image/gallery (3).png",
+            "/image/gallery (4).png",
+            "/image/gallery (5).png",
+            "/image/gallery (6).png",
+            "/image/gallery (7).png",
+            "/image/gallery (8).png",
+        ],
+        dishes:[
+            {
+                title: "Charred Octopus Tacos",
+                description: "Tender Spanish octopus, flame-charred for a smoky finish, laid over soft blue corn tortillas. Topped with mango-habanero salsa, pickled onions, micro cilantro, and a drizzle of cilantro aioli.",
+                image: "/image/dishes (1).png"
+            },
+            {
+                title: "Truffle Yuca Fries",
+                description: "Crispy golden yuca, double-fried for crunch, tossed with white truffle oil and sea salt. Served with a side of smoked paprika aioli and cilantro chimichurri.",
+                image: "/image/dishes (2).png"
+            },
+            {
+                title: "Smoked Pineapple Mezcalita",
+                description: "A smoky, sweet, and spicy cocktail made with artisanal mezcal, fresh pineapple juice, lime, agave nectar, & a tajín rim. Garnished with a grilled pineapple slice and a sprig of mint.",
+                image: "/image/dishes (3).png"
+            }
+        ],
         rating: 4.8,
         reviews: 248,
-        tags: ["Rooftop", "Italian"],
-        location: "Beverly Crest, Los Angeles",
-        neighborhood: "Beverly Crest, Los Angeles",
-        hours: "09:00 AM - 11:00 PM",
-        priceRange: "$$$",
-        trendScore: 87,
-        bookedThisWeek: "28x",
+        tags: [
+            { label: "Trending", icon: "🔥" },
+            { label: "Rooftop", icon: "🏨" },
+            { label: "Romantic", icon: "💖" },
+        ],
+        locationImage: "/image/location-image.png",
+        location: "West Hollywood, Los Angeles",
+        coordinates: {
+            lat: 34.0900,
+            lng: -118.3617
+        },
+        neighborhood: "West Hollywood, Los Angeles",
+        hours: "09:00 AM - 10:00 PM (Mon-Fri)",
+        priceRange: "$35",
+        trendScore: 91,
+        bookedThisWeek: "34x",
         contactInfo: {
-            address: "8721 Sunset Blvd, Beverly Hills, CA 90210",
-            phone: "(213) 555-8899",
-            email: "info@palomakitchen.com",
-            website: "http://www.palomakitchen.com",
+            address: "4517 Washington Ave, Manchester, Kentucky 39495",
+            phone: "(307) 555-0133",
+            email: "velvet.fork@example.com",
+            website: "http://www.thevelvetfork.com",
         },
         description:
-            "Paloma Kitchen offers authentic Italian cuisine with a modern twist, set in a charming rooftop environment with panoramic views of Los Angeles.",
+            "Luxe Bistro is a chic Italian-fusion restaurant located in the heart of Downtown Los Angeles. Known for its skyline views, curated cocktails, and vibrant ambiance, it's a go-to spot for golden hour gatherings, intimate dinners, and weekend vibes.",
         extendedDescription:
-            "Chef Maria Rossi brings her family recipes from Tuscany, creating a menu that celebrates traditional flavors with contemporary presentation. The restaurant's wine list features exclusive Italian imports and local California selections.",
-        mapLocation: "/image/map-location.png",
-    },
-    {
-        id: 9,
-        name: "Paloma Kitchen",
-        image: "/image/nearby (1).png",
-        rating: 4.8,
-        reviews: 248,
-        tags: ["Rooftop", "Italian"],
-        location: "Beverly Crest, Los Angeles",
-        neighborhood: "Beverly Crest, Los Angeles",
-        hours: "09:00 AM - 11:00 PM",
-        priceRange: "$$$",
-        trendScore: 87,
-        bookedThisWeek: "28x",
-        contactInfo: {
-            address: "8721 Sunset Blvd, Beverly Hills, CA 90210",
-            phone: "(213) 555-8899",
-            email: "info@palomakitchen.com",
-            website: "http://www.palomakitchen.com",
-        },
-        description:
-            "Paloma Kitchen offers authentic Italian cuisine with a modern twist, set in a charming rooftop environment with panoramic views of Los Angeles.",
-        extendedDescription:
-            "Chef Maria Rossi brings her family recipes from Tuscany, creating a menu that celebrates traditional flavors with contemporary presentation. The restaurant's wine list features exclusive Italian imports and local California selections.",
+            "Whether you're savoring flame-charred octopus tacos or sipping mezcal under the stars, Luxe Bistro delivers a distinctly LA dining experience — bold, flavorful, and unforgettable. The restaurant's seasonal menu changes quarterly, ensuring the freshest ingredients and innovative dishes year-round.",
         mapLocation: "/image/map-location.png",
     },
 ]
+
+
+
+export const vibeRestaurantData = [
+    {
+        id: "1",
+        name: "Paloma Kitchen",
+        image: "/image/nearby (1).png",
+        gallery: [
+            "/image/gallery (1).png",
+            "/image/gallery (2).png",
+            "/image/gallery (3).png",
+            "/image/gallery (4).png",
+            "/image/gallery (5).png",
+            "/image/gallery (6).png",
+            "/image/gallery (7).png",
+            "/image/gallery (8).png",
+        ],
+        dishes:[
+            {
+                title: "Charred Octopus Tacos",
+                description: "Tender Spanish octopus, flame-charred for a smoky finish, laid over soft blue corn tortillas. Topped with mango-habanero salsa, pickled onions, micro cilantro, and a drizzle of cilantro aioli.",
+                image: "/image/dishes (1).png"
+            },
+            {
+                title: "Truffle Yuca Fries",
+                description: "Crispy golden yuca, double-fried for crunch, tossed with white truffle oil and sea salt. Served with a side of smoked paprika aioli and cilantro chimichurri.",
+                image: "/image/dishes (2).png"
+            },
+            {
+                title: "Smoked Pineapple Mezcalita",
+                description: "A smoky, sweet, and spicy cocktail made with artisanal mezcal, fresh pineapple juice, lime, agave nectar, & a tajín rim. Garnished with a grilled pineapple slice and a sprig of mint.",
+                image: "/image/dishes (3).png"
+            }
+        ],
+        rating: 4.8,
+        reviews: 248,
+        tags: [
+            { label: "Trending", icon: "🔥" },
+            { label: "Rooftop", icon: "🏨" },
+            { label: "Romantic", icon: "💖" },
+        ],
+        locationImage: "/image/location-image.png",
+        location: "West Hollywood, Los Angeles",
+        coordinates: {
+            lat: 34.0900,
+            lng: -118.3617
+        },
+        neighborhood: "West Hollywood, Los Angeles",
+        hours: "09:00 AM - 10:00 PM (Mon-Fri)",
+        priceRange: "$35",
+        trendScore: 91,
+        bookedThisWeek: "34x",
+        contactInfo: {
+            address: "4517 Washington Ave, Manchester, Kentucky 39495",
+            phone: "(307) 555-0133",
+            email: "velvet.fork@example.com",
+            website: "http://www.thevelvetfork.com",
+        },
+        description:
+            "Luxe Bistro is a chic Italian-fusion restaurant located in the heart of Downtown Los Angeles. Known for its skyline views, curated cocktails, and vibrant ambiance, it's a go-to spot for golden hour gatherings, intimate dinners, and weekend vibes.",
+        extendedDescription:
+            "Whether you're savoring flame-charred octopus tacos or sipping mezcal under the stars, Luxe Bistro delivers a distinctly LA dining experience — bold, flavorful, and unforgettable. The restaurant's seasonal menu changes quarterly, ensuring the freshest ingredients and innovative dishes year-round.",
+        mapLocation: "/image/map-location.png",
+    },
+    {
+        id: "2",
+        name: "The Drizzle Room",
+        image: "/image/nearby (2).png",
+        gallery: [
+            "/image/gallery (1).png",
+            "/image/gallery (2).png",
+            "/image/gallery (3).png",
+            "/image/gallery (4).png",
+            "/image/gallery (5).png",
+            "/image/gallery (6).png",
+            "/image/gallery (7).png",
+            "/image/gallery (8).png",
+        ],
+        dishes:[
+            {
+                title: "Charred Octopus Tacos",
+                description: "Tender Spanish octopus, flame-charred for a smoky finish, laid over soft blue corn tortillas. Topped with mango-habanero salsa, pickled onions, micro cilantro, and a drizzle of cilantro aioli.",
+                image: "/image/dishes (1).png"
+            },
+            {
+                title: "Truffle Yuca Fries",
+                description: "Crispy golden yuca, double-fried for crunch, tossed with white truffle oil and sea salt. Served with a side of smoked paprika aioli and cilantro chimichurri.",
+                image: "/image/dishes (2).png"
+            },
+            {
+                title: "Smoked Pineapple Mezcalita",
+                description: "A smoky, sweet, and spicy cocktail made with artisanal mezcal, fresh pineapple juice, lime, agave nectar, & a tajín rim. Garnished with a grilled pineapple slice and a sprig of mint.",
+                image: "/image/dishes (3).png"
+            }
+        ],
+        rating: 4.8,
+        reviews: 248,
+        tags: [
+            { label: "Rooftop", icon: "🔥" },
+            { label: "Italian", icon: "🏨" },
+            { label: "Romantic", icon: "💖" },
+        ],
+        locationImage: "/image/location-image.png",
+        location: "West Hollywood, Los Angeles",
+        coordinates: {
+            lat: 34.0900,
+            lng: -118.3617
+        },
+        neighborhood: "West Hollywood, Los Angeles",
+        hours: "09:00 AM - 10:00 PM (Mon-Fri)",
+        priceRange: "$35",
+        trendScore: 91,
+        bookedThisWeek: "34x",
+        contactInfo: {
+            address: "4517 Washington Ave, Manchester, Kentucky 39495",
+            phone: "(307) 555-0133",
+            email: "velvet.fork@example.com",
+            website: "http://www.thevelvetfork.com",
+        },
+        description:
+            "Luxe Bistro is a chic Italian-fusion restaurant located in the heart of Downtown Los Angeles. Known for its skyline views, curated cocktails, and vibrant ambiance, it's a go-to spot for golden hour gatherings, intimate dinners, and weekend vibes.",
+        extendedDescription:
+            "Whether you're savoring flame-charred octopus tacos or sipping mezcal under the stars, Luxe Bistro delivers a distinctly LA dining experience — bold, flavorful, and unforgettable. The restaurant's seasonal menu changes quarterly, ensuring the freshest ingredients and innovative dishes year-round.",
+        mapLocation: "/image/map-location.png",
+    },
+    {
+        id: "3",
+        name: "Baja & Bloom",
+        image: "/image/nearby (3).png",
+        gallery: [
+            "/image/gallery (1).png",
+            "/image/gallery (2).png",
+            "/image/gallery (3).png",
+            "/image/gallery (4).png",
+            "/image/gallery (5).png",
+            "/image/gallery (6).png",
+            "/image/gallery (7).png",
+            "/image/gallery (8).png",
+        ],
+        dishes:[
+            {
+                title: "Charred Octopus Tacos",
+                description: "Tender Spanish octopus, flame-charred for a smoky finish, laid over soft blue corn tortillas. Topped with mango-habanero salsa, pickled onions, micro cilantro, and a drizzle of cilantro aioli.",
+                image: "/image/dishes (1).png"
+            },
+            {
+                title: "Truffle Yuca Fries",
+                description: "Crispy golden yuca, double-fried for crunch, tossed with white truffle oil and sea salt. Served with a side of smoked paprika aioli and cilantro chimichurri.",
+                image: "/image/dishes (2).png"
+            },
+            {
+                title: "Smoked Pineapple Mezcalita",
+                description: "A smoky, sweet, and spicy cocktail made with artisanal mezcal, fresh pineapple juice, lime, agave nectar, & a tajín rim. Garnished with a grilled pineapple slice and a sprig of mint.",
+                image: "/image/dishes (3).png"
+            }
+        ],
+        rating: 4.8,
+        reviews: 248,
+        tags: [
+            { label: "Trending", icon: "🔥" },
+            { label: "Rooftop", icon: "🏨" },
+            { label: "Romantic", icon: "💖" },
+        ],
+        locationImage: "/image/location-image.png",
+        location: "West Hollywood, Los Angeles",
+        coordinates: {
+            lat: 34.0900,
+            lng: -118.3617
+        },
+        neighborhood: "West Hollywood, Los Angeles",
+        hours: "09:00 AM - 10:00 PM (Mon-Fri)",
+        priceRange: "$35",
+        trendScore: 91,
+        bookedThisWeek: "34x",
+        contactInfo: {
+            address: "4517 Washington Ave, Manchester, Kentucky 39495",
+            phone: "(307) 555-0133",
+            email: "velvet.fork@example.com",
+            website: "http://www.thevelvetfork.com",
+        },
+        description:
+            "Luxe Bistro is a chic Italian-fusion restaurant located in the heart of Downtown Los Angeles. Known for its skyline views, curated cocktails, and vibrant ambiance, it's a go-to spot for golden hour gatherings, intimate dinners, and weekend vibes.",
+        extendedDescription:
+            "Whether you're savoring flame-charred octopus tacos or sipping mezcal under the stars, Luxe Bistro delivers a distinctly LA dining experience — bold, flavorful, and unforgettable. The restaurant's seasonal menu changes quarterly, ensuring the freshest ingredients and innovative dishes year-round.",
+        mapLocation: "/image/map-location.png",
+    },
+    {
+        id: "4",
+        name: "The Velvet Fork",
+        image: "/image/nearby (4).png",
+        gallery: [
+            "/image/gallery (1).png",
+            "/image/gallery (2).png",
+            "/image/gallery (3).png",
+            "/image/gallery (4).png",
+            "/image/gallery (5).png",
+            "/image/gallery (6).png",
+            "/image/gallery (7).png",
+            "/image/gallery (8).png",
+        ],
+        dishes:[
+            {
+                title: "Charred Octopus Tacos",
+                description: "Tender Spanish octopus, flame-charred for a smoky finish, laid over soft blue corn tortillas. Topped with mango-habanero salsa, pickled onions, micro cilantro, and a drizzle of cilantro aioli.",
+                image: "/image/dishes (1).png"
+            },
+            {
+                title: "Truffle Yuca Fries",
+                description: "Crispy golden yuca, double-fried for crunch, tossed with white truffle oil and sea salt. Served with a side of smoked paprika aioli and cilantro chimichurri.",
+                image: "/image/dishes (2).png"
+            },
+            {
+                title: "Smoked Pineapple Mezcalita",
+                description: "A smoky, sweet, and spicy cocktail made with artisanal mezcal, fresh pineapple juice, lime, agave nectar, & a tajín rim. Garnished with a grilled pineapple slice and a sprig of mint.",
+                image: "/image/dishes (3).png"
+            }
+        ],
+        rating: 4.8,
+        reviews: 248,
+        tags: [
+            { label: "Trending", icon: "🔥" },
+            { label: "Rooftop", icon: "🏨" },
+            { label: "Romantic", icon: "💖" },
+        ],
+        locationImage: "/image/location-image.png",
+        location: "West Hollywood, Los Angeles",
+        coordinates: {
+            lat: 34.0900,
+            lng: -118.3617
+        },
+        neighborhood: "West Hollywood, Los Angeles",
+        hours: "09:00 AM - 10:00 PM (Mon-Fri)",
+        priceRange: "$35",
+        trendScore: 91,
+        bookedThisWeek: "34x",
+        contactInfo: {
+            address: "4517 Washington Ave, Manchester, Kentucky 39495",
+            phone: "(307) 555-0133",
+            email: "velvet.fork@example.com",
+            website: "http://www.thevelvetfork.com",
+        },
+        description:
+            "Luxe Bistro is a chic Italian-fusion restaurant located in the heart of Downtown Los Angeles. Known for its skyline views, curated cocktails, and vibrant ambiance, it's a go-to spot for golden hour gatherings, intimate dinners, and weekend vibes.",
+        extendedDescription:
+            "Whether you're savoring flame-charred octopus tacos or sipping mezcal under the stars, Luxe Bistro delivers a distinctly LA dining experience — bold, flavorful, and unforgettable. The restaurant's seasonal menu changes quarterly, ensuring the freshest ingredients and innovative dishes year-round.",
+        mapLocation: "/image/map-location.png",
+    },
+    {
+        id: "5",
+        name: "Paloma Kitchen",
+        image: "/image/nearby (1).png",
+        gallery: [
+            "/image/gallery (1).png",
+            "/image/gallery (2).png",
+            "/image/gallery (3).png",
+            "/image/gallery (4).png",
+            "/image/gallery (5).png",
+            "/image/gallery (6).png",
+            "/image/gallery (7).png",
+            "/image/gallery (8).png",
+        ],
+        dishes:[
+            {
+                title: "Charred Octopus Tacos",
+                description: "Tender Spanish octopus, flame-charred for a smoky finish, laid over soft blue corn tortillas. Topped with mango-habanero salsa, pickled onions, micro cilantro, and a drizzle of cilantro aioli.",
+                image: "/image/dishes (1).png"
+            },
+            {
+                title: "Truffle Yuca Fries",
+                description: "Crispy golden yuca, double-fried for crunch, tossed with white truffle oil and sea salt. Served with a side of smoked paprika aioli and cilantro chimichurri.",
+                image: "/image/dishes (2).png"
+            },
+            {
+                title: "Smoked Pineapple Mezcalita",
+                description: "A smoky, sweet, and spicy cocktail made with artisanal mezcal, fresh pineapple juice, lime, agave nectar, & a tajín rim. Garnished with a grilled pineapple slice and a sprig of mint.",
+                image: "/image/dishes (3).png"
+            }
+        ],
+        rating: 4.8,
+        reviews: 248,
+        tags: [
+            { label: "Trending", icon: "🔥" },
+            { label: "Rooftop", icon: "🏨" },
+            { label: "Romantic", icon: "💖" },
+        ],
+        locationImage: "/image/location-image.png",
+        location: "West Hollywood, Los Angeles",
+        coordinates: {
+            lat: 34.0900,
+            lng: -118.3617
+        },
+        neighborhood: "West Hollywood, Los Angeles",
+        hours: "09:00 AM - 10:00 PM (Mon-Fri)",
+        priceRange: "$35",
+        trendScore: 91,
+        bookedThisWeek: "34x",
+        contactInfo: {
+            address: "4517 Washington Ave, Manchester, Kentucky 39495",
+            phone: "(307) 555-0133",
+            email: "velvet.fork@example.com",
+            website: "http://www.thevelvetfork.com",
+        },
+        description:
+            "Luxe Bistro is a chic Italian-fusion restaurant located in the heart of Downtown Los Angeles. Known for its skyline views, curated cocktails, and vibrant ambiance, it's a go-to spot for golden hour gatherings, intimate dinners, and weekend vibes.",
+        extendedDescription:
+            "Whether you're savoring flame-charred octopus tacos or sipping mezcal under the stars, Luxe Bistro delivers a distinctly LA dining experience — bold, flavorful, and unforgettable. The restaurant's seasonal menu changes quarterly, ensuring the freshest ingredients and innovative dishes year-round.",
+        mapLocation: "/image/map-location.png",
+    },
+    {
+        id: "6",
+        name: "The Drizzle Room",
+        image: "/image/nearby (2).png",
+        gallery: [
+            "/image/gallery (1).png",
+            "/image/gallery (2).png",
+            "/image/gallery (3).png",
+            "/image/gallery (4).png",
+            "/image/gallery (5).png",
+            "/image/gallery (6).png",
+            "/image/gallery (7).png",
+            "/image/gallery (8).png",
+        ],
+        dishes:[
+            {
+                title: "Charred Octopus Tacos",
+                description: "Tender Spanish octopus, flame-charred for a smoky finish, laid over soft blue corn tortillas. Topped with mango-habanero salsa, pickled onions, micro cilantro, and a drizzle of cilantro aioli.",
+                image: "/image/dishes (1).png"
+            },
+            {
+                title: "Truffle Yuca Fries",
+                description: "Crispy golden yuca, double-fried for crunch, tossed with white truffle oil and sea salt. Served with a side of smoked paprika aioli and cilantro chimichurri.",
+                image: "/image/dishes (2).png"
+            },
+            {
+                title: "Smoked Pineapple Mezcalita",
+                description: "A smoky, sweet, and spicy cocktail made with artisanal mezcal, fresh pineapple juice, lime, agave nectar, & a tajín rim. Garnished with a grilled pineapple slice and a sprig of mint.",
+                image: "/image/dishes (3).png"
+            }
+        ],
+        rating: 4.8,
+        reviews: 248,
+        tags: [
+            { label: "Rooftop", icon: "🔥" },
+            { label: "Italian", icon: "🏨" },
+            { label: "Romantic", icon: "💖" },
+        ],
+        locationImage: "/image/location-image.png",
+        location: "West Hollywood, Los Angeles",
+        coordinates: {
+            lat: 34.0900,
+            lng: -118.3617
+        },
+        neighborhood: "West Hollywood, Los Angeles",
+        hours: "09:00 AM - 10:00 PM (Mon-Fri)",
+        priceRange: "$35",
+        trendScore: 91,
+        bookedThisWeek: "34x",
+        contactInfo: {
+            address: "4517 Washington Ave, Manchester, Kentucky 39495",
+            phone: "(307) 555-0133",
+            email: "velvet.fork@example.com",
+            website: "http://www.thevelvetfork.com",
+        },
+        description:
+            "Luxe Bistro is a chic Italian-fusion restaurant located in the heart of Downtown Los Angeles. Known for its skyline views, curated cocktails, and vibrant ambiance, it's a go-to spot for golden hour gatherings, intimate dinners, and weekend vibes.",
+        extendedDescription:
+            "Whether you're savoring flame-charred octopus tacos or sipping mezcal under the stars, Luxe Bistro delivers a distinctly LA dining experience — bold, flavorful, and unforgettable. The restaurant's seasonal menu changes quarterly, ensuring the freshest ingredients and innovative dishes year-round.",
+        mapLocation: "/image/map-location.png",
+    },
+    {
+        id: "7",
+        name: "Baja & Bloom",
+        image: "/image/nearby (3).png",
+        gallery: [
+            "/image/gallery (1).png",
+            "/image/gallery (2).png",
+            "/image/gallery (3).png",
+            "/image/gallery (4).png",
+            "/image/gallery (5).png",
+            "/image/gallery (6).png",
+            "/image/gallery (7).png",
+            "/image/gallery (8).png",
+        ],
+        dishes:[
+            {
+                title: "Charred Octopus Tacos",
+                description: "Tender Spanish octopus, flame-charred for a smoky finish, laid over soft blue corn tortillas. Topped with mango-habanero salsa, pickled onions, micro cilantro, and a drizzle of cilantro aioli.",
+                image: "/image/dishes (1).png"
+            },
+            {
+                title: "Truffle Yuca Fries",
+                description: "Crispy golden yuca, double-fried for crunch, tossed with white truffle oil and sea salt. Served with a side of smoked paprika aioli and cilantro chimichurri.",
+                image: "/image/dishes (2).png"
+            },
+            {
+                title: "Smoked Pineapple Mezcalita",
+                description: "A smoky, sweet, and spicy cocktail made with artisanal mezcal, fresh pineapple juice, lime, agave nectar, & a tajín rim. Garnished with a grilled pineapple slice and a sprig of mint.",
+                image: "/image/dishes (3).png"
+            }
+        ],
+        rating: 4.8,
+        reviews: 248,
+        tags: [
+            { label: "Trending", icon: "🔥" },
+            { label: "Rooftop", icon: "🏨" },
+            { label: "Romantic", icon: "💖" },
+        ],
+        locationImage: "/image/location-image.png",
+        location: "West Hollywood, Los Angeles",
+        coordinates: {
+            lat: 34.0900,
+            lng: -118.3617
+        },
+        neighborhood: "West Hollywood, Los Angeles",
+        hours: "09:00 AM - 10:00 PM (Mon-Fri)",
+        priceRange: "$35",
+        trendScore: 91,
+        bookedThisWeek: "34x",
+        contactInfo: {
+            address: "4517 Washington Ave, Manchester, Kentucky 39495",
+            phone: "(307) 555-0133",
+            email: "velvet.fork@example.com",
+            website: "http://www.thevelvetfork.com",
+        },
+        description:
+            "Luxe Bistro is a chic Italian-fusion restaurant located in the heart of Downtown Los Angeles. Known for its skyline views, curated cocktails, and vibrant ambiance, it's a go-to spot for golden hour gatherings, intimate dinners, and weekend vibes.",
+        extendedDescription:
+            "Whether you're savoring flame-charred octopus tacos or sipping mezcal under the stars, Luxe Bistro delivers a distinctly LA dining experience — bold, flavorful, and unforgettable. The restaurant's seasonal menu changes quarterly, ensuring the freshest ingredients and innovative dishes year-round.",
+        mapLocation: "/image/map-location.png",
+    },
+    {
+        id: "8",
+        name: "The Velvet Fork",
+        image: "/image/nearby (4).png",
+        gallery: [
+            "/image/gallery (1).png",
+            "/image/gallery (2).png",
+            "/image/gallery (3).png",
+            "/image/gallery (4).png",
+            "/image/gallery (5).png",
+            "/image/gallery (6).png",
+            "/image/gallery (7).png",
+            "/image/gallery (8).png",
+        ],
+        dishes:[
+            {
+                title: "Charred Octopus Tacos",
+                description: "Tender Spanish octopus, flame-charred for a smoky finish, laid over soft blue corn tortillas. Topped with mango-habanero salsa, pickled onions, micro cilantro, and a drizzle of cilantro aioli.",
+                image: "/image/dishes (1).png"
+            },
+            {
+                title: "Truffle Yuca Fries",
+                description: "Crispy golden yuca, double-fried for crunch, tossed with white truffle oil and sea salt. Served with a side of smoked paprika aioli and cilantro chimichurri.",
+                image: "/image/dishes (2).png"
+            },
+            {
+                title: "Smoked Pineapple Mezcalita",
+                description: "A smoky, sweet, and spicy cocktail made with artisanal mezcal, fresh pineapple juice, lime, agave nectar, & a tajín rim. Garnished with a grilled pineapple slice and a sprig of mint.",
+                image: "/image/dishes (3).png"
+            }
+        ],
+        rating: 4.8,
+        reviews: 248,
+        tags: [
+            { label: "Trending", icon: "🔥" },
+            { label: "Rooftop", icon: "🏨" },
+            { label: "Romantic", icon: "💖" },
+        ],
+        locationImage: "/image/location-image.png",
+        location: "West Hollywood, Los Angeles",
+        coordinates: {
+            lat: 34.0900,
+            lng: -118.3617
+        },
+        neighborhood: "West Hollywood, Los Angeles",
+        hours: "09:00 AM - 10:00 PM (Mon-Fri)",
+        priceRange: "$35",
+        trendScore: 91,
+        bookedThisWeek: "34x",
+        contactInfo: {
+            address: "4517 Washington Ave, Manchester, Kentucky 39495",
+            phone: "(307) 555-0133",
+            email: "velvet.fork@example.com",
+            website: "http://www.thevelvetfork.com",
+        },
+        description:
+            "Luxe Bistro is a chic Italian-fusion restaurant located in the heart of Downtown Los Angeles. Known for its skyline views, curated cocktails, and vibrant ambiance, it's a go-to spot for golden hour gatherings, intimate dinners, and weekend vibes.",
+        extendedDescription:
+            "Whether you're savoring flame-charred octopus tacos or sipping mezcal under the stars, Luxe Bistro delivers a distinctly LA dining experience — bold, flavorful, and unforgettable. The restaurant's seasonal menu changes quarterly, ensuring the freshest ingredients and innovative dishes year-round.",
+        mapLocation: "/image/map-location.png",
+    },
+]
+
+
+
+
+
+export const cuiseneRestaurantData = [
+    {
+        id: "1",
+        name: "Paloma Kitchen",
+        image: "/image/nearby (1).png",
+        gallery: [
+            "/image/gallery (1).png",
+            "/image/gallery (2).png",
+            "/image/gallery (3).png",
+            "/image/gallery (4).png",
+            "/image/gallery (5).png",
+            "/image/gallery (6).png",
+            "/image/gallery (7).png",
+            "/image/gallery (8).png",
+        ],
+        dishes:[
+            {
+                title: "Charred Octopus Tacos",
+                description: "Tender Spanish octopus, flame-charred for a smoky finish, laid over soft blue corn tortillas. Topped with mango-habanero salsa, pickled onions, micro cilantro, and a drizzle of cilantro aioli.",
+                image: "/image/dishes (1).png"
+            },
+            {
+                title: "Truffle Yuca Fries",
+                description: "Crispy golden yuca, double-fried for crunch, tossed with white truffle oil and sea salt. Served with a side of smoked paprika aioli and cilantro chimichurri.",
+                image: "/image/dishes (2).png"
+            },
+            {
+                title: "Smoked Pineapple Mezcalita",
+                description: "A smoky, sweet, and spicy cocktail made with artisanal mezcal, fresh pineapple juice, lime, agave nectar, & a tajín rim. Garnished with a grilled pineapple slice and a sprig of mint.",
+                image: "/image/dishes (3).png"
+            }
+        ],
+        rating: 4.8,
+        reviews: 248,
+        tags: [
+            { label: "Trending", icon: "🔥" },
+            { label: "Rooftop", icon: "🏨" },
+            { label: "Romantic", icon: "💖" },
+        ],
+        locationImage: "/image/location-image.png",
+        location: "West Hollywood, Los Angeles",
+        coordinates: {
+            lat: 34.0900,
+            lng: -118.3617
+        },
+        neighborhood: "West Hollywood, Los Angeles",
+        hours: "09:00 AM - 10:00 PM (Mon-Fri)",
+        priceRange: "$35",
+        trendScore: 91,
+        bookedThisWeek: "34x",
+        contactInfo: {
+            address: "4517 Washington Ave, Manchester, Kentucky 39495",
+            phone: "(307) 555-0133",
+            email: "velvet.fork@example.com",
+            website: "http://www.thevelvetfork.com",
+        },
+        description:
+            "Luxe Bistro is a chic Italian-fusion restaurant located in the heart of Downtown Los Angeles. Known for its skyline views, curated cocktails, and vibrant ambiance, it's a go-to spot for golden hour gatherings, intimate dinners, and weekend vibes.",
+        extendedDescription:
+            "Whether you're savoring flame-charred octopus tacos or sipping mezcal under the stars, Luxe Bistro delivers a distinctly LA dining experience — bold, flavorful, and unforgettable. The restaurant's seasonal menu changes quarterly, ensuring the freshest ingredients and innovative dishes year-round.",
+        mapLocation: "/image/map-location.png",
+    },
+    {
+        id: "2",
+        name: "The Drizzle Room",
+        image: "/image/nearby (2).png",
+        gallery: [
+            "/image/gallery (1).png",
+            "/image/gallery (2).png",
+            "/image/gallery (3).png",
+            "/image/gallery (4).png",
+            "/image/gallery (5).png",
+            "/image/gallery (6).png",
+            "/image/gallery (7).png",
+            "/image/gallery (8).png",
+        ],
+        dishes:[
+            {
+                title: "Charred Octopus Tacos",
+                description: "Tender Spanish octopus, flame-charred for a smoky finish, laid over soft blue corn tortillas. Topped with mango-habanero salsa, pickled onions, micro cilantro, and a drizzle of cilantro aioli.",
+                image: "/image/dishes (1).png"
+            },
+            {
+                title: "Truffle Yuca Fries",
+                description: "Crispy golden yuca, double-fried for crunch, tossed with white truffle oil and sea salt. Served with a side of smoked paprika aioli and cilantro chimichurri.",
+                image: "/image/dishes (2).png"
+            },
+            {
+                title: "Smoked Pineapple Mezcalita",
+                description: "A smoky, sweet, and spicy cocktail made with artisanal mezcal, fresh pineapple juice, lime, agave nectar, & a tajín rim. Garnished with a grilled pineapple slice and a sprig of mint.",
+                image: "/image/dishes (3).png"
+            }
+        ],
+        rating: 4.8,
+        reviews: 248,
+        tags: [
+            { label: "Rooftop", icon: "🔥" },
+            { label: "Italian", icon: "🏨" },
+            { label: "Romantic", icon: "💖" },
+        ],
+        locationImage: "/image/location-image.png",
+        location: "West Hollywood, Los Angeles",
+        coordinates: {
+            lat: 34.0900,
+            lng: -118.3617
+        },
+        neighborhood: "West Hollywood, Los Angeles",
+        hours: "09:00 AM - 10:00 PM (Mon-Fri)",
+        priceRange: "$35",
+        trendScore: 91,
+        bookedThisWeek: "34x",
+        contactInfo: {
+            address: "4517 Washington Ave, Manchester, Kentucky 39495",
+            phone: "(307) 555-0133",
+            email: "velvet.fork@example.com",
+            website: "http://www.thevelvetfork.com",
+        },
+        description:
+            "Luxe Bistro is a chic Italian-fusion restaurant located in the heart of Downtown Los Angeles. Known for its skyline views, curated cocktails, and vibrant ambiance, it's a go-to spot for golden hour gatherings, intimate dinners, and weekend vibes.",
+        extendedDescription:
+            "Whether you're savoring flame-charred octopus tacos or sipping mezcal under the stars, Luxe Bistro delivers a distinctly LA dining experience — bold, flavorful, and unforgettable. The restaurant's seasonal menu changes quarterly, ensuring the freshest ingredients and innovative dishes year-round.",
+        mapLocation: "/image/map-location.png",
+    },
+    {
+        id: "3",
+        name: "Baja & Bloom",
+        image: "/image/nearby (3).png",
+        gallery: [
+            "/image/gallery (1).png",
+            "/image/gallery (2).png",
+            "/image/gallery (3).png",
+            "/image/gallery (4).png",
+            "/image/gallery (5).png",
+            "/image/gallery (6).png",
+            "/image/gallery (7).png",
+            "/image/gallery (8).png",
+        ],
+        dishes:[
+            {
+                title: "Charred Octopus Tacos",
+                description: "Tender Spanish octopus, flame-charred for a smoky finish, laid over soft blue corn tortillas. Topped with mango-habanero salsa, pickled onions, micro cilantro, and a drizzle of cilantro aioli.",
+                image: "/image/dishes (1).png"
+            },
+            {
+                title: "Truffle Yuca Fries",
+                description: "Crispy golden yuca, double-fried for crunch, tossed with white truffle oil and sea salt. Served with a side of smoked paprika aioli and cilantro chimichurri.",
+                image: "/image/dishes (2).png"
+            },
+            {
+                title: "Smoked Pineapple Mezcalita",
+                description: "A smoky, sweet, and spicy cocktail made with artisanal mezcal, fresh pineapple juice, lime, agave nectar, & a tajín rim. Garnished with a grilled pineapple slice and a sprig of mint.",
+                image: "/image/dishes (3).png"
+            }
+        ],
+        rating: 4.8,
+        reviews: 248,
+        tags: [
+            { label: "Trending", icon: "🔥" },
+            { label: "Rooftop", icon: "🏨" },
+            { label: "Romantic", icon: "💖" },
+        ],
+        locationImage: "/image/location-image.png",
+        location: "West Hollywood, Los Angeles",
+        coordinates: {
+            lat: 34.0900,
+            lng: -118.3617
+        },
+        neighborhood: "West Hollywood, Los Angeles",
+        hours: "09:00 AM - 10:00 PM (Mon-Fri)",
+        priceRange: "$35",
+        trendScore: 91,
+        bookedThisWeek: "34x",
+        contactInfo: {
+            address: "4517 Washington Ave, Manchester, Kentucky 39495",
+            phone: "(307) 555-0133",
+            email: "velvet.fork@example.com",
+            website: "http://www.thevelvetfork.com",
+        },
+        description:
+            "Luxe Bistro is a chic Italian-fusion restaurant located in the heart of Downtown Los Angeles. Known for its skyline views, curated cocktails, and vibrant ambiance, it's a go-to spot for golden hour gatherings, intimate dinners, and weekend vibes.",
+        extendedDescription:
+            "Whether you're savoring flame-charred octopus tacos or sipping mezcal under the stars, Luxe Bistro delivers a distinctly LA dining experience — bold, flavorful, and unforgettable. The restaurant's seasonal menu changes quarterly, ensuring the freshest ingredients and innovative dishes year-round.",
+        mapLocation: "/image/map-location.png",
+    },
+    {
+        id: "4",
+        name: "The Velvet Fork",
+        image: "/image/nearby (4).png",
+        gallery: [
+            "/image/gallery (1).png",
+            "/image/gallery (2).png",
+            "/image/gallery (3).png",
+            "/image/gallery (4).png",
+            "/image/gallery (5).png",
+            "/image/gallery (6).png",
+            "/image/gallery (7).png",
+            "/image/gallery (8).png",
+        ],
+        dishes:[
+            {
+                title: "Charred Octopus Tacos",
+                description: "Tender Spanish octopus, flame-charred for a smoky finish, laid over soft blue corn tortillas. Topped with mango-habanero salsa, pickled onions, micro cilantro, and a drizzle of cilantro aioli.",
+                image: "/image/dishes (1).png"
+            },
+            {
+                title: "Truffle Yuca Fries",
+                description: "Crispy golden yuca, double-fried for crunch, tossed with white truffle oil and sea salt. Served with a side of smoked paprika aioli and cilantro chimichurri.",
+                image: "/image/dishes (2).png"
+            },
+            {
+                title: "Smoked Pineapple Mezcalita",
+                description: "A smoky, sweet, and spicy cocktail made with artisanal mezcal, fresh pineapple juice, lime, agave nectar, & a tajín rim. Garnished with a grilled pineapple slice and a sprig of mint.",
+                image: "/image/dishes (3).png"
+            }
+        ],
+        rating: 4.8,
+        reviews: 248,
+        tags: [
+            { label: "Trending", icon: "🔥" },
+            { label: "Rooftop", icon: "🏨" },
+            { label: "Romantic", icon: "💖" },
+        ],
+        locationImage: "/image/location-image.png",
+        location: "West Hollywood, Los Angeles",
+        coordinates: {
+            lat: 34.0900,
+            lng: -118.3617
+        },
+        neighborhood: "West Hollywood, Los Angeles",
+        hours: "09:00 AM - 10:00 PM (Mon-Fri)",
+        priceRange: "$35",
+        trendScore: 91,
+        bookedThisWeek: "34x",
+        contactInfo: {
+            address: "4517 Washington Ave, Manchester, Kentucky 39495",
+            phone: "(307) 555-0133",
+            email: "velvet.fork@example.com",
+            website: "http://www.thevelvetfork.com",
+        },
+        description:
+            "Luxe Bistro is a chic Italian-fusion restaurant located in the heart of Downtown Los Angeles. Known for its skyline views, curated cocktails, and vibrant ambiance, it's a go-to spot for golden hour gatherings, intimate dinners, and weekend vibes.",
+        extendedDescription:
+            "Whether you're savoring flame-charred octopus tacos or sipping mezcal under the stars, Luxe Bistro delivers a distinctly LA dining experience — bold, flavorful, and unforgettable. The restaurant's seasonal menu changes quarterly, ensuring the freshest ingredients and innovative dishes year-round.",
+        mapLocation: "/image/map-location.png",
+    },
+    {
+        id: "5",
+        name: "Paloma Kitchen",
+        image: "/image/nearby (1).png",
+        gallery: [
+            "/image/gallery (1).png",
+            "/image/gallery (2).png",
+            "/image/gallery (3).png",
+            "/image/gallery (4).png",
+            "/image/gallery (5).png",
+            "/image/gallery (6).png",
+            "/image/gallery (7).png",
+            "/image/gallery (8).png",
+        ],
+        dishes:[
+            {
+                title: "Charred Octopus Tacos",
+                description: "Tender Spanish octopus, flame-charred for a smoky finish, laid over soft blue corn tortillas. Topped with mango-habanero salsa, pickled onions, micro cilantro, and a drizzle of cilantro aioli.",
+                image: "/image/dishes (1).png"
+            },
+            {
+                title: "Truffle Yuca Fries",
+                description: "Crispy golden yuca, double-fried for crunch, tossed with white truffle oil and sea salt. Served with a side of smoked paprika aioli and cilantro chimichurri.",
+                image: "/image/dishes (2).png"
+            },
+            {
+                title: "Smoked Pineapple Mezcalita",
+                description: "A smoky, sweet, and spicy cocktail made with artisanal mezcal, fresh pineapple juice, lime, agave nectar, & a tajín rim. Garnished with a grilled pineapple slice and a sprig of mint.",
+                image: "/image/dishes (3).png"
+            }
+        ],
+        rating: 4.8,
+        reviews: 248,
+        tags: [
+            { label: "Trending", icon: "🔥" },
+            { label: "Rooftop", icon: "🏨" },
+            { label: "Romantic", icon: "💖" },
+        ],
+        locationImage: "/image/location-image.png",
+        location: "West Hollywood, Los Angeles",
+        coordinates: {
+            lat: 34.0900,
+            lng: -118.3617
+        },
+        neighborhood: "West Hollywood, Los Angeles",
+        hours: "09:00 AM - 10:00 PM (Mon-Fri)",
+        priceRange: "$35",
+        trendScore: 91,
+        bookedThisWeek: "34x",
+        contactInfo: {
+            address: "4517 Washington Ave, Manchester, Kentucky 39495",
+            phone: "(307) 555-0133",
+            email: "velvet.fork@example.com",
+            website: "http://www.thevelvetfork.com",
+        },
+        description:
+            "Luxe Bistro is a chic Italian-fusion restaurant located in the heart of Downtown Los Angeles. Known for its skyline views, curated cocktails, and vibrant ambiance, it's a go-to spot for golden hour gatherings, intimate dinners, and weekend vibes.",
+        extendedDescription:
+            "Whether you're savoring flame-charred octopus tacos or sipping mezcal under the stars, Luxe Bistro delivers a distinctly LA dining experience — bold, flavorful, and unforgettable. The restaurant's seasonal menu changes quarterly, ensuring the freshest ingredients and innovative dishes year-round.",
+        mapLocation: "/image/map-location.png",
+    },
+    {
+        id: "6",
+        name: "The Drizzle Room",
+        image: "/image/nearby (2).png",
+        gallery: [
+            "/image/gallery (1).png",
+            "/image/gallery (2).png",
+            "/image/gallery (3).png",
+            "/image/gallery (4).png",
+            "/image/gallery (5).png",
+            "/image/gallery (6).png",
+            "/image/gallery (7).png",
+            "/image/gallery (8).png",
+        ],
+        dishes:[
+            {
+                title: "Charred Octopus Tacos",
+                description: "Tender Spanish octopus, flame-charred for a smoky finish, laid over soft blue corn tortillas. Topped with mango-habanero salsa, pickled onions, micro cilantro, and a drizzle of cilantro aioli.",
+                image: "/image/dishes (1).png"
+            },
+            {
+                title: "Truffle Yuca Fries",
+                description: "Crispy golden yuca, double-fried for crunch, tossed with white truffle oil and sea salt. Served with a side of smoked paprika aioli and cilantro chimichurri.",
+                image: "/image/dishes (2).png"
+            },
+            {
+                title: "Smoked Pineapple Mezcalita",
+                description: "A smoky, sweet, and spicy cocktail made with artisanal mezcal, fresh pineapple juice, lime, agave nectar, & a tajín rim. Garnished with a grilled pineapple slice and a sprig of mint.",
+                image: "/image/dishes (3).png"
+            }
+        ],
+        rating: 4.8,
+        reviews: 248,
+        tags: [
+            { label: "Rooftop", icon: "🔥" },
+            { label: "Italian", icon: "🏨" },
+            { label: "Romantic", icon: "💖" },
+        ],
+        locationImage: "/image/location-image.png",
+        location: "West Hollywood, Los Angeles",
+        coordinates: {
+            lat: 34.0900,
+            lng: -118.3617
+        },
+        neighborhood: "West Hollywood, Los Angeles",
+        hours: "09:00 AM - 10:00 PM (Mon-Fri)",
+        priceRange: "$35",
+        trendScore: 91,
+        bookedThisWeek: "34x",
+        contactInfo: {
+            address: "4517 Washington Ave, Manchester, Kentucky 39495",
+            phone: "(307) 555-0133",
+            email: "velvet.fork@example.com",
+            website: "http://www.thevelvetfork.com",
+        },
+        description:
+            "Luxe Bistro is a chic Italian-fusion restaurant located in the heart of Downtown Los Angeles. Known for its skyline views, curated cocktails, and vibrant ambiance, it's a go-to spot for golden hour gatherings, intimate dinners, and weekend vibes.",
+        extendedDescription:
+            "Whether you're savoring flame-charred octopus tacos or sipping mezcal under the stars, Luxe Bistro delivers a distinctly LA dining experience — bold, flavorful, and unforgettable. The restaurant's seasonal menu changes quarterly, ensuring the freshest ingredients and innovative dishes year-round.",
+        mapLocation: "/image/map-location.png",
+    },
+    {
+        id: "7",
+        name: "Baja & Bloom",
+        image: "/image/nearby (3).png",
+        gallery: [
+            "/image/gallery (1).png",
+            "/image/gallery (2).png",
+            "/image/gallery (3).png",
+            "/image/gallery (4).png",
+            "/image/gallery (5).png",
+            "/image/gallery (6).png",
+            "/image/gallery (7).png",
+            "/image/gallery (8).png",
+        ],
+        dishes:[
+            {
+                title: "Charred Octopus Tacos",
+                description: "Tender Spanish octopus, flame-charred for a smoky finish, laid over soft blue corn tortillas. Topped with mango-habanero salsa, pickled onions, micro cilantro, and a drizzle of cilantro aioli.",
+                image: "/image/dishes (1).png"
+            },
+            {
+                title: "Truffle Yuca Fries",
+                description: "Crispy golden yuca, double-fried for crunch, tossed with white truffle oil and sea salt. Served with a side of smoked paprika aioli and cilantro chimichurri.",
+                image: "/image/dishes (2).png"
+            },
+            {
+                title: "Smoked Pineapple Mezcalita",
+                description: "A smoky, sweet, and spicy cocktail made with artisanal mezcal, fresh pineapple juice, lime, agave nectar, & a tajín rim. Garnished with a grilled pineapple slice and a sprig of mint.",
+                image: "/image/dishes (3).png"
+            }
+        ],
+        rating: 4.8,
+        reviews: 248,
+        tags: [
+            { label: "Trending", icon: "🔥" },
+            { label: "Rooftop", icon: "🏨" },
+            { label: "Romantic", icon: "💖" },
+        ],
+        locationImage: "/image/location-image.png",
+        location: "West Hollywood, Los Angeles",
+        coordinates: {
+            lat: 34.0900,
+            lng: -118.3617
+        },
+        neighborhood: "West Hollywood, Los Angeles",
+        hours: "09:00 AM - 10:00 PM (Mon-Fri)",
+        priceRange: "$35",
+        trendScore: 91,
+        bookedThisWeek: "34x",
+        contactInfo: {
+            address: "4517 Washington Ave, Manchester, Kentucky 39495",
+            phone: "(307) 555-0133",
+            email: "velvet.fork@example.com",
+            website: "http://www.thevelvetfork.com",
+        },
+        description:
+            "Luxe Bistro is a chic Italian-fusion restaurant located in the heart of Downtown Los Angeles. Known for its skyline views, curated cocktails, and vibrant ambiance, it's a go-to spot for golden hour gatherings, intimate dinners, and weekend vibes.",
+        extendedDescription:
+            "Whether you're savoring flame-charred octopus tacos or sipping mezcal under the stars, Luxe Bistro delivers a distinctly LA dining experience — bold, flavorful, and unforgettable. The restaurant's seasonal menu changes quarterly, ensuring the freshest ingredients and innovative dishes year-round.",
+        mapLocation: "/image/map-location.png",
+    },
+    {
+        id: "8",
+        name: "The Velvet Fork",
+        image: "/image/nearby (4).png",
+        gallery: [
+            "/image/gallery (1).png",
+            "/image/gallery (2).png",
+            "/image/gallery (3).png",
+            "/image/gallery (4).png",
+            "/image/gallery (5).png",
+            "/image/gallery (6).png",
+            "/image/gallery (7).png",
+            "/image/gallery (8).png",
+        ],
+        dishes:[
+            {
+                title: "Charred Octopus Tacos",
+                description: "Tender Spanish octopus, flame-charred for a smoky finish, laid over soft blue corn tortillas. Topped with mango-habanero salsa, pickled onions, micro cilantro, and a drizzle of cilantro aioli.",
+                image: "/image/dishes (1).png"
+            },
+            {
+                title: "Truffle Yuca Fries",
+                description: "Crispy golden yuca, double-fried for crunch, tossed with white truffle oil and sea salt. Served with a side of smoked paprika aioli and cilantro chimichurri.",
+                image: "/image/dishes (2).png"
+            },
+            {
+                title: "Smoked Pineapple Mezcalita",
+                description: "A smoky, sweet, and spicy cocktail made with artisanal mezcal, fresh pineapple juice, lime, agave nectar, & a tajín rim. Garnished with a grilled pineapple slice and a sprig of mint.",
+                image: "/image/dishes (3).png"
+            }
+        ],
+        rating: 4.8,
+        reviews: 248,
+        tags: [
+            { label: "Trending", icon: "🔥" },
+            { label: "Rooftop", icon: "🏨" },
+            { label: "Romantic", icon: "💖" },
+        ],
+        locationImage: "/image/location-image.png",
+        location: "West Hollywood, Los Angeles",
+        coordinates: {
+            lat: 34.0900,
+            lng: -118.3617
+        },
+        neighborhood: "West Hollywood, Los Angeles",
+        hours: "09:00 AM - 10:00 PM (Mon-Fri)",
+        priceRange: "$35",
+        trendScore: 91,
+        bookedThisWeek: "34x",
+        contactInfo: {
+            address: "4517 Washington Ave, Manchester, Kentucky 39495",
+            phone: "(307) 555-0133",
+            email: "velvet.fork@example.com",
+            website: "http://www.thevelvetfork.com",
+        },
+        description:
+            "Luxe Bistro is a chic Italian-fusion restaurant located in the heart of Downtown Los Angeles. Known for its skyline views, curated cocktails, and vibrant ambiance, it's a go-to spot for golden hour gatherings, intimate dinners, and weekend vibes.",
+        extendedDescription:
+            "Whether you're savoring flame-charred octopus tacos or sipping mezcal under the stars, Luxe Bistro delivers a distinctly LA dining experience — bold, flavorful, and unforgettable. The restaurant's seasonal menu changes quarterly, ensuring the freshest ingredients and innovative dishes year-round.",
+        mapLocation: "/image/map-location.png",
+    },
+]
+
+
+
+
+
+
+
+
+
 
 
 // Filter categories

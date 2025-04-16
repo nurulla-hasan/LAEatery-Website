@@ -11,7 +11,7 @@ function getHashedIndex(str, length) {
   return Math.abs(hash) % length
 }
 
-const VibeRestaurantDetails = ({ params }) => {
+const CusineRestaurantDetails = ({ params }) => {
 
 
   const { id } = use(params)
@@ -39,4 +39,4 @@ const VibeRestaurantDetails = ({ params }) => {
   )
 }
 
-export default VibeRestaurantDetails
+export default CusineRestaurantDetails

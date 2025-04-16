@@ -4,7 +4,7 @@ import React, { useState } from "react"
 import Image from "next/image"
 import { Heart, X, FilterIcon } from "lucide-react"
 import HomeContainer from "@/components/home-container/HomeContainer"
-import { cuisines, neighborhoods, allRestaurantData, vibes } from "@/lib/data"
+import { cuisines, neighborhoods, allRestaurantData, vibes, vibeRestaurantData } from "@/lib/data"
 import toast from "react-hot-toast"
 import RestaurantCard from "@/components/shared/restaurant-Card/RestaurantCard"
 import FilterCompo from "@/components/shared/filterCompo/FilterCompo"
@@ -24,7 +24,7 @@ const NearbyRestaurant = () => {
 
     const handleFilterApply = () => {
         setShowFilterModal(false)
-        toast.success("Your Filtered restaurant")
+        toast.success("Your Filtered Items")
     }
 
     return (
@@ -33,7 +33,7 @@ const NearbyRestaurant = () => {
                 <HomeContainer>
                     {/* Header with result count and filter button */}
                     <div className="flex justify-between items-center mb-6">
-                        <div className="text-white">Showing {allRestaurantData.length} results</div>
+                        <div className="text-black">Showing {allRestaurantData.length} results</div>
                         <button
                             onClick={() => setShowFilterModal(true)}
                             className="bg-white text-black px-4 py-2 rounded flex items-center gap-2 cursor-pointer"
@@ -45,17 +45,21 @@ const NearbyRestaurant = () => {
 
                     {/* Restaurant grid */}
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 ">
-                        <RestaurantCard allRestaurantData={allRestaurantData} />
+                        {
+                            allRestaurantData?.map((restaurant, index) => (
+                                <RestaurantCard key={index} path={"nearby-restaurants"} data={restaurant}/>
+                            ))
+                        }
                     </div>
                 </HomeContainer>
 
                 {/* Filter Modal */}
                 {showFilterModal && (
                     <div className="fixed inset-0 bg-black/30 backdrop-blur-xs z-50 flex justify-end ">
-                        <div className="bg-[#242424] w-full max-w-xs h-full overflow-y-auto scrl-hide rounded-l-lg">
-                            <div className="p-4 flex justify-between items-center border-b border-gray-800">
-                                <h2 className="text-white text-lg font-medium">Filter</h2>
-                                <button onClick={() => setShowFilterModal(false)} className="text-gray-400 hover:text-white cursor-pointer">
+                        <div className="bg-white w-full max-w-xs h-full overflow-y-auto scrl-hide rounded-l-lg">
+                            <div className="p-4 flex justify-between items-center">
+                                <h2 className="text-black text-lg font-medium">Filter</h2>
+                                <button onClick={() => setShowFilterModal(false)} className="text-black hover:text-black/50 cursor-pointer">
                                     <X size={20} />
                                 </button>
                             </div>
