@@ -1,8 +1,9 @@
 import { Heart } from 'lucide-react';
 import Image from 'next/image';
+import Link from 'next/link';
 import React, { useState } from 'react';
 
-const RestaurantCard = ({ restaurantData }) => {
+const RestaurantCard = ({ vibeRestaurantData }) => {
     const [favorites, setFavorites] = useState({})
 
     // Toggle favorite status
@@ -17,16 +18,18 @@ const RestaurantCard = ({ restaurantData }) => {
     return (
         <>
             {
-                restaurantData.map((restaurant) => (
+                vibeRestaurantData.map((restaurant) => (
                     <div key={restaurant.id} className="bg-white rounded-xl overflow-hidden">
                         {/* Restaurant image and favorite button */}
-                        <div className="relative w-full h-[200px]">
-                            <Image
-                                src={restaurant.image || "/placeholder.svg"}
-                                alt={restaurant.name}
-                                fill
-                                className="object-cover rounded-t-xl"
-                            />
+                        <div className="relative w-full h-[200px] cursor-pointer hover:scale-102 transition">
+                            <Link href={`/vibe/${restaurant.id}`}>
+                                <Image
+                                    src={restaurant.image || "/placeholder.svg"}
+                                    alt={restaurant.name}
+                                    fill
+                                    className="object-cover rounded-t-xl"
+                                />
+                            </Link>
                             <button
                                 className={`absolute cursor-pointer top-2 right-2 p-1.5 rounded-full ${favorites[restaurant.id] ? "bg-white" : "bg-black/50"}`}
                                 onClick={() => toggleFavorite(restaurant.id)}

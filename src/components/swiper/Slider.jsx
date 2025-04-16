@@ -8,7 +8,7 @@ import 'swiper/css'
 import 'swiper/css/navigation'
 
 // Dummy data import
-import { restaurantData } from '@/lib/data'
+import { allRestaurantData } from '@/lib/data'
 
 const Slider = () => {
   const [favorites, setFavorites] = useState([])
@@ -38,7 +38,7 @@ const Slider = () => {
         }}
         className="nearby-restaurants-slider"
       >
-        {restaurantData.map((restaurant) => (
+        {allRestaurantData.map((restaurant) => (
           <SwiperSlide key={restaurant.id}>
             <div className="bg-white overflow-hidden transition-transform hover:scale-[1.02] duration-300 rounded-xl">
               <div className="relative w-full h-[200px]">

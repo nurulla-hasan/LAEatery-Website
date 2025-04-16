@@ -15,7 +15,7 @@ const icon = L.icon({
 });
 
 
-const RestaurantMap = ({ address, lat, lng, name }) => {
+const RestaurantMapComponent = ({ address, lat, lng, name }) => {
   const [isMounted, setIsMounted] = useState(false);
   
   useEffect(() => {
@@ -35,7 +35,7 @@ const RestaurantMap = ({ address, lat, lng, name }) => {
   }
 
   return (
-    <div className="w-full h-48 overflow-hidden rounded-lg">
+    <div className="w-full h-72 overflow-hidden rounded-lg">
       <MapContainer 
         center={position} 
         zoom={13} 
@@ -59,4 +59,4 @@ const RestaurantMap = ({ address, lat, lng, name }) => {
   );
 };
 
-export default RestaurantMap;
+export default RestaurantMapComponent;

@@ -2,14 +2,13 @@
 import HomeContainer from "@/components/home-container/HomeContainer"
 import FilterCompo from "@/components/shared/filterCompo/FilterCompo";
 import RestaurantCard from "@/components/shared/restaurant-Card/RestaurantCard"
-import { restaurantData } from '@/lib/data';
+import { vibeRestaurantData } from '@/lib/data';
 import { vibes } from "@/lib/data"
 
 const VibePage = () => {
 
     return (
-        <div className="">
-            {/* border-t-2 border-[#ffffff79] */}
+        <div className="border-t border-[#C0C0C0]">
             <HomeContainer>
                 <div className="flex flex-col md:flex-row my-10 gap-5">
                     {/* Left sidebar - Filters */}
@@ -28,7 +27,7 @@ const VibePage = () => {
                         <div className="h-[100vh] overflow-auto scrl-hide rounded-xl">
                             {/* Card Component Hare */}
                             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 ">
-                                <RestaurantCard restaurantData={restaurantData} />
+                                <RestaurantCard vibeRestaurantData={vibeRestaurantData} />
                             </div>
                         </div>
                     </div>

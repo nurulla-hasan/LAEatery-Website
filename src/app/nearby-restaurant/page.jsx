@@ -4,7 +4,7 @@ import React, { useState } from "react"
 import Image from "next/image"
 import { Heart, X, FilterIcon } from "lucide-react"
 import HomeContainer from "@/components/home-container/HomeContainer"
-import { cuisines, neighborhoods, restaurantData, vibes } from "@/lib/data"
+import { cuisines, neighborhoods, allRestaurantData, vibes } from "@/lib/data"
 import toast from "react-hot-toast"
 import RestaurantCard from "@/components/shared/restaurant-Card/RestaurantCard"
 import FilterCompo from "@/components/shared/filterCompo/FilterCompo"
@@ -33,7 +33,7 @@ const NearbyRestaurant = () => {
                 <HomeContainer>
                     {/* Header with result count and filter button */}
                     <div className="flex justify-between items-center mb-6">
-                        <div className="text-white">Showing {restaurantData.length} results</div>
+                        <div className="text-white">Showing {allRestaurantData.length} results</div>
                         <button
                             onClick={() => setShowFilterModal(true)}
                             className="bg-white text-black px-4 py-2 rounded flex items-center gap-2 cursor-pointer"
@@ -45,7 +45,7 @@ const NearbyRestaurant = () => {
 
                     {/* Restaurant grid */}
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 ">
-                        <RestaurantCard restaurantData={restaurantData} />
+                        <RestaurantCard allRestaurantData={allRestaurantData} />
                     </div>
                 </HomeContainer>
 
