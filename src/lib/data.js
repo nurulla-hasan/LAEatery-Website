@@ -26,13 +26,32 @@ export const features = [
 export const restaurantData = [
     {
         id: 1,
-        name: "Paloma Kitchen",
+        name: "The Velvet Fork",
         image: "/image/nearby (4).png",
         rating: 4.8,
         reviews: 248,
-        tags: ["Rooftop", "Italian"],
-        location: "Beverly Crest, Los Angeles",
-        hours: "09:00 AM - 11 PM",
+        tags: ["Trending", "Rooftop", "Romantic"],
+        location: "West Hollywood, Los Angeles",
+        coordinates: {
+            lat: 34.0900,
+            lng: -118.3617
+        },
+        neighborhood: "West Hollywood, Los Angeles",
+        hours: "09:00 AM - 10:00 PM (Mon-Fri)",
+        priceRange: "$35",
+        trendScore: 91,
+        bookedThisWeek: "34x",
+        contactInfo: {
+            address: "4517 Washington Ave, Manchester, Kentucky 39495",
+            phone: "(307) 555-0133",
+            email: "velvet.fork@example.com",
+            website: "http://www.thevelvetfork.com",
+        },
+        description:
+            "Luxe Bistro is a chic Italian-fusion restaurant located in the heart of Downtown Los Angeles. Known for its skyline views, curated cocktails, and vibrant ambiance, it's a go-to spot for golden hour gatherings, intimate dinners, and weekend vibes.",
+        extendedDescription:
+            "Whether you're savoring flame-charred octopus tacos or sipping mezcal under the stars, Luxe Bistro delivers a distinctly LA dining experience — bold, flavorful, and unforgettable. The restaurant's seasonal menu changes quarterly, ensuring the freshest ingredients and innovative dishes year-round.",
+        mapLocation: "/image/map-location.png",
     },
     {
         id: 2,
@@ -42,7 +61,22 @@ export const restaurantData = [
         reviews: 248,
         tags: ["Rooftop", "Italian"],
         location: "Beverly Crest, Los Angeles",
-        hours: "09:00 AM - 11 PM",
+        neighborhood: "Beverly Crest, Los Angeles",
+        hours: "09:00 AM - 11:00 PM",
+        priceRange: "$$$",
+        trendScore: 87,
+        bookedThisWeek: "28x",
+        contactInfo: {
+            address: "8721 Sunset Blvd, Beverly Hills, CA 90210",
+            phone: "(213) 555-8899",
+            email: "info@palomakitchen.com",
+            website: "http://www.palomakitchen.com",
+        },
+        description:
+            "Paloma Kitchen offers authentic Italian cuisine with a modern twist, set in a charming rooftop environment with panoramic views of Los Angeles.",
+        extendedDescription:
+            "Chef Maria Rossi brings her family recipes from Tuscany, creating a menu that celebrates traditional flavors with contemporary presentation. The restaurant's wine list features exclusive Italian imports and local California selections.",
+        mapLocation: "/image/map-location.png",
     },
     {
         id: 3,
@@ -125,6 +159,7 @@ export const restaurantData = [
         hours: "09:00 AM - 11 PM",
     },
 ]
+
 
 // Filter categories
 export const neighborhoods = [

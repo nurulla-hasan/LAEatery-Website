@@ -1,4 +1,5 @@
 import "./globals.css";
+import 'leaflet/dist/leaflet.css';
 import { Toaster } from "react-hot-toast";
 import RootLayoutClient from "./RootLayoutClient";
 import { Inter, Poltawski_Nowy } from 'next/font/google'
