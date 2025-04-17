@@ -2,12 +2,12 @@
 import { MapPin, Phone, Mail, Globe, Star, Heart, Clock, DollarSign } from 'lucide-react'
 import HomeContainer from "@/components/home-container/HomeContainer"
 import Image from "next/image"
-import RestaurantMap from "@/components/shared/restaurant-map/RestaurantMapWrapper"
 import toast from 'react-hot-toast'
 import Link from 'next/link'
 import Slider from '@/components/swiper/Slider'
 import { GrNext, GrPrevious } from 'react-icons/gr'
 import { allRestaurantData } from "@/lib/data";
+import SingleDataMap from '../restaurant-map/RestaurantMapWrapper'
 
 
 const bgColors = ["bg-amber-50", "bg-blue-50", "bg-pink-50", "bg-green-50", "bg-purple-50", "bg-yellow-50"]
@@ -18,6 +18,7 @@ const RestaurantDetailsCard = ({ getHashedIndex, toggleFavorite, restaurant, isF
 
 
     const handleBook = (id) => {
+        console.log(id);
         toast.success("Successfully Booked")
     }
 
@@ -33,12 +34,13 @@ const RestaurantDetailsCard = ({ getHashedIndex, toggleFavorite, restaurant, isF
                             height={1080}
                             src={restaurant?.locationImage || "/placeholder.svg"}
                             alt={restaurant?.name}
+                            priority
                             className="w-full md:h-[550px] object-cover rounded-2xl"
                         />
                     </div>
 
                     <div className="bg-white rounded-2xl shadow-sm overflow-hidden">
-                        <RestaurantMap
+                        <SingleDataMap
                             address={restaurant?.contactInfo?.address}
                             lat={restaurant?.coordinates?.lat}
                             lng={restaurant?.coordinates?.lng}
@@ -142,7 +144,7 @@ const RestaurantDetailsCard = ({ getHashedIndex, toggleFavorite, restaurant, isF
 
                 {/* Book Now */}
                 <div className="mt-6">
-                    <button onClick={handleBook} className="bg-black text-white text-xs px-6 py-3 rounded-sm font-medium hover:bg-gray-800 transition-colors cursor-pointer">
+                    <button onClick={()=>(handleBook(restaurant.id))} className="bg-black text-white text-xs px-6 py-3 rounded-sm font-medium hover:bg-gray-800 transition-colors cursor-pointer">
                         Book Now
                     </button>
                 </div>

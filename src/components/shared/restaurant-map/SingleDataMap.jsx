@@ -1,21 +1,11 @@
 "use client"
 
+import { icon } from '@/lib/leaflet-icon';
 import { useEffect, useState } from 'react';
 import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
-import L from 'leaflet';
-
-// for markar icon fix
-const icon = L.icon({
-  iconUrl: '/marker-icon.png',
-  iconSize: [25, 41],
-  iconAnchor: [12, 41],
-  popupAnchor: [1, -34],
-  shadowUrl: '/marker-shadow.png',
-  shadowSize: [41, 41]
-});
 
 
-const RestaurantMapComponent = ({ address, lat, lng, name }) => {
+const SingleDataMap = ({ address, lat, lng, name }) => {
   const [isMounted, setIsMounted] = useState(false);
   
   useEffect(() => {
@@ -59,4 +49,4 @@ const RestaurantMapComponent = ({ address, lat, lng, name }) => {
   );
 };
 
-export default RestaurantMapComponent;
+export default SingleDataMap;

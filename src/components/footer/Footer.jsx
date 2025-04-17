@@ -14,7 +14,7 @@ const Footer = () => {
                 <HomeContainer>
                     {/* Top Logo */}
                     <div className="flex justify-center mb-12">
-                        <img src="/image/logo2.png" alt="LA Eatery" className="md:h-72" />
+                        <Link href='/'><img src="/image/logo2.png" alt="LA Eatery" className="md:h-72" /></Link>
                     </div>
 
                     <div className="flex flex-col md:flex-row justify-between gap-10 lg:gap-20">
@@ -47,7 +47,7 @@ const Footer = () => {
                                     </Link>
                                 </li>
                                 <li>
-                                    <Link href="/terms-conditions" className="hover: transition-colors">
+                                    <Link href="/terms-condition" className="hover: transition-colors">
                                         Terms & Conditions
                                     </Link>
                                 </li>

@@ -28,7 +28,7 @@ export default function RootLayout({ children }) {
       <body>
         <Toaster />
         <ThemeProvider>
-          <div className={`${inter.variable} ${poltawski.variable} bg-[#E9E7E3]`}>
+          <div className={`${inter.variable} ${poltawski.variable}`}>
             <RootLayoutClient>{children}</RootLayoutClient>
           </div>
         </ThemeProvider>

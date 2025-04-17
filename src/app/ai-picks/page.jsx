@@ -4,9 +4,10 @@ import FilterCompo from "@/components/shared/filterCompo/FilterCompo";
 import RestaurantCard from "@/components/shared/restaurant-Card/RestaurantCard";
 import { allRestaurantData, cuisines, neighborhoods, vibes } from "@/lib/data";
 import { FilterIcon, X } from "lucide-react";
+import Link from "next/link";
 import { useState } from "react";
 
-const SavePage = () => {
+const AiPics = () => {
 
     const [showFilterModal, setShowFilterModal] = useState(false)
 
@@ -23,6 +24,13 @@ const SavePage = () => {
                     <div className="flex justify-between items-center mb-6">
                         <div className="text-black ">Showing {allRestaurantData.length} results</div>
                         <div className="flex gap-2 text-sm">
+                            <Link href="/map">
+                                <button
+                                    className="text-black border border-[#C0C0C0] px-7 py-2 rounded flex items-center gap-2 cursor-pointer"
+                                >
+                                    Map
+                                </button>
+                            </Link>
                             <button
                                 onClick={() => setShowFilterModal(true)}
                                 className="bg-black text-white px-4 py-2 rounded flex items-center gap-2 cursor-pointer"
@@ -80,4 +88,4 @@ const SavePage = () => {
     );
 };
 
-export default SavePage;
+export default AiPics;

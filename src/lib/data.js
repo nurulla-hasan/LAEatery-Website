@@ -26,6 +26,7 @@ export const features = [
 export const allRestaurantData = [
     {
         id: "1",
+        favorite: true,
         name: "Paloma Kitchen",
         image: "/image/nearby (1).png",
         gallery: [
@@ -38,7 +39,7 @@ export const allRestaurantData = [
             "/image/gallery (7).png",
             "/image/gallery (8).png",
         ],
-        dishes:[
+        dishes: [
             {
                 title: "Charred Octopus Tacos",
                 description: "Tender Spanish octopus, flame-charred for a smoky finish, laid over soft blue corn tortillas. Topped with mango-habanero salsa, pickled onions, micro cilantro, and a drizzle of cilantro aioli.",
@@ -63,10 +64,10 @@ export const allRestaurantData = [
             { label: "Romantic", icon: "💖" },
         ],
         locationImage: "/image/location-image.png",
-        location: "West Hollywood, Los Angeles",
+        location: "Gulshan, Dhaka",
         coordinates: {
-            lat: 34.0900,
-            lng: -118.3617
+            lat: 23.7916,
+            lng: 90.4072
         },
         neighborhood: "West Hollywood, Los Angeles",
         hours: "09:00 AM - 10:00 PM (Mon-Fri)",
@@ -87,6 +88,7 @@ export const allRestaurantData = [
     },
     {
         id: "2",
+        favorite: true,
         name: "The Drizzle Room",
         image: "/image/nearby (2).png",
         gallery: [
@@ -99,7 +101,7 @@ export const allRestaurantData = [
             "/image/gallery (7).png",
             "/image/gallery (8).png",
         ],
-        dishes:[
+        dishes: [
             {
                 title: "Charred Octopus Tacos",
                 description: "Tender Spanish octopus, flame-charred for a smoky finish, laid over soft blue corn tortillas. Topped with mango-habanero salsa, pickled onions, micro cilantro, and a drizzle of cilantro aioli.",
@@ -124,10 +126,10 @@ export const allRestaurantData = [
             { label: "Romantic", icon: "💖" },
         ],
         locationImage: "/image/location-image.png",
-        location: "West Hollywood, Los Angeles",
+        location: "Connaught Place, New Delhi, India",
         coordinates: {
-            lat: 34.0900,
-            lng: -118.3617
+            lat: 28.6315,
+            lng: 77.2167
         },
         neighborhood: "West Hollywood, Los Angeles",
         hours: "09:00 AM - 10:00 PM (Mon-Fri)",
@@ -148,6 +150,7 @@ export const allRestaurantData = [
     },
     {
         id: "3",
+        favorite: true,
         name: "Baja & Bloom",
         image: "/image/nearby (3).png",
         gallery: [
@@ -160,7 +163,7 @@ export const allRestaurantData = [
             "/image/gallery (7).png",
             "/image/gallery (8).png",
         ],
-        dishes:[
+        dishes: [
             {
                 title: "Charred Octopus Tacos",
                 description: "Tender Spanish octopus, flame-charred for a smoky finish, laid over soft blue corn tortillas. Topped with mango-habanero salsa, pickled onions, micro cilantro, and a drizzle of cilantro aioli.",
@@ -185,10 +188,10 @@ export const allRestaurantData = [
             { label: "Romantic", icon: "💖" },
         ],
         locationImage: "/image/location-image.png",
-        location: "West Hollywood, Los Angeles",
+        location: "Shinjuku, Tokyo, Japan",
         coordinates: {
-            lat: 34.0900,
-            lng: -118.3617
+            lat: 35.6938,
+            lng: 139.7034
         },
         neighborhood: "West Hollywood, Los Angeles",
         hours: "09:00 AM - 10:00 PM (Mon-Fri)",
@@ -209,6 +212,7 @@ export const allRestaurantData = [
     },
     {
         id: "4",
+        favorite: true,
         name: "The Velvet Fork",
         image: "/image/nearby (4).png",
         gallery: [
@@ -221,7 +225,7 @@ export const allRestaurantData = [
             "/image/gallery (7).png",
             "/image/gallery (8).png",
         ],
-        dishes:[
+        dishes: [
             {
                 title: "Charred Octopus Tacos",
                 description: "Tender Spanish octopus, flame-charred for a smoky finish, laid over soft blue corn tortillas. Topped with mango-habanero salsa, pickled onions, micro cilantro, and a drizzle of cilantro aioli.",
@@ -246,10 +250,10 @@ export const allRestaurantData = [
             { label: "Romantic", icon: "💖" },
         ],
         locationImage: "/image/location-image.png",
-        location: "West Hollywood, Los Angeles",
+        location: "Times Square, New York, USA",
         coordinates: {
-            lat: 34.0900,
-            lng: -118.3617
+            lat: 40.7580,
+            lng: -73.9855
         },
         neighborhood: "West Hollywood, Los Angeles",
         hours: "09:00 AM - 10:00 PM (Mon-Fri)",
@@ -270,6 +274,7 @@ export const allRestaurantData = [
     },
     {
         id: "5",
+        favorite: true,
         name: "Paloma Kitchen",
         image: "/image/nearby (1).png",
         gallery: [
@@ -282,7 +287,7 @@ export const allRestaurantData = [
             "/image/gallery (7).png",
             "/image/gallery (8).png",
         ],
-        dishes:[
+        dishes: [
             {
                 title: "Charred Octopus Tacos",
                 description: "Tender Spanish octopus, flame-charred for a smoky finish, laid over soft blue corn tortillas. Topped with mango-habanero salsa, pickled onions, micro cilantro, and a drizzle of cilantro aioli.",
@@ -307,10 +312,10 @@ export const allRestaurantData = [
             { label: "Romantic", icon: "💖" },
         ],
         locationImage: "/image/location-image.png",
-        location: "West Hollywood, Los Angeles",
+        location: "La Rambla, Barcelona, Spain",
         coordinates: {
-            lat: 34.0900,
-            lng: -118.3617
+            lat: 41.3809,
+            lng: 2.1735
         },
         neighborhood: "West Hollywood, Los Angeles",
         hours: "09:00 AM - 10:00 PM (Mon-Fri)",
@@ -331,6 +336,7 @@ export const allRestaurantData = [
     },
     {
         id: "6",
+        favorite: true,
         name: "The Drizzle Room",
         image: "/image/nearby (2).png",
         gallery: [
@@ -343,7 +349,7 @@ export const allRestaurantData = [
             "/image/gallery (7).png",
             "/image/gallery (8).png",
         ],
-        dishes:[
+        dishes: [
             {
                 title: "Charred Octopus Tacos",
                 description: "Tender Spanish octopus, flame-charred for a smoky finish, laid over soft blue corn tortillas. Topped with mango-habanero salsa, pickled onions, micro cilantro, and a drizzle of cilantro aioli.",
@@ -368,10 +374,10 @@ export const allRestaurantData = [
             { label: "Romantic", icon: "💖" },
         ],
         locationImage: "/image/location-image.png",
-        location: "West Hollywood, Los Angeles",
+        location: "Le Marais, Paris, France",
         coordinates: {
-            lat: 34.0900,
-            lng: -118.3617
+            lat: 48.8590,
+            lng: 2.3580
         },
         neighborhood: "West Hollywood, Los Angeles",
         hours: "09:00 AM - 10:00 PM (Mon-Fri)",
@@ -392,6 +398,7 @@ export const allRestaurantData = [
     },
     {
         id: "7",
+        favorite: true,
         name: "Baja & Bloom",
         image: "/image/nearby (3).png",
         gallery: [
@@ -404,7 +411,7 @@ export const allRestaurantData = [
             "/image/gallery (7).png",
             "/image/gallery (8).png",
         ],
-        dishes:[
+        dishes: [
             {
                 title: "Charred Octopus Tacos",
                 description: "Tender Spanish octopus, flame-charred for a smoky finish, laid over soft blue corn tortillas. Topped with mango-habanero salsa, pickled onions, micro cilantro, and a drizzle of cilantro aioli.",
@@ -429,10 +436,10 @@ export const allRestaurantData = [
             { label: "Romantic", icon: "💖" },
         ],
         locationImage: "/image/location-image.png",
-        location: "West Hollywood, Los Angeles",
+        location: "Downtown, Dubai, UAE",
         coordinates: {
-            lat: 34.0900,
-            lng: -118.3617
+            lat: 25.1972,
+            lng: 55.2744
         },
         neighborhood: "West Hollywood, Los Angeles",
         hours: "09:00 AM - 10:00 PM (Mon-Fri)",
@@ -453,6 +460,7 @@ export const allRestaurantData = [
     },
     {
         id: "8",
+        favorite: true,
         name: "The Velvet Fork",
         image: "/image/nearby (4).png",
         gallery: [
@@ -465,7 +473,7 @@ export const allRestaurantData = [
             "/image/gallery (7).png",
             "/image/gallery (8).png",
         ],
-        dishes:[
+        dishes: [
             {
                 title: "Charred Octopus Tacos",
                 description: "Tender Spanish octopus, flame-charred for a smoky finish, laid over soft blue corn tortillas. Topped with mango-habanero salsa, pickled onions, micro cilantro, and a drizzle of cilantro aioli.",
@@ -490,10 +498,10 @@ export const allRestaurantData = [
             { label: "Romantic", icon: "💖" },
         ],
         locationImage: "/image/location-image.png",
-        location: "West Hollywood, Los Angeles",
+        location: "Queen Street, Auckland, New Zealand",
         coordinates: {
-            lat: 34.0900,
-            lng: -118.3617
+            lat: -36.8485,
+            lng: 174.7633
         },
         neighborhood: "West Hollywood, Los Angeles",
         hours: "09:00 AM - 10:00 PM (Mon-Fri)",
@@ -531,7 +539,7 @@ export const vibeRestaurantData = [
             "/image/gallery (7).png",
             "/image/gallery (8).png",
         ],
-        dishes:[
+        dishes: [
             {
                 title: "Charred Octopus Tacos",
                 description: "Tender Spanish octopus, flame-charred for a smoky finish, laid over soft blue corn tortillas. Topped with mango-habanero salsa, pickled onions, micro cilantro, and a drizzle of cilantro aioli.",
@@ -556,10 +564,10 @@ export const vibeRestaurantData = [
             { label: "Romantic", icon: "💖" },
         ],
         locationImage: "/image/location-image.png",
-        location: "West Hollywood, Los Angeles",
+        location: "Gulshan, Dhaka",
         coordinates: {
-            lat: 34.0900,
-            lng: -118.3617
+            lat: 23.7916,
+            lng: 90.4072
         },
         neighborhood: "West Hollywood, Los Angeles",
         hours: "09:00 AM - 10:00 PM (Mon-Fri)",
@@ -592,7 +600,7 @@ export const vibeRestaurantData = [
             "/image/gallery (7).png",
             "/image/gallery (8).png",
         ],
-        dishes:[
+        dishes: [
             {
                 title: "Charred Octopus Tacos",
                 description: "Tender Spanish octopus, flame-charred for a smoky finish, laid over soft blue corn tortillas. Topped with mango-habanero salsa, pickled onions, micro cilantro, and a drizzle of cilantro aioli.",
@@ -617,10 +625,10 @@ export const vibeRestaurantData = [
             { label: "Romantic", icon: "💖" },
         ],
         locationImage: "/image/location-image.png",
-        location: "West Hollywood, Los Angeles",
+        location: "Connaught Place, New Delhi, India",
         coordinates: {
-            lat: 34.0900,
-            lng: -118.3617
+            lat: 28.6315,
+            lng: 77.2167
         },
         neighborhood: "West Hollywood, Los Angeles",
         hours: "09:00 AM - 10:00 PM (Mon-Fri)",
@@ -653,7 +661,7 @@ export const vibeRestaurantData = [
             "/image/gallery (7).png",
             "/image/gallery (8).png",
         ],
-        dishes:[
+        dishes: [
             {
                 title: "Charred Octopus Tacos",
                 description: "Tender Spanish octopus, flame-charred for a smoky finish, laid over soft blue corn tortillas. Topped with mango-habanero salsa, pickled onions, micro cilantro, and a drizzle of cilantro aioli.",
@@ -678,10 +686,10 @@ export const vibeRestaurantData = [
             { label: "Romantic", icon: "💖" },
         ],
         locationImage: "/image/location-image.png",
-        location: "West Hollywood, Los Angeles",
+        location: "Shinjuku, Tokyo, Japan",
         coordinates: {
-            lat: 34.0900,
-            lng: -118.3617
+            lat: 35.6938,
+            lng: 139.7034
         },
         neighborhood: "West Hollywood, Los Angeles",
         hours: "09:00 AM - 10:00 PM (Mon-Fri)",
@@ -714,7 +722,7 @@ export const vibeRestaurantData = [
             "/image/gallery (7).png",
             "/image/gallery (8).png",
         ],
-        dishes:[
+        dishes: [
             {
                 title: "Charred Octopus Tacos",
                 description: "Tender Spanish octopus, flame-charred for a smoky finish, laid over soft blue corn tortillas. Topped with mango-habanero salsa, pickled onions, micro cilantro, and a drizzle of cilantro aioli.",
@@ -739,10 +747,10 @@ export const vibeRestaurantData = [
             { label: "Romantic", icon: "💖" },
         ],
         locationImage: "/image/location-image.png",
-        location: "West Hollywood, Los Angeles",
+        location: "Times Square, New York, USA",
         coordinates: {
-            lat: 34.0900,
-            lng: -118.3617
+            lat: 40.7580,
+            lng: -73.9855
         },
         neighborhood: "West Hollywood, Los Angeles",
         hours: "09:00 AM - 10:00 PM (Mon-Fri)",
@@ -775,7 +783,7 @@ export const vibeRestaurantData = [
             "/image/gallery (7).png",
             "/image/gallery (8).png",
         ],
-        dishes:[
+        dishes: [
             {
                 title: "Charred Octopus Tacos",
                 description: "Tender Spanish octopus, flame-charred for a smoky finish, laid over soft blue corn tortillas. Topped with mango-habanero salsa, pickled onions, micro cilantro, and a drizzle of cilantro aioli.",
@@ -800,10 +808,10 @@ export const vibeRestaurantData = [
             { label: "Romantic", icon: "💖" },
         ],
         locationImage: "/image/location-image.png",
-        location: "West Hollywood, Los Angeles",
+        location: "La Rambla, Barcelona, Spain",
         coordinates: {
-            lat: 34.0900,
-            lng: -118.3617
+            lat: 41.3809,
+            lng: 2.1735
         },
         neighborhood: "West Hollywood, Los Angeles",
         hours: "09:00 AM - 10:00 PM (Mon-Fri)",
@@ -836,7 +844,7 @@ export const vibeRestaurantData = [
             "/image/gallery (7).png",
             "/image/gallery (8).png",
         ],
-        dishes:[
+        dishes: [
             {
                 title: "Charred Octopus Tacos",
                 description: "Tender Spanish octopus, flame-charred for a smoky finish, laid over soft blue corn tortillas. Topped with mango-habanero salsa, pickled onions, micro cilantro, and a drizzle of cilantro aioli.",
@@ -861,10 +869,10 @@ export const vibeRestaurantData = [
             { label: "Romantic", icon: "💖" },
         ],
         locationImage: "/image/location-image.png",
-        location: "West Hollywood, Los Angeles",
+        location: "Le Marais, Paris, France",
         coordinates: {
-            lat: 34.0900,
-            lng: -118.3617
+            lat: 48.8590,
+            lng: 2.3580
         },
         neighborhood: "West Hollywood, Los Angeles",
         hours: "09:00 AM - 10:00 PM (Mon-Fri)",
@@ -897,7 +905,7 @@ export const vibeRestaurantData = [
             "/image/gallery (7).png",
             "/image/gallery (8).png",
         ],
-        dishes:[
+        dishes: [
             {
                 title: "Charred Octopus Tacos",
                 description: "Tender Spanish octopus, flame-charred for a smoky finish, laid over soft blue corn tortillas. Topped with mango-habanero salsa, pickled onions, micro cilantro, and a drizzle of cilantro aioli.",
@@ -922,10 +930,10 @@ export const vibeRestaurantData = [
             { label: "Romantic", icon: "💖" },
         ],
         locationImage: "/image/location-image.png",
-        location: "West Hollywood, Los Angeles",
+        location: "Downtown, Dubai, UAE",
         coordinates: {
-            lat: 34.0900,
-            lng: -118.3617
+            lat: 25.1972,
+            lng: 55.2744
         },
         neighborhood: "West Hollywood, Los Angeles",
         hours: "09:00 AM - 10:00 PM (Mon-Fri)",
@@ -958,7 +966,7 @@ export const vibeRestaurantData = [
             "/image/gallery (7).png",
             "/image/gallery (8).png",
         ],
-        dishes:[
+        dishes: [
             {
                 title: "Charred Octopus Tacos",
                 description: "Tender Spanish octopus, flame-charred for a smoky finish, laid over soft blue corn tortillas. Topped with mango-habanero salsa, pickled onions, micro cilantro, and a drizzle of cilantro aioli.",
@@ -983,10 +991,10 @@ export const vibeRestaurantData = [
             { label: "Romantic", icon: "💖" },
         ],
         locationImage: "/image/location-image.png",
-        location: "West Hollywood, Los Angeles",
+        location: "Queen Street, Auckland, New Zealand",
         coordinates: {
-            lat: 34.0900,
-            lng: -118.3617
+            lat: -36.8485,
+            lng: 174.7633
         },
         neighborhood: "West Hollywood, Los Angeles",
         hours: "09:00 AM - 10:00 PM (Mon-Fri)",
@@ -1026,7 +1034,7 @@ export const cuiseneRestaurantData = [
             "/image/gallery (7).png",
             "/image/gallery (8).png",
         ],
-        dishes:[
+        dishes: [
             {
                 title: "Charred Octopus Tacos",
                 description: "Tender Spanish octopus, flame-charred for a smoky finish, laid over soft blue corn tortillas. Topped with mango-habanero salsa, pickled onions, micro cilantro, and a drizzle of cilantro aioli.",
@@ -1051,10 +1059,10 @@ export const cuiseneRestaurantData = [
             { label: "Romantic", icon: "💖" },
         ],
         locationImage: "/image/location-image.png",
-        location: "West Hollywood, Los Angeles",
+        location: "Gulshan, Dhaka",
         coordinates: {
-            lat: 34.0900,
-            lng: -118.3617
+            lat: 23.7916,
+            lng: 90.4072
         },
         neighborhood: "West Hollywood, Los Angeles",
         hours: "09:00 AM - 10:00 PM (Mon-Fri)",
@@ -1087,7 +1095,7 @@ export const cuiseneRestaurantData = [
             "/image/gallery (7).png",
             "/image/gallery (8).png",
         ],
-        dishes:[
+        dishes: [
             {
                 title: "Charred Octopus Tacos",
                 description: "Tender Spanish octopus, flame-charred for a smoky finish, laid over soft blue corn tortillas. Topped with mango-habanero salsa, pickled onions, micro cilantro, and a drizzle of cilantro aioli.",
@@ -1112,10 +1120,10 @@ export const cuiseneRestaurantData = [
             { label: "Romantic", icon: "💖" },
         ],
         locationImage: "/image/location-image.png",
-        location: "West Hollywood, Los Angeles",
+        location: "Connaught Place, New Delhi, India",
         coordinates: {
-            lat: 34.0900,
-            lng: -118.3617
+            lat: 28.6315,
+            lng: 77.2167
         },
         neighborhood: "West Hollywood, Los Angeles",
         hours: "09:00 AM - 10:00 PM (Mon-Fri)",
@@ -1148,7 +1156,7 @@ export const cuiseneRestaurantData = [
             "/image/gallery (7).png",
             "/image/gallery (8).png",
         ],
-        dishes:[
+        dishes: [
             {
                 title: "Charred Octopus Tacos",
                 description: "Tender Spanish octopus, flame-charred for a smoky finish, laid over soft blue corn tortillas. Topped with mango-habanero salsa, pickled onions, micro cilantro, and a drizzle of cilantro aioli.",
@@ -1173,10 +1181,10 @@ export const cuiseneRestaurantData = [
             { label: "Romantic", icon: "💖" },
         ],
         locationImage: "/image/location-image.png",
-        location: "West Hollywood, Los Angeles",
+        location: "Shinjuku, Tokyo, Japan",
         coordinates: {
-            lat: 34.0900,
-            lng: -118.3617
+            lat: 35.6938,
+            lng: 139.7034
         },
         neighborhood: "West Hollywood, Los Angeles",
         hours: "09:00 AM - 10:00 PM (Mon-Fri)",
@@ -1209,7 +1217,7 @@ export const cuiseneRestaurantData = [
             "/image/gallery (7).png",
             "/image/gallery (8).png",
         ],
-        dishes:[
+        dishes: [
             {
                 title: "Charred Octopus Tacos",
                 description: "Tender Spanish octopus, flame-charred for a smoky finish, laid over soft blue corn tortillas. Topped with mango-habanero salsa, pickled onions, micro cilantro, and a drizzle of cilantro aioli.",
@@ -1234,10 +1242,10 @@ export const cuiseneRestaurantData = [
             { label: "Romantic", icon: "💖" },
         ],
         locationImage: "/image/location-image.png",
-        location: "West Hollywood, Los Angeles",
+        location: "Times Square, New York, USA",
         coordinates: {
-            lat: 34.0900,
-            lng: -118.3617
+            lat: 40.7580,
+            lng: -73.9855
         },
         neighborhood: "West Hollywood, Los Angeles",
         hours: "09:00 AM - 10:00 PM (Mon-Fri)",
@@ -1270,7 +1278,7 @@ export const cuiseneRestaurantData = [
             "/image/gallery (7).png",
             "/image/gallery (8).png",
         ],
-        dishes:[
+        dishes: [
             {
                 title: "Charred Octopus Tacos",
                 description: "Tender Spanish octopus, flame-charred for a smoky finish, laid over soft blue corn tortillas. Topped with mango-habanero salsa, pickled onions, micro cilantro, and a drizzle of cilantro aioli.",
@@ -1295,10 +1303,10 @@ export const cuiseneRestaurantData = [
             { label: "Romantic", icon: "💖" },
         ],
         locationImage: "/image/location-image.png",
-        location: "West Hollywood, Los Angeles",
+        location: "La Rambla, Barcelona, Spain",
         coordinates: {
-            lat: 34.0900,
-            lng: -118.3617
+            lat: 41.3809,
+            lng: 2.1735
         },
         neighborhood: "West Hollywood, Los Angeles",
         hours: "09:00 AM - 10:00 PM (Mon-Fri)",
@@ -1331,7 +1339,7 @@ export const cuiseneRestaurantData = [
             "/image/gallery (7).png",
             "/image/gallery (8).png",
         ],
-        dishes:[
+        dishes: [
             {
                 title: "Charred Octopus Tacos",
                 description: "Tender Spanish octopus, flame-charred for a smoky finish, laid over soft blue corn tortillas. Topped with mango-habanero salsa, pickled onions, micro cilantro, and a drizzle of cilantro aioli.",
@@ -1356,10 +1364,10 @@ export const cuiseneRestaurantData = [
             { label: "Romantic", icon: "💖" },
         ],
         locationImage: "/image/location-image.png",
-        location: "West Hollywood, Los Angeles",
+        location: "Le Marais, Paris, France",
         coordinates: {
-            lat: 34.0900,
-            lng: -118.3617
+            lat: 48.8590,
+            lng: 2.3580
         },
         neighborhood: "West Hollywood, Los Angeles",
         hours: "09:00 AM - 10:00 PM (Mon-Fri)",
@@ -1392,7 +1400,7 @@ export const cuiseneRestaurantData = [
             "/image/gallery (7).png",
             "/image/gallery (8).png",
         ],
-        dishes:[
+        dishes: [
             {
                 title: "Charred Octopus Tacos",
                 description: "Tender Spanish octopus, flame-charred for a smoky finish, laid over soft blue corn tortillas. Topped with mango-habanero salsa, pickled onions, micro cilantro, and a drizzle of cilantro aioli.",
@@ -1417,10 +1425,10 @@ export const cuiseneRestaurantData = [
             { label: "Romantic", icon: "💖" },
         ],
         locationImage: "/image/location-image.png",
-        location: "West Hollywood, Los Angeles",
+        location: "Downtown, Dubai, UAE",
         coordinates: {
-            lat: 34.0900,
-            lng: -118.3617
+            lat: 25.1972,
+            lng: 55.2744
         },
         neighborhood: "West Hollywood, Los Angeles",
         hours: "09:00 AM - 10:00 PM (Mon-Fri)",
@@ -1453,7 +1461,7 @@ export const cuiseneRestaurantData = [
             "/image/gallery (7).png",
             "/image/gallery (8).png",
         ],
-        dishes:[
+        dishes: [
             {
                 title: "Charred Octopus Tacos",
                 description: "Tender Spanish octopus, flame-charred for a smoky finish, laid over soft blue corn tortillas. Topped with mango-habanero salsa, pickled onions, micro cilantro, and a drizzle of cilantro aioli.",
@@ -1478,10 +1486,10 @@ export const cuiseneRestaurantData = [
             { label: "Romantic", icon: "💖" },
         ],
         locationImage: "/image/location-image.png",
-        location: "West Hollywood, Los Angeles",
+        location: "Queen Street, Auckland, New Zealand",
         coordinates: {
-            lat: 34.0900,
-            lng: -118.3617
+            lat: -36.8485,
+            lng: 174.7633
         },
         neighborhood: "West Hollywood, Los Angeles",
         hours: "09:00 AM - 10:00 PM (Mon-Fri)",

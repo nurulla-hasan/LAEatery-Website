@@ -29,7 +29,7 @@ const NearbyRestaurant = () => {
 
     return (
         <>
-            <div className="my-16">
+            <div className="mt-10 mb-20">
                 <HomeContainer>
                     {/* Header with result count and filter button */}
                     <div className="flex justify-between items-center mb-6">

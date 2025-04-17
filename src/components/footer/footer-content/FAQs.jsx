@@ -44,12 +44,12 @@ const Faqs = () => {
   }
 
   return (
-    <div className="min-h-screen text-white">
-      <div className="border-t border-[#ffffffbd]" />
+    <div className="min-h-screen text-[#333333]">
+      <div className="border-t border-[#C0C0C0]" />
       <HomeContainer>
         <section className="py-14 md:py-20 space-y-10">
-          <h1 className="text-center text-4xl font-bold font-poltawski">FAQs</h1>
-          <p className="text-center text-sm text-gray-300 max-w-2xl mx-auto leading-7">
+          <h1 className="text-center text-[#0A0A0A] text-4xl font-bold font-poltawski">FAQs</h1>
+          <p className="text-center text-sm  max-w-2xl mx-auto leading-7">
             Welcome to the LAEATERY FAQ! Here you’ll find answers to common questions about using our platform to discover the best restaurants in Los Angeles.
           </p>
 
@@ -57,7 +57,7 @@ const Faqs = () => {
             {faqs.map((item, index) => (
               <div
                 key={index}
-                className="bg-[#1b1b1b] border border-[#333] rounded-lg"
+                className="bg-white border border-[#333] rounded-lg"
               >
                 <button
                   onClick={() => toggleIndex(index)}
@@ -72,7 +72,7 @@ const Faqs = () => {
                 </button>
 
                 {openIndex === index && item.answer && (
-                  <div className="px-5 pb-4 text-sm text-gray-300 leading-7">
+                  <div className="px-5 pb-4 text-sm  leading-7">
                     {item.answer}
                   </div>
                 )}

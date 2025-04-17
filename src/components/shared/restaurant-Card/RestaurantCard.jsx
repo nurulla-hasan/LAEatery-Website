@@ -50,7 +50,11 @@ const RestaurantCard = ({ data, path }) => {
 
                 {/* data details */}
                 <div className="p-3 space-y-3">
-                    <h3 className="text-md font-medium text-[#333333]">{data?.name}</h3>
+                    <div>
+                        <Link href={`/${path}/${data?.id}`}>
+                            <h3 className="text-md font-medium text-[#333333]">{data?.name}</h3>
+                        </Link>
+                    </div>
 
                     {/* Rating and tags */}
                     <div className="flex flex-wrap items-center gap-x-2 gap-y-1 text-[#333333] text-xs">
@@ -70,7 +74,7 @@ const RestaurantCard = ({ data, path }) => {
                                     if (index > 1) return null;
                                     return (
                                         <React.Fragment key={index}>
-                                            {index !== 0 && <span>•</span>}
+                                            <span>•</span>
                                             <span>{tag.label}</span>
                                         </React.Fragment>
                                     )
