@@ -16,7 +16,7 @@ const AIChatPage = () => {
     }
 
     return (
-        <div className="min-h-screen pt-5 mb-20">
+        <div className="min-h-screen pt-5 pb-20">
             <HomeContainer>
                 <div className="flex flex-col items-center">
                     {/* Logo */}
@@ -47,14 +47,14 @@ const AIChatPage = () => {
                             {/* Bottom Icons */}
                             <div className="flex items-center justify-between mt-3">
                                 {/* Left Icon - Upload */}
-                                <button type="button" className="text-gray-600">
+                                <button type="button" className="text-gray-600 cursor-pointer">
                                     <Plus className="h-5 w-5" />
                                 </button>
 
                                 {/* Right Icon - Mic */}
                                 <button
                                     type="button"
-                                    className="p-2 rounded-full bg-black text-white flex items-center justify-center"
+                                    className="p-2 rounded-full bg-black text-white flex items-center justify-center cursor-pointer"
                                 >
                                     <Mic className="h-4 w-4" />
                                 </button>
@@ -68,7 +68,7 @@ const AIChatPage = () => {
                         <h2 className="text-4xl font-bold text-gray-800 mb-10">Discover LA's Hottest Restaurants</h2>
 
                         <Link href="/ai-picks">
-                            <button className="bg-[#5C5C5C] hover:bg-gray-800 text-white py-3 px-8 rounded-full transition-colors">
+                            <button className="bg-[#5C5C5C] cursor-pointer hover:bg-gray-800 text-white py-3 px-8 rounded-full transition-colors">
                                 Explore AI Picks
                             </button>
                         </Link>

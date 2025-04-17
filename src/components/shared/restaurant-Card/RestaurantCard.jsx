@@ -82,7 +82,7 @@ const RestaurantCard = ({ data, path }) => {
 
                                 {data.tags.length > 2 && (
                                     <>
-                                        <span>•</span>
+                                        <span>...</span>
                                         <span className='text-xs cursor-pointer' title={data.tags.map(tag => tag.label).join(', ')}>
                                             +{data.tags.length - 2} more
                                         </span>

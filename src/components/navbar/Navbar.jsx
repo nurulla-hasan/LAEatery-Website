@@ -11,7 +11,7 @@ export default function Navbar() {
 
 
   const pathName = usePathname()
-  const isHiddenRoute = ["/", "/ai-picks"];
+  const isHiddenRoute = ["/", "/ai-chat"];
   const hideLogoBg = isHiddenRoute.includes(pathName);
 
   // Sample user data - in a real app, this would come from authentication
@@ -42,7 +42,7 @@ export default function Navbar() {
     <div className="">
       <nav className={`w-full ${hideLogoBg ? 'bg-transparent' : 'bg-[#E9E7E3]'} py-2 md:py-5 fixed z-[10000]`}>
         <div className="max-w-7xl mx-auto px-4 md:px-0">
-          <div className="flex items-center justify-between md:justify-center md:h-16">
+          <div className={`flex items-center justify-between ${hideLogoBg?"md:justify-center":""}  md:h-16`}>
             {/* Logo */}
             <div className={`w-[25%] ${hideLogoBg ? "hidden" : ""}`}>
               <Link href="/">

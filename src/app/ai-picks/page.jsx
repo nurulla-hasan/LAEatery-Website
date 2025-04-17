@@ -53,7 +53,7 @@ const AiPics = () => {
 
                 {/* Filter Modal */}
                 {showFilterModal && (
-                    <div className="fixed inset-0 bg-black/30 backdrop-blur-xs z-50 flex justify-end ">
+                    <div className="fixed inset-0 bg-black/30 backdrop-blur-xs z-[30000] flex justify-end ">
                         <div className="bg-white w-full max-w-xs h-full overflow-y-auto scrl-hide rounded-l-lg">
                             <div className="p-4 flex justify-between items-center">
                                 <h2 className="text-black text-lg font-medium">Filter</h2>

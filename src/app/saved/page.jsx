@@ -45,16 +45,16 @@ const SavePage = () => {
 
                 {/* Filter Modal */}
                 {showFilterModal && (
-                    <div className="fixed inset-0 bg-black/30 backdrop-blur-xs z-50 flex justify-end ">
+                    <div className="fixed inset-0 bg-black/30 backdrop-blur-xs z-[30000] flex justify-end ">
                         <div className="bg-white w-full max-w-xs h-full overflow-y-auto scrl-hide rounded-l-lg">
-                            <div className="p-4 flex justify-between items-center">
+                            <div className="p-4 flex justify-between items-center ">
                                 <h2 className="text-black text-lg font-medium">Filter</h2>
                                 <button onClick={() => setShowFilterModal(false)} className="text-black hover:text-black/50 cursor-pointer">
                                     <X size={20} />
                                 </button>
                             </div>
 
-                            <div className=" h-[82vh] overflow-auto scrl-hide">
+                            <div className=" h-[82vh] overflow-auto scrl-hide ">
                                 {/* Neighborhood filter */}
                                 <FilterCompo title="Neighborhood" data={neighborhoods} />
 
