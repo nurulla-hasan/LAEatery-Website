@@ -13,8 +13,8 @@ function getHashedIndex(str, length) {
 
 const AIPicsDetails = ({ params }) => {
 
-
   const { id } = use(params)
+  console.log(id);
   const [isFavorite, setIsFavorite] = useState(false)
 
   const restaurant = useMemo(() => {
