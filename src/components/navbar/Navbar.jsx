@@ -15,7 +15,7 @@ export default function Navbar() {
   const hideLogoBg = isHiddenRoute.includes(pathName);
 
   // Sample user data - in a real app, this would come from authentication
-  const [isLoggedIn, setIsLoggedIn] = useState(true)
+  const [isLoggedIn, setIsLoggedIn] = useState(false)
   const user = isLoggedIn ? { name: "Mr. Mike" } : ""
 
   const navLinks = [
@@ -44,7 +44,7 @@ export default function Navbar() {
         <div className="max-w-7xl mx-auto px-4 md:px-0">
           <div className={`flex items-center justify-between ${hideLogoBg ? "md:justify-center" : ""}  md:h-16`}>
             {/* Logo */}
-            <div className={`flex-1/3 ${hideLogoBg ? "hidden" : ""}`}>
+            <div className={`flex-1/4 ${hideLogoBg ? "hidden" : ""}`}>
               <div className="w-40">
                 <Link href="/">
                   <img
@@ -58,7 +58,7 @@ export default function Navbar() {
 
 
             {/* Navigation Links - Desktop */}
-            <div className={`hidden md:flex ${hideLogoBg ? "" : "flex-2/3"} items-center justify-center gap-10 bg-white py-4 px-8 rounded-[22px]`}>
+            <div className={`hidden md:flex ${hideLogoBg ? "" : "flex-3/4"} items-center justify-center gap-10 bg-white py-4 px-8 rounded-[22px]`}>
               <div className="flex space-x-8">
                 {navLinks.map((link, index) => (
                   <NavLink key={index} href={link.href} title={link.title} />
@@ -81,13 +81,13 @@ export default function Navbar() {
                   <div className="flex items-center space-x-2">
                     <Link
                       href="/auth/login"
-                      className="text-gray-800 bg-white border border-gray-300 hover:bg-gray-100 px-4 py-2 rounded-xl text-sm font-medium"
+                      className="text-gray-800 bg-white border border-gray-300 hover:bg-gray-100 px-4 py-1 rounded-lg text-xs font-normal"
                     >
                       Sign in
                     </Link>
                     <Link
                       href="/auth/signup"
-                      className="text-white bg-black hover:bg-gray-800 px-4 py-2 rounded-xl text-sm font-medium"
+                      className="text-white bg-black hover:bg-gray-800 px-4 py-1 rounded-lg text-xs font-normal"
                     >
                       Join
                     </Link>
@@ -97,7 +97,7 @@ export default function Navbar() {
             </div>
 
             {/* Right side: Search  */}
-            <div className={` ${hideLogoBg ? "" : "flex-1/3"}`}>
+            <div className={` ${hideLogoBg ? "" : "flex-1/4"}`}>
 
             </div>
 
