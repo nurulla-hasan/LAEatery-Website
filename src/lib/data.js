@@ -26,7 +26,7 @@ export const features = [
 export const allRestaurantData = [
     {
         id: "1",
-        favorite: true,
+        favorite: false,
         name: "Paloma Kitchen",
         image: "/image/nearby (1).png",
         gallery: [
@@ -88,7 +88,7 @@ export const allRestaurantData = [
     },
     {
         id: "2",
-        favorite: true,
+        favorite: false,
         name: "The Drizzle Room",
         image: "/image/nearby (2).png",
         gallery: [
@@ -274,7 +274,7 @@ export const allRestaurantData = [
     },
     {
         id: "5",
-        favorite: true,
+        favorite: false,
         name: "Paloma Kitchen",
         image: "/image/nearby (1).png",
         gallery: [
@@ -398,7 +398,7 @@ export const allRestaurantData = [
     },
     {
         id: "7",
-        favorite: true,
+        favorite: false,
         name: "Baja & Bloom",
         image: "/image/nearby (3).png",
         gallery: [
@@ -527,6 +527,7 @@ export const allRestaurantData = [
 export const vibeRestaurantData = [
     {
         id: "1",
+        favorite: true,
         name: "Paloma Kitchen",
         image: "/image/nearby (1).png",
         gallery: [
@@ -588,6 +589,7 @@ export const vibeRestaurantData = [
     },
     {
         id: "2",
+        favorite: false,
         name: "The Drizzle Room",
         image: "/image/nearby (2).png",
         gallery: [
@@ -649,6 +651,7 @@ export const vibeRestaurantData = [
     },
     {
         id: "3",
+        favorite: true,
         name: "Baja & Bloom",
         image: "/image/nearby (3).png",
         gallery: [
@@ -710,6 +713,7 @@ export const vibeRestaurantData = [
     },
     {
         id: "4",
+        favorite: true,
         name: "The Velvet Fork",
         image: "/image/nearby (4).png",
         gallery: [
@@ -771,6 +775,7 @@ export const vibeRestaurantData = [
     },
     {
         id: "5",
+        favorite: false,
         name: "Paloma Kitchen",
         image: "/image/nearby (1).png",
         gallery: [
@@ -832,6 +837,7 @@ export const vibeRestaurantData = [
     },
     {
         id: "6",
+        favorite: false,
         name: "The Drizzle Room",
         image: "/image/nearby (2).png",
         gallery: [
@@ -893,6 +899,7 @@ export const vibeRestaurantData = [
     },
     {
         id: "7",
+        favorite: false,
         name: "Baja & Bloom",
         image: "/image/nearby (3).png",
         gallery: [
@@ -954,6 +961,7 @@ export const vibeRestaurantData = [
     },
     {
         id: "8",
+        favorite: true,
         name: "The Velvet Fork",
         image: "/image/nearby (4).png",
         gallery: [
@@ -1014,14 +1022,13 @@ export const vibeRestaurantData = [
         mapLocation: "/image/map-location.png",
     },
 ]
-
-
 
 
 
 export const cuiseneRestaurantData = [
     {
         id: "1",
+        favorite: true,
         name: "Paloma Kitchen",
         image: "/image/nearby (1).png",
         gallery: [
@@ -1083,6 +1090,7 @@ export const cuiseneRestaurantData = [
     },
     {
         id: "2",
+        favorite: false,
         name: "The Drizzle Room",
         image: "/image/nearby (2).png",
         gallery: [
@@ -1144,6 +1152,7 @@ export const cuiseneRestaurantData = [
     },
     {
         id: "3",
+        favorite: true,
         name: "Baja & Bloom",
         image: "/image/nearby (3).png",
         gallery: [
@@ -1205,6 +1214,7 @@ export const cuiseneRestaurantData = [
     },
     {
         id: "4",
+        favorite: true,
         name: "The Velvet Fork",
         image: "/image/nearby (4).png",
         gallery: [
@@ -1266,6 +1276,7 @@ export const cuiseneRestaurantData = [
     },
     {
         id: "5",
+        favorite: false,
         name: "Paloma Kitchen",
         image: "/image/nearby (1).png",
         gallery: [
@@ -1327,6 +1338,7 @@ export const cuiseneRestaurantData = [
     },
     {
         id: "6",
+        favorite: false,
         name: "The Drizzle Room",
         image: "/image/nearby (2).png",
         gallery: [
@@ -1388,6 +1400,7 @@ export const cuiseneRestaurantData = [
     },
     {
         id: "7",
+        favorite: false,
         name: "Baja & Bloom",
         image: "/image/nearby (3).png",
         gallery: [
@@ -1449,6 +1462,7 @@ export const cuiseneRestaurantData = [
     },
     {
         id: "8",
+        favorite: true,
         name: "The Velvet Fork",
         image: "/image/nearby (4).png",
         gallery: [
@@ -1509,13 +1523,6 @@ export const cuiseneRestaurantData = [
         mapLocation: "/image/map-location.png",
     },
 ]
-
-
-
-
-
-
-
 
 
 

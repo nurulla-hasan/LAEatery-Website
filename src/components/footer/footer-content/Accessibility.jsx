@@ -3,9 +3,9 @@ import HomeContainer from "@/components/home-container/HomeContainer";
 const Accessibility = () => {
   return (
     <div>
-      <div className="border-t border-[#ffffffbd]"></div>
+      <div className=""></div>
       <HomeContainer>
-        <section className="text-white py-10 md:py-20">
+        <section className="text-white py-10">
           <h1 className="text-center text-4xl font-bold mb-16 font-poltawski text-white">Accessibility</h1>
 
           <div className="space-y-12 leading-8 text-sm text-gray-300">

@@ -9,7 +9,6 @@ const CuisinePage = () => {
 
     return (
         <div className="">
-            {/* border-t-2 border-[#ffffff79] */}
             <HomeContainer>
                 <div className="flex flex-col md:flex-row py-10 gap-5">
                     {/* Left sidebar - Filters */}
@@ -22,7 +21,7 @@ const CuisinePage = () => {
 
                     {/* Right content - Restaurant listings */}
                     <div className="w-full overflow-y-auto">
-                        <div className="text-[#333333] text-sm mb-4">Showing 58 results</div>
+                        <div className="text-[#333333] text-sm mb-4">Showing {cuiseneRestaurantData.length} results</div>
 
                         {/* Restaurant grid */}
                         <div className="h-[100vh] overflow-auto scrl-hide rounded-xl">

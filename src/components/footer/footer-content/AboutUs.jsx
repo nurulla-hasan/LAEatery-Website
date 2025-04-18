@@ -3,10 +3,10 @@ import HomeContainer from "@/components/home-container/HomeContainer";
 const AboutUs = () => {
     return (
         <div>
-            <div className="border-t border-[#C0C0C0]"></div>
+            <div className=""></div>
             <HomeContainer>
 
-                <section className="text-[#333333] py-10 md:py-20 space-y-12">
+                <section className="text-[#333333] py-10  space-y-12">
                     <h1 className="text-center text-[#0A0A0A] text-4xl font-bold mb-16 font-poltawski">About Us</h1>
 
                     <div className="space-y-4">

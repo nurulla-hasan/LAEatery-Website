@@ -4,17 +4,26 @@ import Image from 'next/image';
 import Link from 'next/link';
 import React, { useState } from 'react';
 import placeholder_image from '../../../../public/image/placeholder-image.png'
+import toast from 'react-hot-toast';
 
-const RestaurantCard = ({ data, path }) => {
-    const [favorites, setFavorites] = useState([])
+const RestaurantCard = ({ data, path, toggleFavorite: customToggle }) => {
+
     const [imgError, setImgError] = useState(false)
-    // Toggle favorite status
-    const toggleFavorite = (id) => {
-        setFavorites((prev) =>
-            prev.includes(id)
-                ? prev.filter((item) => item !== id)
-                : [...prev, id]
-        )
+    const [localFavorite, setLocalFavorite] = useState(data.favorite);
+
+    const handleToggle = () => {
+        if (customToggle) {
+            customToggle(data.id);
+        } else {
+            const updated = !localFavorite;
+            setLocalFavorite(updated);
+            toast.success(updated ? 'Added to favorites' : 'Removed from favorites');
+        }
+    };
+
+    const isFavorite = customToggle ? data.favorite : localFavorite;
+
+    const handleBook = () => {
     }
 
 
@@ -32,20 +41,16 @@ const RestaurantCard = ({ data, path }) => {
                             onError={() => setImgError(true)}
                         />
                     </Link>
+                    {/* Heart button */}
                     <button
-                        onClick={() => toggleFavorite(data.id)}
-                        className={`absolute top-3 right-3 p-2 rounded-full cursor-pointer transition-all duration-300 ${favorites.includes(data.id)
-                            ? "bg-white/50 text-black backdrop-blur-sm"
-                            : "bg-white/50 text-black backdrop-blur-sm"
-                            }`}
-                        aria-label={
-                            favorites.includes(data.id)
-                                ? "Remove from favorites"
-                                : "Add to favorites"
-                        }
+                        onClick={handleToggle}
+                        className="absolute top-3 right-3 p-2 rounded-full cursor-pointer transition-all duration-300 bg-white/50 text-black backdrop-blur-sm"
+                        aria-label={data.favorite ? "Remove from favorites" : "Add to favorites"}
                     >
-                        <Heart className={`h-5 w-5 ${favorites.includes(data.id) ? "fill-current" : ""}`} />
+                        <Heart className={`h-5 w-5 ${data.favorite || localFavorite ? "fill-black" : ""}`} />
                     </button>
+
+
                 </div>
 
                 {/* data details */}
@@ -126,7 +131,7 @@ const RestaurantCard = ({ data, path }) => {
                     </div>
 
                     {/* Book now button */}
-                    <button className="w-full mt-3 py-1.5 bg-black text-white text-xs font-medium rounded hover:bg-gray-700 transition-colors cursor-pointer">
+                    <button onClick={handleBook} className="w-full mt-3 py-1.5 bg-black text-white text-xs font-medium rounded hover:bg-gray-700 transition-colors cursor-pointer">
                         Book Now
                     </button>
                 </div>

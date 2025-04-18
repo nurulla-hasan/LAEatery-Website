@@ -28,7 +28,7 @@ const NearbyRestaurantDetails = ({ params }) => {
   if (!restaurant) return <div>Loading...</div>
 
   return (
-    <div className="min-h-screen py-8 border-t border-[#C0C0C0]">
+    <div className="min-h-screen py-8 ">
       <RestaurantDetailsCard
         isFavorite={isFavorite}
         restaurant={restaurant}

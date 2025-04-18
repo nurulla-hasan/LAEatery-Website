@@ -5,9 +5,9 @@ import Link from 'next/link';
 const HelpAndSupport = () => {
   return (
     <div>
-      <div className="border-t border-[#C0C0C0]"></div>
+      <div className=""></div>
       <HomeContainer>
-        <section className="text-[#333333] py-12">
+        <section className="text-[#333333] py-10">
           {/* Main Title */}
           <h1 className="text-center text-3xl font-bold mb-8 text-[#0A0A0A]">Help & Support</h1>
           

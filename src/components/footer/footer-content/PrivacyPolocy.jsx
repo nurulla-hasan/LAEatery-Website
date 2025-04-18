@@ -3,9 +3,9 @@ import HomeContainer from "@/components/home-container/HomeContainer";
 const PrivacyPolicy = () => {
   return (
     <div>
-      <div className="border-t border-[#C0C0C0]"></div>
+      <div className=""></div>
       <HomeContainer>
-        <section className="text-[#333333] py-20">
+        <section className="text-[#333333] py-10">
           <h1 className="text-center text-4xl font-bold mb-16 font-poltawski text-[#0A0A0A]">Privacy Policy</h1>
 
           <div className="space-y-12 leading-8 text-sm ">

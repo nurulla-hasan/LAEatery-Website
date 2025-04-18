@@ -9,17 +9,21 @@ import 'swiper/css/navigation'
 import placeholder_image from '../../../public/image/placeholder-image.png'
 
 
-const Slider = ({ data }) => {
-  const [favorites, setFavorites] = useState([])
+const Slider = ({ data, toggleFavorite: customToggle }) => {
   const [imgError, setImgError] = useState(false)
 
-  const toggleFavorite = (id) => {
-    setFavorites((prev) =>
-      prev.includes(id)
-        ? prev.filter((item) => item !== id)
-        : [...prev, id]
-    )
-  }
+
+  const [localFavorite, setLocalFavorite] = useState(data.favorite);
+
+  const handleToggle = () => {
+    if (customToggle) {
+      customToggle(data.id);
+    } else {
+      const updated = !localFavorite;
+      setLocalFavorite(updated);
+      toast.success(updated ? 'Added to favorites' : 'Removed from favorites');
+    }
+  };
 
   return (
     <>
@@ -50,18 +54,11 @@ const Slider = ({ data }) => {
                   onError={() => (setImgError(true))}
                 />
                 <button
-                  onClick={() => toggleFavorite(restaurant.id)}
-                  className={`absolute top-3 right-3 p-2 rounded-full cursor-pointer transition-all duration-300 ${favorites.includes(restaurant.id)
-                    ? "bg-white/50 text-black backdrop-blur-sm"
-                    : "bg-white/50 text-black backdrop-blur-sm"
-                    }`}
-                  aria-label={
-                    favorites.includes(restaurant.id)
-                      ? "Remove from favorites"
-                      : "Add to favorites"
-                  }
+                  onClick={handleToggle}
+                  className="absolute top-3 right-3 p-2 rounded-full cursor-pointer transition-all duration-300 bg-white/50 text-black backdrop-blur-sm"
+                  aria-label={data.favorite ? "Remove from favorites" : "Add to favorites"}
                 >
-                  <Heart className={`h-5 w-5 ${favorites.includes(restaurant.id) ? "fill-current" : ""}`} />
+                  <Heart className={`h-5 w-5 ${data.favorite || localFavorite ? "fill-black" : ""}`} />
                 </button>
               </div>
 

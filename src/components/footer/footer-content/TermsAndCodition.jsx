@@ -4,9 +4,9 @@ import HomeContainer from "@/components/home-container/HomeContainer";
 const Terms = () => {
   return (
     <div>
-      <div className="border-tborder-[#C0C0C0]"></div>
+      <div className=""></div>
       <HomeContainer>
-        <section className="text-[#333333] py-10 md:py-20 space-y-12">
+        <section className="text-[#333333] py-10 space-y-12">
           <h1 className="text-center text-4xl font-bold mb-4 text-[#0A0A0A] font-poltawski">
             Terms & Conditions
           </h1>

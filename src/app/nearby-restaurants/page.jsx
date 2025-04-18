@@ -36,7 +36,7 @@ const NearbyRestaurant = () => {
                         <div className="text-black">Showing {allRestaurantData.length} results</div>
                         <button
                             onClick={() => setShowFilterModal(true)}
-                            className="bg-white text-black px-4 py-2 rounded flex items-center gap-2 cursor-pointer"
+                            className="bg-black text-white px-4 py-2 rounded flex items-center gap-2 cursor-pointer"
                         >
                             <FilterIcon size={16} />
                             Filter
@@ -55,7 +55,7 @@ const NearbyRestaurant = () => {
 
                 {/* Filter Modal */}
                 {showFilterModal && (
-                    <div className="fixed inset-0 bg-black/30 backdrop-blur-xs z-[30000] flex justify-end ">
+                    <div className="fixed inset-0 bg-black/30 backdrop-blur-xs z-[600] flex justify-end ">
                         <div className="bg-white w-full max-w-xs h-full overflow-y-auto scrl-hide rounded-l-lg">
                             <div className="p-4 flex justify-between items-center">
                                 <h2 className="text-black text-lg font-medium">Filter</h2>

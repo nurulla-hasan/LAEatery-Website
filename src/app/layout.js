@@ -26,7 +26,10 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body>
-        <Toaster />
+        <Toaster
+          position="top-center"
+          reverseOrder={false}
+        />
         <ThemeProvider>
           <div className={`${inter.variable} ${poltawski.variable}`}>
             <RootLayoutClient>{children}</RootLayoutClient>

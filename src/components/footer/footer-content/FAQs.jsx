@@ -45,9 +45,9 @@ const Faqs = () => {
 
   return (
     <div className="min-h-screen text-[#333333]">
-      <div className="border-t border-[#C0C0C0]" />
+      <div className="" />
       <HomeContainer>
-        <section className="py-14 md:py-20 space-y-10">
+        <section className="py-10 space-y-10">
           <h1 className="text-center text-[#0A0A0A] text-4xl font-bold font-poltawski">FAQs</h1>
           <p className="text-center text-sm  max-w-2xl mx-auto leading-7">
             Welcome to the LAEATERY FAQ! Here you’ll find answers to common questions about using our platform to discover the best restaurants in Los Angeles.

@@ -8,7 +8,7 @@ import { vibeRestaurantData, vibes } from "@/lib/data"
 const VibePage = () => {
 
     return (
-        <div className="border-t border-[#C0C0C0]">
+        <div className="">
             <HomeContainer>
                 <div className="flex flex-col md:flex-row py-10 gap-5">
                     {/* Left sidebar - Filters */}

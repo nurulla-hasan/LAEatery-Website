@@ -6,6 +6,7 @@ import { allRestaurantData, cuisines, neighborhoods, vibes } from "@/lib/data";
 import { FilterIcon, X } from "lucide-react";
 import Link from "next/link";
 import { useState } from "react";
+import toast from "react-hot-toast";
 
 const AiPics = () => {
 
@@ -17,8 +18,8 @@ const AiPics = () => {
     }
 
     return (
-        <div className="border-t border-[#C0C0C0]">
-            <div className="pt-10 pb-20">
+        <div className="">
+            <div className="md:pt-10 pb-20">
                 <HomeContainer>
                     {/* Header with result count and filter button */}
                     <div className="flex justify-between items-center mb-6">
@@ -53,7 +54,7 @@ const AiPics = () => {
 
                 {/* Filter Modal */}
                 {showFilterModal && (
-                    <div className="fixed inset-0 bg-black/30 backdrop-blur-xs z-[30000] flex justify-end ">
+                    <div className="fixed inset-0 bg-black/30 backdrop-blur-xs z-[700] flex justify-end ">
                         <div className="bg-white w-full max-w-xs h-full overflow-y-auto scrl-hide rounded-l-lg">
                             <div className="p-4 flex justify-between items-center">
                                 <h2 className="text-black text-lg font-medium">Filter</h2>
