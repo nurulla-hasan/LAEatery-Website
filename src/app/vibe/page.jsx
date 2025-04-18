@@ -10,7 +10,7 @@ const VibePage = () => {
     return (
         <div className="border-t border-[#C0C0C0]">
             <HomeContainer>
-                <div className="flex flex-col md:flex-row my-10 gap-5">
+                <div className="flex flex-col md:flex-row py-10 gap-5">
                     {/* Left sidebar - Filters */}
                     <div className=" w-full md:w-[30%] overflow-y-auto">
                         <h2 className="text-[#333333] text-sm font-medium mb-4">Filter By</h2>

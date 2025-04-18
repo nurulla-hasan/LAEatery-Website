@@ -42,21 +42,23 @@ export default function Navbar() {
     <div className="">
       <nav className={`w-full ${hideLogoBg ? 'bg-transparent' : 'bg-[#E9E7E3]'} py-2 md:py-5 fixed z-[10000]`}>
         <div className="max-w-7xl mx-auto px-4 md:px-0">
-          <div className={`flex items-center justify-between ${hideLogoBg?"md:justify-center":""}  md:h-16`}>
+          <div className={`flex items-center justify-between ${hideLogoBg ? "md:justify-center" : ""}  md:h-16`}>
             {/* Logo */}
-            <div className={`w-[25%] ${hideLogoBg ? "hidden" : ""}`}>
-              <Link href="/">
-                <img
-                  src="/image/logo2.png"
-                  alt="Logo"
-                  className="md:h-20 h-12 w-auto"
-                />
-              </Link>
+            <div className={`flex-1/3 ${hideLogoBg ? "hidden" : ""}`}>
+              <div className="w-40">
+                <Link href="/">
+                  <img
+                    src="/image/logo2.png"
+                    alt="Logo"
+                    className="md:h-20 h-12 w-auto"
+                  />
+                </Link>
+              </div>
             </div>
 
 
             {/* Navigation Links - Desktop */}
-            <div className="hidden md:flex items-center justify-center gap-10 bg-white py-4 px-8 rounded-[22px]">
+            <div className={`hidden md:flex ${hideLogoBg ? "" : "flex-2/3"} items-center justify-center gap-10 bg-white py-4 px-8 rounded-[22px]`}>
               <div className="flex space-x-8">
                 {navLinks.map((link, index) => (
                   <NavLink key={index} href={link.href} title={link.title} />
@@ -95,7 +97,9 @@ export default function Navbar() {
             </div>
 
             {/* Right side: Search  */}
-            <div className={` ${hideLogoBg ? "" : "w-[20%]"}`}></div>
+            <div className={` ${hideLogoBg ? "" : "flex-1/3"}`}>
+
+            </div>
 
 
 
