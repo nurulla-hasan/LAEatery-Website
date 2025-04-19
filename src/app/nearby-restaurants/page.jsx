@@ -1,8 +1,7 @@
 "use client"
 
 import React, { useState } from "react"
-import Image from "next/image"
-import { Heart, X, FilterIcon } from "lucide-react"
+import { X, FilterIcon } from "lucide-react"
 import HomeContainer from "@/components/home-container/HomeContainer"
 import { cuisines, neighborhoods, allRestaurantData, vibes, vibeRestaurantData } from "@/lib/data"
 import toast from "react-hot-toast"

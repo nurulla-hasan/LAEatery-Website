@@ -4,12 +4,23 @@ import Image from "next/image"
 import Link from "next/link"
 import { Mic, Plus } from "lucide-react"
 import HomeContainer from "@/components/home-container/HomeContainer"
+import { useDispatch } from "react-redux"
+import { useRouter } from "next/navigation"
+import { setHasChatted } from "@/store/uiSlice"
 
 const AIChatPage = () => {
+    const dispatch = useDispatch();
+    const router = useRouter();
     const [message, setMessage] = useState("")
+
+    const handleChatStart = () => {
+        dispatch(setHasChatted(true));
+        router.push('/');
+      };
 
     const handleSubmit = (e) => {
         e.preventDefault()
+        handleChatStart()
         // Handle chat submission
         console.log("Submitted message:", message)
         setMessage("")

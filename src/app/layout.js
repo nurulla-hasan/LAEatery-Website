@@ -5,6 +5,7 @@ import RootLayoutClient from "./RootLayoutClient";
 import { Inter, Poltawski_Nowy } from 'next/font/google'
 import { ThemeProvider } from "@/context/ThemeContext";
 
+
 const inter = Inter({
   subsets: ['latin'],
   variable: '--font-inter',
@@ -30,11 +31,11 @@ export default function RootLayout({ children }) {
           position="top-center"
           reverseOrder={false}
         />
-        <ThemeProvider>
-          <div className={`${inter.variable} ${poltawski.variable}`}>
-            <RootLayoutClient>{children}</RootLayoutClient>
-          </div>
-        </ThemeProvider>
+          <ThemeProvider>
+            <div className={`${inter.variable} ${poltawski.variable}`}>
+              <RootLayoutClient>{children}</RootLayoutClient>
+            </div>
+          </ThemeProvider>
       </body>
     </html>
   );

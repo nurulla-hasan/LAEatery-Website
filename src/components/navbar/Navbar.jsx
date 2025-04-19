@@ -5,27 +5,36 @@ import Link from "next/link"
 import { usePathname } from "next/navigation"
 import { ChevronDown, Menu, X, UserRound } from "lucide-react"
 import NavLink from "./NavLink"
+// import { useSelector } from "react-redux"
 
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
-
+  // const hasChatted = useSelector((state) => state.ui.hasChatted);
 
   const pathName = usePathname()
   const isHiddenRoute = ["/", "/ai-chat"];
   const hideLogoBg = isHiddenRoute.includes(pathName);
 
   // Sample user data - in a real app, this would come from authentication
-  const [isLoggedIn, setIsLoggedIn] = useState(true)
+  const [isLoggedIn, setIsLoggedIn] = useState(false)
   const user = isLoggedIn ? { name: "Mr. Mike" } : ""
 
-  const navLinks = [
+  let navLinks = [
     { title: "Home", href: "/" },
     { title: "AI Picks", href: "/ai-picks" },
     { title: "AI Chat", href: "/ai-chat" },
-    { title: "Map", href: "/map" },
-    { title: "Saved", href: "/saved" },
     { title: "About", href: "/about-us" },
+    { title: "Map", href: "/map" },
+    { title: "Saved", href: "/saved" }
   ]
+
+  // if (hasChatted) {
+  //   navLinks = [
+  //     ...navLinks,
+  //     { title: "Map", href: "/map" },
+  //     { title: "Saved", href: "/saved" }
+  //   ];
+  // }
 
   const handleSearch = (e) => {
     e.preventDefault()

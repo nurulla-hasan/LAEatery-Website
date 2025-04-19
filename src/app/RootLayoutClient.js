@@ -1,7 +1,13 @@
 "use client";
 import Footer from "@/components/footer/Footer";
 import Navbar from "@/components/navbar/Navbar";
+import { store } from "@/store";
+import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { usePathname } from "next/navigation";
+import { Provider } from "react-redux";
+
+
+const queryClient = new QueryClient();
 
 export default function RootLayoutClient({ children }) {
   const pathName = usePathname();
@@ -13,16 +19,21 @@ export default function RootLayoutClient({ children }) {
   );
 
   return (
+
     <>
-      {!hideNavbar && (
-        <Navbar />
-      )}
-      <div className={`min-h-[calc(100vh-88px)] bg-[#E9E7E3] ${hidePadding ? "pt-[0px]" : "md:pt-[104px] pt-[65px]"}`}>
-        {children}
-      </div>
-      {!hideNavbar && (
-        <Footer />
-      )}
+      <Provider store={store}>
+        <QueryClientProvider client={queryClient}>
+          {!hideNavbar && (
+            <Navbar />
+          )}
+          <div className={`min-h-[calc(100vh-88px)] bg-[#E9E7E3] ${hidePadding ? "pt-[0px]" : "md:pt-[104px] pt-[65px]"}`}>
+            {children}
+          </div>
+          {!hideNavbar && (
+            <Footer />
+          )}
+        </QueryClientProvider>
+      </Provider>
     </>
   );
 }

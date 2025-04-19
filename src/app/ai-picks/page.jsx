@@ -19,7 +19,7 @@ const AiPics = () => {
 
     return (
         <div className="">
-            <div className="md:pt-10 pb-20">
+            <div className="py-10">
                 <HomeContainer>
                     {/* Header with result count and filter button */}
                     <div className="flex justify-between items-center mb-6">
