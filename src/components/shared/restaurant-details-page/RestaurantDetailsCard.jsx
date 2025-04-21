@@ -126,9 +126,7 @@ const RestaurantDetailsCard = ({ getHashedIndex, toggleFavorite, restaurant, isF
               lng={restaurant?.coordinates?.lng}
               name={restaurant?.name}
             />
-            <motion.div
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
+            <div
             >
               <Link 
                 href={`/view-map?lat=${restaurant?.coordinates?.lat}&lng=${restaurant?.coordinates?.lng}&address=${encodeURIComponent(restaurant?.contactInfo?.address)}&name=${encodeURIComponent(restaurant?.name)}`} 
@@ -136,7 +134,7 @@ const RestaurantDetailsCard = ({ getHashedIndex, toggleFavorite, restaurant, isF
               >
                 View Larger Map
               </Link>
-            </motion.div>
+            </div>
             <motion.div 
               className="p-7"
               variants={staggerContainer}
