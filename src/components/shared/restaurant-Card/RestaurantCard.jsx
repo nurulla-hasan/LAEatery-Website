@@ -25,7 +25,7 @@ const RestaurantCard = ({ data, path, toggleFavorite: customToggle }) => {
   const isFavorite = customToggle ? data.favorite : localFavorite
 
   const handleBook = () => {
-    // Book functionality
+    // Book functionality 
   }
 
   // Animation variants

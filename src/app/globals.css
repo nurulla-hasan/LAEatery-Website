@@ -21,7 +21,13 @@ body {
 }
 
 
- 
+.scrl-hide::-webkit-scrollbar {
+  display: none;
+}
+.scrl-hide {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
 
 /* Font utility classes */
 .font-inter {
