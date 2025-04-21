@@ -1,5 +1,5 @@
 "use client"
-
+import 'leaflet/dist/leaflet.css'
 import { icon } from '@/lib/leaflet-icon';
 import { useEffect, useState } from 'react';
 import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
