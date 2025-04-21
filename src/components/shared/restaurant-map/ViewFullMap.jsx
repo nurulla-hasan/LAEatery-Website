@@ -4,6 +4,7 @@ import dynamic from "next/dynamic"
 import { useSearchParams } from "next/navigation"
 import { useEffect, useState } from "react"
 import { icon } from "@/lib/leaflet-icon"
+import { Skeleton } from "@mui/material"
 
 const MapContainer = dynamic(() => import("react-leaflet").then((m) => m.MapContainer), { ssr: false })
 const TileLayer = dynamic(() => import("react-leaflet").then((m) => m.TileLayer), { ssr: false })
@@ -30,12 +31,20 @@ const ViewFullMap = () => {
 
     // Update location state
     setLocation({ lat, lng, address, name })
-    setIsLoading(false)
+      setIsLoading(false)
   }, [searchParams])
 
   if (isLoading) {
-    return <div className="h-full w-full flex items-center justify-center">Loading...</div>
+    return <div className="h-full w-full flex items-center justify-center">
+      <Skeleton
+        sx={{ bgcolor: 'grey.900' }}
+        variant="rectangular"
+        width={1550}
+        height={730}
+      />
+    </div>
   }
+
 
   return (
     <MapContainer
