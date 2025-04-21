@@ -9,13 +9,14 @@ import RestaurantCard from "@/components/shared/restaurant-Card/RestaurantCard"
 import FilterCompo from "@/components/shared/filterCompo/FilterCompo"
 
 
-const NearbyRestaurant = () => {
-    // State for favorites
-    const [favorites, setFavorites] = useState(["restaurant-2"])
+const NearbyRestaurant = () => { 
+   
 
     // State for filter modal
     const [showFilterModal, setShowFilterModal] = useState(false)
 
+     // State for favorites
+     const [favorites, setFavorites] = useState(["restaurant-2"])
     // Toggle favorite status
     const toggleFavorite = (id) => {
         setFavorites((prev) => (prev.includes(id) ? prev.filter((item) => item !== id) : [...prev, id]))
@@ -54,7 +55,7 @@ const NearbyRestaurant = () => {
 
                 {/* Filter Modal */}
                 {showFilterModal && (
-                    <div className="fixed inset-0 bg-black/30 backdrop-blur-xs z-[600] flex justify-end ">
+                    <div className="fixed inset-0 bg-black/30 backdrop-blur-xs z-[1200] flex justify-end ">
                         <div className="bg-white w-full max-w-xs h-full overflow-y-auto scrl-hide rounded-l-lg">
                             <div className="p-4 flex justify-between items-center">
                                 <h2 className="text-black text-lg font-medium">Filter</h2>

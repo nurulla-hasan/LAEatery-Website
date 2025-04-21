@@ -31,6 +31,7 @@ const SingleDataMap = ({ address, lat, lng, name }) => {
         zoom={13} 
         style={{ height: '100%', width: '100%' }}
         scrollWheelZoom={false}
+        zoomControl={false}
       >
         <TileLayer
           attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
@@ -42,6 +43,7 @@ const SingleDataMap = ({ address, lat, lng, name }) => {
               <strong>{name}</strong><br />
               {address}
             </div>
+            
           </Popup>
         </Marker>
       </MapContainer>

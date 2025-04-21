@@ -7,10 +7,11 @@ import placeholder_image from "../../../../public/image/placeholder-image.png"
 import toast from "react-hot-toast"
 
 const RestaurantCardExact = ({ data, path, toggleFavorite: customToggle }) => {
-  const [favorites, setFavorites] = useState([])
   const [imgError, setImgError] = useState(false)
-  const [localFavorite, setLocalFavorite] = useState(data.favorite);
 
+
+  const [favorites, setFavorites] = useState([])
+  const [localFavorite, setLocalFavorite] = useState(data.favorite);
   // Toggle favorite status
   const handleToggle = () => {
     if (customToggle) {

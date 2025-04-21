@@ -7,21 +7,23 @@ import { Navigation } from 'swiper/modules'
 import 'swiper/css'
 import 'swiper/css/navigation'
 import placeholder_image from '../../../public/image/placeholder-image.png'
+import toast from 'react-hot-toast'
 
 
 const Slider = ({ data, toggleFavorite: customToggle }) => {
   const [imgError, setImgError] = useState(false)
 
 
-  const [localFavorite, setLocalFavorite] = useState(data.favorite);
+  const [favorites, setFavorites] = useState([]);
+  console.log(favorites);
 
-  const handleToggle = () => {
-    if (customToggle) {
-      customToggle(data.id);
+  const handleToggle = (id) => {
+    if (favorites.includes(id)) {
+      setFavorites(favorites.filter(favId => favId !== id));
+      toast.success('Removed from favorites');
     } else {
-      const updated = !localFavorite;
-      setLocalFavorite(updated);
-      toast.success(updated ? 'Added to favorites' : 'Removed from favorites');
+      setFavorites([...favorites, id]);
+      toast.success('Added to favorites');
     }
   };
 
@@ -54,11 +56,11 @@ const Slider = ({ data, toggleFavorite: customToggle }) => {
                   onError={() => (setImgError(true))}
                 />
                 <button
-                  onClick={handleToggle}
+                  onClick={() => handleToggle(restaurant.id)}
                   className="absolute top-3 right-3 p-2 rounded-full cursor-pointer transition-all duration-300 bg-white/50 text-black backdrop-blur-sm"
-                  aria-label={data.favorite ? "Remove from favorites" : "Add to favorites"}
+                  aria-label={favorites.includes(restaurant.id) ? "Remove from favorites" : "Add to favorites"}
                 >
-                  <Heart className={`h-5 w-5 ${data.favorite || localFavorite ? "fill-black" : ""}`} />
+                  <Heart className={`h-5 w-5 ${favorites.includes(restaurant.id) ? "fill-black" : ""}`} />
                 </button>
               </div>
 
@@ -85,7 +87,7 @@ const Slider = ({ data, toggleFavorite: customToggle }) => {
                         if (index > 1) return null;
                         return (
                           <React.Fragment key={index}>
-                            {index !== 0 && <span>•</span>}
+                            {index !== 0 && <span></span>}
                             <span>{tag.label}</span>
                           </React.Fragment>
                         )
@@ -93,7 +95,7 @@ const Slider = ({ data, toggleFavorite: customToggle }) => {
 
                       {restaurant.tags.length > 2 && (
                         <>
-                          <span>•</span>
+                          <span>...</span>
                           <span className='text-xs cursor-pointer' title={restaurant.tags.map(tag => tag.label).join(', ')}>
                             +{restaurant.tags.length - 2} more
                           </span>

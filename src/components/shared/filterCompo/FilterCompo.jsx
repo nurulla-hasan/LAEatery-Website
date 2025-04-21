@@ -1,36 +1,39 @@
+"use client"
 
-const FilterCompo = ({title, data}) => {
+import { motion } from "framer-motion"
 
-    return (
-        <>
-            <div className="overflow-auto scrl-hide rounded-xl p-5 bg-white">
-                <div className="">
-                    <button
-                        className="flex items-center justify-between w-full text-[#333333] text-md font-medium mb-">
-                        {title}
-                    </button>
+const FilterCompo = ({ title, data }) => {
+  return (
+    <motion.div
+      initial={{ opacity: 0, y: 20 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.5, ease: "easeOut" }}
+      viewport={{ once: true }}
+      className="overflow-auto scrl-hide rounded-xl p-5 bg-white"
+    >
+      <div>
+        <button className="flex items-center justify-between w-full text-[#333333] text-md font-medium">
+          {title}
+        </button>
 
-
-                    <div className="space-y-4 mt-5">
-                        {data.map((item) => (
-                            <div key={item.id} className="flex items-center">
-                                <input
-                                    type="checkbox"
-                                    id={`vibe-${item.id}`}
-                                    defaultChecked={item.checked}
-                                    className="h-4 w-4 rounded border-gray-600 text-white focus:ring-0 cursor-pointer"
-                                />
-                                <label htmlFor={`vibe-${item.id}`} className="ml-2 text-sm text-[#333333]">
-                                    {item.label}
-                                </label>
-                            </div>
-                        ))}
-                    </div>
-
-                </div>
+        <div className="space-y-4 mt-5">
+          {data.map((item) => (
+            <div key={item.id} className="flex items-center">
+              <input
+                type="checkbox"
+                id={`vibe-${item.id}`}
+                defaultChecked={item.checked}
+                className="h-4 w-4 rounded border-gray-600 text-white focus:ring-0 cursor-pointer"
+              />
+              <label htmlFor={`vibe-${item.id}`} className="ml-2 text-sm text-[#333333]">
+                {item.label}
+              </label>
             </div>
-        </>
-    );
-};
+          ))}
+        </div>
+      </div>
+    </motion.div>
+  )
+}
 
-export default FilterCompo;
+export default FilterCompo
