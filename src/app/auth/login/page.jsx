@@ -1,11 +1,12 @@
-const { default: LoginForm } = require("@/components/auth/LoginForm")
+"use client"
 
-const LoginPage = () => {
-    return (
-        <>
-            <LoginForm/>
-        </>
-    );
-};
+import { Suspense } from "react"
+import LoginForm from "@/components/auth/LoginForm"
 
-export default LoginPage;
+export default function LoginPage() {
+  return (
+    <Suspense fallback={<div>Loading...</div>}>
+      <LoginForm />
+    </Suspense>
+  )
+}
