@@ -27,7 +27,7 @@ const RelatedRestaurants = ({ restaurants }) => {
         </motion.h2>
         <div className="flex justify-between items-end gap-4">
           <motion.div whileHover={{ x: 3 }} transition={{ duration: 0.2 }}>
-            <Link href="/nearby-restaurant" className="text-[#0A0A0A] text-sm hover:text-gray-700 transition-colors">
+            <Link href="/nearby-restaurants" className="text-[#0A0A0A] text-sm hover:text-gray-700 transition-colors">
               See All
             </Link>
           </motion.div>

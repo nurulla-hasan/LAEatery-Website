@@ -2,8 +2,18 @@
 import { useState } from "react";
 import { useForm } from "react-hook-form";
 import { Eye, EyeOff } from "lucide-react";
+import { useDispatch } from "react-redux";
+import { login } from "@/redux/features/authSlice";
+import { useRouter, useSearchParams } from "next/navigation";
+import toast from "react-hot-toast";
 
 const SignupForm = () => {
+  const dispatch = useDispatch();
+
+  const router = useRouter();
+  const searchParams = useSearchParams()
+  const redirect = searchParams.get("redirect") || "/"
+
   const [showPassword, setShowPassword] = useState(false);
   const [showConfirmPassword, setShowConfirmPassword] = useState(false);
 
@@ -17,6 +27,9 @@ const SignupForm = () => {
   const password = watch("password");
 
   const onSubmit = (data) => {
+    dispatch(login(data));
+    toast.success('SignUp Success!');
+    router.push(redirect)
     console.log("Signup data:", data);
   };
 
@@ -24,10 +37,10 @@ const SignupForm = () => {
     <div className="flex items-center justify-center min-h-screen p-3 text-white">
       <div className="border bg-[#FEFEFEE5] p-14 rounded-2xl w-full max-w-md">
         <h1 className="text-2xl font-semibold text-center text-[#333333] mb-2">
-        Welcome to LAEatery! 
+          Welcome to LAEatery!
         </h1>
         <p className="text-center text-[#333333] mb-6 text-sm">
-        Please sign up to continue access.
+          Please sign up to continue access.
         </p>
 
         <form onSubmit={handleSubmit(onSubmit)}>
@@ -40,9 +53,8 @@ const SignupForm = () => {
               id="fullName"
               type="text"
               placeholder="Enter your name"
-              className={`w-full px-3 py-2 border  text-[#5C5C5C] text-xs bg-white rounded-sm ${
-                errors.fullName ? "border-red-500" : "border-[#5C5C5C]"
-              } focus:outline-none cursor-pointer`}
+              className={`w-full px-3 py-2 border  text-[#5C5C5C] text-xs bg-white rounded-sm ${errors.fullName ? "border-red-500" : "border-[#5C5C5C]"
+                } focus:outline-none cursor-pointer`}
               {...register("fullName", { required: "Full name is required" })}
             />
             {errors.fullName && <p className="mt-1 text-xs text-red-500">{errors.fullName.message}</p>}
@@ -57,9 +69,8 @@ const SignupForm = () => {
               id="email"
               type="email"
               placeholder="Enter your email"
-              className={`w-full px-3 py-2 border  text-[#5C5C5C] text-xs bg-white rounded-sm ${
-                errors.email ? "border-red-500" : "border-[#5C5C5C]"
-              } focus:outline-none cursor-pointer`}
+              className={`w-full px-3 py-2 border  text-[#5C5C5C] text-xs bg-white rounded-sm ${errors.email ? "border-red-500" : "border-[#5C5C5C]"
+                } focus:outline-none cursor-pointer`}
               {...register("email", {
                 required: "Email is required",
                 pattern: {
@@ -81,9 +92,8 @@ const SignupForm = () => {
                 id="password"
                 type={showPassword ? "text" : "password"}
                 placeholder="********"
-                className={`w-full px-3 py-2 border  text-[#5C5C5C] text-xs bg-white rounded-sm ${
-                  errors.password ? "border-red-500" : "border-[#5C5C5C]"
-                } focus:outline-none cursor-pointer`}
+                className={`w-full px-3 py-2 border  text-[#5C5C5C] text-xs bg-white rounded-sm ${errors.password ? "border-red-500" : "border-[#5C5C5C]"
+                  } focus:outline-none cursor-pointer`}
                 {...register("password", {
                   required: "Password is required",
                   minLength: {
@@ -113,9 +123,8 @@ const SignupForm = () => {
                 id="confirmPassword"
                 type={showConfirmPassword ? "text" : "password"}
                 placeholder="********"
-                className={`w-full px-3 py-2 border  text-[#5C5C5C] text-xs bg-white rounded-sm ${
-                  errors.confirmPassword ? "border-red-500" : "border-[#5C5C5C]"
-                } focus:outline-none cursor-pointer`}
+                className={`w-full px-3 py-2 border  text-[#5C5C5C] text-xs bg-white rounded-sm ${errors.confirmPassword ? "border-red-500" : "border-[#5C5C5C]"
+                  } focus:outline-none cursor-pointer`}
                 {...register("confirmPassword", {
                   required: "Please confirm your password",
                   validate: (value) => value === password || "Passwords do not match",

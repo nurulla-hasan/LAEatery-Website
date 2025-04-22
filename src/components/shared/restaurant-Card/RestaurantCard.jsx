@@ -49,13 +49,6 @@ const RestaurantCard = ({ data, path, toggleFavorite: customToggle }) => {
     },
   }
 
-  const imageContainerVariants = {
-    hover: {
-      scale: 1.03,
-      transition: { duration: 0.3 },
-    },
-  }
-
   const heartVariants = {
     initial: { scale: 1 },
     tap: {
@@ -113,7 +106,7 @@ const RestaurantCard = ({ data, path, toggleFavorite: customToggle }) => {
       onHoverEnd={() => setIsHovered(false)}
     >
       {/* Restaurant image and favorite button */}
-      <motion.div className="relative w-full h-[200px] cursor-pointer" variants={imageContainerVariants}>
+      <motion.div className="relative w-full h-[200px] cursor-pointer" >
         <Link href={`/${path}/${data?.id}`}>
           <Image
             src={imgError ? placeholder_image : data?.image}

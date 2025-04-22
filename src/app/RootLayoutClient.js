@@ -1,7 +1,7 @@
 "use client";
 import Footer from "@/components/footer/Footer";
 import Navbar from "@/components/navbar/Navbar";
-import { store } from "@/store";
+import store from "@/redux/store";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { usePathname } from "next/navigation";
 import { Provider } from "react-redux";

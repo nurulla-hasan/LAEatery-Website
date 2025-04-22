@@ -1,8 +1,13 @@
 "use client"
 
 import { motion } from "framer-motion"
+import { useState } from "react"
 
 const FilterCompo = ({ title, data }) => {
+
+  const [selected, setSelected] = useState([])
+  console.log(selected);
+
   return (
     <motion.div
       initial={{ opacity: 0, y: 20 }}
@@ -21,8 +26,15 @@ const FilterCompo = ({ title, data }) => {
             <div key={item.id} className="flex items-center">
               <input
                 type="checkbox"
-                id={`vibe-${item.id}`}
+                id={`${title}-${item.id}`}
                 defaultChecked={item.checked}
+                onChange={() => {
+                  if (selected.includes(item.label)) {
+                    setSelected(selected.filter((i) => i !== item.label))
+                  } else {
+                    setSelected([...selected, item.label])
+                  }
+                }}
                 className="h-4 w-4 rounded border-gray-600 text-white focus:ring-0 cursor-pointer"
               />
               <label htmlFor={`vibe-${item.id}`} className="ml-2 text-sm text-[#333333]">

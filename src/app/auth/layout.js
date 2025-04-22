@@ -16,7 +16,7 @@ export default function AuthLayout({ children }) {
       >
         <div>
           <Toaster />
-          <Link href="/" className="absolute top-10 left-10 font-poltawski">
+          <Link href="/" className="absolute p-2 rounded-full bg-black/50  backdrop-blur-sm top-10 left-10 font-poltawski">
             <MoveLeft size={20} />
           </Link>
           {children}

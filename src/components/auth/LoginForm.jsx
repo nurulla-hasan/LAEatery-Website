@@ -4,8 +4,18 @@ import { useForm } from "react-hook-form"
 import { Eye, EyeOff } from "lucide-react"
 import toast from "react-hot-toast"
 import Link from "next/link"
+import { useDispatch } from "react-redux"
+import { useRouter, useSearchParams } from "next/navigation"
+import { login } from "@/redux/features/authSlice"
 
 const LoginForm = () => {
+  const dispatch = useDispatch();
+
+  const router = useRouter();
+  const searchParams = useSearchParams()
+  const redirect = searchParams.get("redirect") || "/"
+
+
   const [showPassword, setShowPassword] = useState(false)
   const [rememberPassword, setRememberPassword] = useState(false)
 
@@ -16,16 +26,9 @@ const LoginForm = () => {
   } = useForm()
 
   const onSubmit = (data) => {
-    toast('Login Success!',
-      {
-        icon: '✅',
-        style: {
-          borderRadius: '5px',
-          background: '#333',
-          color: '#fff',
-        },
-      }
-    );
+    dispatch(login(data));
+    toast.success('Login Success!');
+    router.push(redirect)
     console.log("Login form data:", data)
     // Handle form submission
   }

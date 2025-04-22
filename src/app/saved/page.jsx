@@ -1,4 +1,4 @@
-"use client"
+"use client" 
 
 import HomeContainer from "@/components/home-container/HomeContainer";
 import RestaurantCard from "@/components/shared/restaurant-Card/RestaurantCard";
@@ -10,7 +10,6 @@ const SavePage = () => {
     const [restaurantList, setRestaurantList] = useState(allRestaurantData);
 
     const wishes = restaurantList.filter(item => item.favorite);
-    console.log(wishes);
 
     const toggleFavorite = (id) => {
         const updatedList = restaurantList.map(item =>

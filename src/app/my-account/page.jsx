@@ -7,15 +7,18 @@ import AccountBanner from "@/components/account/AccountBanner"
 import AccountDetails from "@/components/account/AccountDetails"
 import EditProfile from "@/components/account/EditProfile"
 import ChangePassword from "@/components/account/ChangePassword"
+import { useSelector } from "react-redux"
 
 
 const AccountPage = () => {
   const [activeView, setActiveView] = useState("details") // details, edit, password
 
+  const user = useSelector(state => state.auth.user);
+
   // User data state
   const [userData, setUserData] = useState({
-    fullName: "Leslie Alexander",
-    email: "debra.holt@example.com",
+    fullName: user?.fullName || "Your Name",
+    email: user?.email ||"debra.holt@example.com",
     phone: "(208) 555-0112",
     password: "••••••••",
   })

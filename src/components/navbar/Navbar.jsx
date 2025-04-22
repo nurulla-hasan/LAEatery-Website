@@ -2,23 +2,27 @@
 import { motion, AnimatePresence } from "framer-motion"
 import { useState } from "react"
 import Link from "next/link"
-import { usePathname } from "next/navigation"
+import { usePathname, useRouter } from "next/navigation"
 import { ChevronDown, Menu, X, UserRound } from "lucide-react"
 import NavLink from "./NavLink"
-// import { useSelector } from "react-redux"
+import { useDispatch, useSelector } from "react-redux"
+import { logout } from "@/redux/features/authSlice"
 
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
-  // const hasChatted = useSelector((state) => state.ui.hasChatted);
-  const [searchQuery, setSearchQuery] = useState("") // Declare searchQuery
+  const [isDropdown, setIsDropdown] = useState(false)
+  const router = useRouter();
 
+  const dispatch = useDispatch();
+  const isLoggedIn = useSelector(state => state.auth.isLoggedIn);
+  const userInfo = useSelector(state => state.auth.user);
+
+  const user = {
+    fullName: userInfo?.fullName || "Your Name"
+  }
   const pathName = usePathname()
   const isHiddenRoute = ["/", "/ai-chat"]
   const hideLogoBg = isHiddenRoute.includes(pathName)
-
-  // Sample user data - in a real app, this would come from authentication
-  const [isLoggedIn, setIsLoggedIn] = useState(false)
-  const user = isLoggedIn ? { name: "Mr. Mike" } : ""
 
   const navLinks = [
     { title: "Home", href: "/" },
@@ -26,25 +30,21 @@ export default function Navbar() {
     { title: "AI Chat", href: "/ai-chat" },
     { title: "About", href: "/about-us" },
     { title: "Map", href: "/map" },
-    { title: "Saved", href: "/saved" },
-  ]
+    ...(isLoggedIn ? [{ title: "Saved", href: "/saved" }] : [])
+  ];
 
-  // if (hasChatted) {
-  //   navLinks = [
-  //     ...navLinks,
-  //     { title: "Map", href: "/map" },
-  //     { title: "Saved", href: "/saved" }
-  //   ];
-  // }
 
-  const handleSearch = (e) => {
-    e.preventDefault()
-    console.log("Searching for:", searchQuery)
-    // Implement search functionality
+  const handleLogout = () => {
+    dispatch(logout());
+    router.push('/')
+
   }
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen)
+  }
+  const toggleDropdown = () => {
+    setIsDropdown(!isDropdown)
   }
 
   // Animation variants
@@ -152,16 +152,28 @@ export default function Navbar() {
                 {isLoggedIn ? (
                   <div className="relative">
                     <motion.button
+                      onClick={toggleDropdown}
                       className="flex items-center space-x-2 text-gray-800"
-                      whileHover={{ scale: 1.05 }}
+                      // whileHover={{ scale: 1.05 }}
                       whileTap={{ scale: 0.95 }}
                     >
-                      <Link href="/my-account" className="flex gap-2 items-center text-sm text-[#333333bb]">
+                      <div className="flex gap-2 items-center text-sm text-[#333333bb] cursor-pointer">
                         <UserRound color="#333333bb" size={16} />
-                        {user?.name}
-                      </Link>
-                      <motion.div animate={{ rotate: isMenuOpen ? 180 : 0 }} transition={{ duration: 0.3 }}>
-                        <ChevronDown className="h-4 w-4" />
+                        {user?.fullName}
+                      </div>
+
+                      {
+                        isDropdown && (
+                          <div onClick={toggleMenu} className="bg-white text-xs *:cursor-pointer text-gray-600 flex flex-col gap-3 border border-gray-300 px-2 py-3 shadow-md rounded-sm w-full absolute top-10">
+                            <Link href='/my-account'> My Account</Link>
+                            <div className="border-t border-gray-300"></div>
+                            <div onClick={handleLogout}>Logout</div>
+                          </div>
+                        )
+                      }
+
+                      <motion.div animate={{ rotate: isDropdown ? 180 : 0 }} transition={{ duration: 0.3 }}>
+                        <ChevronDown className="h-4 w-4 cursor-pointer" />
                       </motion.div>
                     </motion.button>
                   </div>
@@ -290,19 +302,29 @@ export default function Navbar() {
                 </motion.div>
               ) : (
                 <motion.div
-                onClick={toggleMenu}
+                  // onClick={toggleMenu}
                   className="mt-4"
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ delay: 0.4 }}
                   exit={{ opacity: 0, y: 20, transition: { delay: 0 } }}
                 >
-                  <div className="flex items-center">
-                    <motion.div  className="" whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
-                      <Link href="/my-account" className="flex gap-2 items-center text-sm text-[#333333bb]">
+                  <div className="flex items-center relative">
+                    <motion.div onClick={toggleDropdown} className="" whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
+                      <div className="flex gap-2 items-center text-sm text-[#333333bb] cursor-pointer">
                         <UserRound color="#333333bb" size={16} />
-                        {user?.name}
-                      </Link>
+                        {user?.fullName}
+                      </div>
+
+                      {
+                        isDropdown && (
+                          <div onClick={toggleMenu} className="mt-2 text-xs *:cursor-pointer text-gray-600 flex flex-col gap-3 border border-gray-300 px-2 py-3 shadow-md rounded-sm">
+                            <Link href='/my-account'> My Account</Link>
+                            <div className="border-t border-gray-300"></div>
+                            <div onClick={handleLogout}>Logout</div>
+                          </div>
+                        )
+                      }
                     </motion.div>
                   </div>
                 </motion.div>
