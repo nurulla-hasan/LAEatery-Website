@@ -28,7 +28,7 @@ export default function Navbar() {
   const navLinks = [
     { title: "Home", href: "/" },
     ...chatted ? [{ title: "AI Picks", href: "/ai-picks" }] : [],
-    { title: "About", href: "/about-us" },
+    // { title: "About", href: "/about-us" },
     ...(isLoggedIn && chatted ? [{ title: "Map", href: "/map" }] : []),
     ...(isLoggedIn && chatted ? [{ title: "Saved", href: "/saved" }] : []),
   ];

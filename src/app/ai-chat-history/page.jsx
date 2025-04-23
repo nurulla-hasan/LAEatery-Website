@@ -127,7 +127,7 @@ const AIChatWithHistory = () => {
                         <h2 className="text-3xl font-bold text-gray-800 mb-6">Discover LA's Hottest Restaurants</h2>
 
                         <button onClick={handleExplore} className="bg-[#5C5C5C] cursor-pointer hover:bg-gray-800 text-white py-3 px-8 rounded-full transition-colors">
-                            Explore Now
+                            Let’s Explore
                         </button>
                     </div>
                 </div>
