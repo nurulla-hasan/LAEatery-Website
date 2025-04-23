@@ -15,7 +15,7 @@ export default function Hero() {
             />
 
             {/* Content Container */}
-            <div className="relative z-10 flex h-full items-center">
+            <div className="relative z-10 flex h-full items-center backdrop-blur-xs ">
                 <div className="container max-w-7xl mx-auto px-4 sm:px-6 lg:px-12">
                     <div className="flex justify-center items-center">
                         <motion.div
@@ -25,7 +25,7 @@ export default function Hero() {
                             transition={{ duration: 1, ease: "easeOut" }}
                         >
                             {/* White blurred round background */}
-                            <div className="absolute w-96 h-96 bg-white rounded-full blur-3xl opacity-70" />
+                            <div className="absolute w-[500px] h-[500px] bg-white rounded-full blur-3xl opacity-60" />
 
                             {/* Logo Image */}
                             <Image
@@ -33,7 +33,7 @@ export default function Hero() {
                                 width={1920}
                                 height={1080}
                                 alt="Logo"
-                                className="relative h-auto z-10"
+                                className="relative h-auto z-10 drop-shadow-lg"
                             />
                         </motion.div>
                     </div>

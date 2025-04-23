@@ -12,7 +12,7 @@ const queryClient = new QueryClient();
 export default function RootLayoutClient({ children }) {
   const pathName = usePathname();
   const noNavbarRoutes = ["/auth", "/admin", "/404"];
-  const isHiddenRoute = ["/", '/auth/login', '/auth/signup', '/auth/forgot-password', '/auth/verify-email', '/auth/reset-password'];
+  const isHiddenRoute = ["/home", '/auth/login', '/auth/signup', '/auth/forgot-password', '/auth/verify-email', '/auth/reset-password'];
   const hidePadding = isHiddenRoute.includes(pathName);
   const hideNavbar = noNavbarRoutes.some((route) =>
     pathName.startsWith(route)

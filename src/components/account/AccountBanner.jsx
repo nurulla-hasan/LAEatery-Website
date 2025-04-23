@@ -9,7 +9,7 @@ const AccountBanner = ({ fullName }) => {
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5 }}
-      className="relative w-full h-60 rounded-lg overflow-hidden mb-8"
+      className="relative w-full rounded-lg overflow-hidden mb-8"
     >
       <Image
         src="/image/profile-bg.png"
@@ -18,8 +18,8 @@ const AccountBanner = ({ fullName }) => {
         alt="Account Banner"
         className="w-full h-full object-cover"
       />
-      <div className="absolute inset-0 bg-gradient-to-r from-black/10 to-transparent flex items-center">
-        <div className="p-8">
+      <div className="absolute inset-0 to-transparent flex items-center">
+        <div className="p-20">
           <motion.h2
             initial={{ opacity: 0, y: 10 }}
             animate={{ opacity: 1, y: 0 }}

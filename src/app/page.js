@@ -1,36 +1,161 @@
-"use client";
-import Hero from "@/components/hero/Hero";
-import CuisineSection from "@/components/home-container/home-items/CuisineSection";
-import FindGallery from "@/components/home-container/home-items/FindGallery";
-import NearbyRestaurants from "@/components/home-container/home-items/NearbyRestaurants";
-import VibeSection from "@/components/home-container/home-items/VibeSection";
-import { useEffect, useState } from 'react';
-import { usePathname, useRouter } from 'next/navigation';
-import { useSelector } from 'react-redux';
+"use client"
+import { useState } from "react"
+import Image from "next/image"
+import { Mic, Plus, Send } from "lucide-react"
+import HomeContainer from "@/components/home-container/HomeContainer"
+import ChatHistory from "@/components/AI/ChatHistory"
+import SuggestionChip from "@/components/AI/SuggestionChip"
+import { useDispatch } from "react-redux"
+import { setChattedTrue } from "@/redux/features/aiSlice"
+import { useRouter } from "next/navigation"
 
-export default function Home() {
+const Home = () => {
+  const dispatch = useDispatch();
+  const router = useRouter()
+  const [message, setMessage] = useState("")
+  const [chatHistory, setChatHistory] = useState([
+  ])
 
-  const isChatted = useSelector((state) => state.ai.isChatted);
+  const [clickedOnce, setClickedOnce] = useState(false)
 
-  const router = useRouter();
-  const pathname = usePathname();
+  const suggestions = [
+    "Find me a romantic restaurant",
+    "Best Italian food in LA",
+    "Rooftop dining options",
+    "Restaurants open late night",
+  ]
 
-  useEffect(() => {
-    if (pathname === '/' && isChatted === false) {
-      router.replace('/ai-chat-history');
+  const handleSubmit = (e) => {
+    e.preventDefault()
+    if (!message.trim()) return
+
+    // Add user message to chat
+    setChatHistory([...chatHistory, { text: message, isUser: true }])
+
+    // Simulate AI response (in a real app, this would be an API call)
+    setTimeout(() => {
+      setChatHistory((prev) => [
+        ...prev,
+        {
+          text: `I'll help you find information about "${message}". Here are some options...`,
+          isUser: false,
+        },
+      ])
+    }, 1000)
+
+    setMessage("")
+  }
+
+  const handleSuggestionClick = (text) => {
+    setChatHistory([...chatHistory, { text, isUser: true }])
+
+    // Simulate AI response
+    setTimeout(() => {
+      setChatHistory((prev) => [
+        ...prev,
+        {
+          text: `Great choice! Here are some recommendations for "${text}"...`,
+          isUser: false,
+        },
+      ])
+    }, 1000)
+  }
+
+
+  const handleExplore = () => {
+    if (!clickedOnce) {
+      setClickedOnce(true)
+    } else {
+      dispatch(setChattedTrue(true));
+      router.push('/ai-picks');
+      // setClickedOnce(false)
     }
-  }, [isChatted, pathname, router]);
-  
+
+  }
+
+
 
   return (
-    <>
-      <div>
-        <Hero />
-        <FindGallery />
-        <NearbyRestaurants />
-        <VibeSection />
-        <CuisineSection />
-      </div>
-    </>
-  );
+    <div className="min-h-screen py-10">
+      <HomeContainer>
+        <div className="flex flex-col items-center">
+          {/* Logo */}
+          <div className="relative mb-4">
+            <Image src="/image/logo2.png" alt="LA Eatery Logo" width={1920} height={1080} className="object-contain w-[500px]" />
+          </div>
+
+          {
+            !clickedOnce && (
+              <div>
+                {/* Title */}
+                <h1 className="text-5xl font-semibold text-gray-800 text-center mb-4">LA Restaurant Concierge</h1>
+                <p className="text-2xl text-gray-700 mt-1 mb-6 text-center">-Tailored by AI-</p>
+              </div>
+            )
+          }
+
+          {
+            clickedOnce && (
+              <div>
+                {/* Chat History */}
+                <ChatHistory messages={chatHistory} />
+
+                {/* Suggestions */}
+                {chatHistory.length <= 2 && (
+                  <div className="flex flex-wrap gap-2 justify-center mb-6">
+                    {suggestions.map((suggestion, index) => (
+                      <SuggestionChip key={index} text={suggestion} onClick={handleSuggestionClick} />
+                    ))}
+                  </div>
+                )}
+              </div>
+            )
+          }
+
+          {/* Chat Input */}
+          {
+            clickedOnce && (
+              <form onSubmit={handleSubmit} className="w-full max-w-2xl mb-8">
+                <div className="bg-white rounded-full shadow-md flex items-center p-2 pl-4">
+                  <Plus className="h-5 w-5 text-gray-500 mr-2" />
+                  <input
+                    type="text"
+                    placeholder="Ask me anything about LA restaurants..."
+                    className="flex-grow py-2 px-2 focus:outline-none text-gray-800"
+                    value={message}
+                    onChange={(e) => setMessage(e.target.value)}
+                  />
+                  {message.trim() ? (
+                    <button
+                      type="submit"
+                      className="p-2 rounded-full bg-gray-800 text-white flex items-center justify-center"
+                    >
+                      <Send className="h-5 w-5" />
+                    </button>
+                  ) : (
+                    <button
+                      type="button"
+                      className="p-2 rounded-full bg-gray-800 text-white flex items-center justify-center"
+                    >
+                      <Mic className="h-5 w-5" />
+                    </button>
+                  )}
+                </div>
+              </form>
+            )
+          }
+
+          {/* Discover Section */}
+          <div className="mt-4 text-center">
+
+            <button onClick={handleExplore} className="bg-[#5C5C5C] cursor-pointer hover:bg-gray-800 text-white py-3 px-8 rounded-full transition-colors">
+              Let’s Explore
+            </button>
+          </div>
+        </div>
+      </HomeContainer>
+    </div>
+  )
 }
+
+export default Home

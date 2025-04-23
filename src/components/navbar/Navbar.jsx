@@ -22,11 +22,11 @@ export default function Navbar() {
     fullName: userInfo?.fullName || "Your Name"
   }
   const pathName = usePathname()
-  const isHiddenRoute = ["/", "/ai-chat-history"]
+  const isHiddenRoute = ["/home", "/"]
   const hideLogoBg = isHiddenRoute.includes(pathName)
 
   const navLinks = [
-    { title: "Home", href: "/" },
+    { title: "Home", href: "/home" },
     ...chatted ? [{ title: "AI Picks", href: "/ai-picks" }] : [],
     // { title: "About", href: "/about-us" },
     ...(isLoggedIn && chatted ? [{ title: "Map", href: "/map" }] : []),
@@ -130,7 +130,7 @@ export default function Navbar() {
 
             {/* Navigation Links - Desktop */}
             <motion.div
-              className={`hidden lg:flex ${hideLogoBg ? "" : "flex-3/5"} items-center justify-center gap-10 bg-white py-4 px-8 rounded-3xl`}
+              className={`hidden lg:flex ${hideLogoBg ? "" : "flex-2/5"} items-center justify-center gap-10 bg-white py-4 px-8 rounded-3xl`}
               variants={navLinksContainerVariants}
               initial="hidden"
               animate="visible"
