@@ -6,8 +6,13 @@ import { Mic, Plus, Send } from "lucide-react"
 import HomeContainer from "@/components/home-container/HomeContainer"
 import ChatHistory from "@/components/AI/ChatHistory"
 import SuggestionChip from "@/components/AI/SuggestionChip"
+import { useDispatch } from "react-redux"
+import { setChattedTrue } from "@/redux/features/aiSlice"
+import { useRouter } from "next/navigation"
 
 const AIChatWithHistory = () => {
+    const dispatch = useDispatch();
+    const router = useRouter()
     const [message, setMessage] = useState("")
     const [chatHistory, setChatHistory] = useState([
     ])
@@ -54,6 +59,14 @@ const AIChatWithHistory = () => {
             ])
         }, 1000)
     }
+
+
+    const handleExplore = () => {
+        dispatch(setChattedTrue(true));
+        router.push('/');
+    }
+
+
 
     return (
         <div className="min-h-screen py-10">
@@ -113,11 +126,9 @@ const AIChatWithHistory = () => {
                     <div className="mt-4 text-center">
                         <h2 className="text-3xl font-bold text-gray-800 mb-6">Discover LA's Hottest Restaurants</h2>
 
-                        <Link href="/ai-picks">
-                            <button className="bg-[#5C5C5C] hover:bg-gray-800 text-white py-3 px-8 rounded-full transition-colors">
-                                Explore AI Picks
-                            </button>
-                        </Link>
+                        <button onClick={handleExplore} className="bg-[#5C5C5C] cursor-pointer hover:bg-gray-800 text-white py-3 px-8 rounded-full transition-colors">
+                            Explore Now
+                        </button>
                     </div>
                 </div>
             </HomeContainer>

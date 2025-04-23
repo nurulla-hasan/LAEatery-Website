@@ -16,22 +16,24 @@ export default function Navbar() {
   const dispatch = useDispatch();
   const isLoggedIn = useSelector(state => state.auth.isLoggedIn);
   const userInfo = useSelector(state => state.auth.user);
+  const chatted = useSelector(state => state.ai.isChatted)
 
   const user = {
     fullName: userInfo?.fullName || "Your Name"
   }
   const pathName = usePathname()
-  const isHiddenRoute = ["/", "/ai-chat"]
+  const isHiddenRoute = ["/", "/ai-chat-history"]
   const hideLogoBg = isHiddenRoute.includes(pathName)
 
   const navLinks = [
     { title: "Home", href: "/" },
-    { title: "AI Picks", href: "/ai-picks" },
-    { title: "AI Chat", href: "/ai-chat" },
+    ...chatted ? [{ title: "AI Picks", href: "/ai-picks" }] : [],
     { title: "About", href: "/about-us" },
-    { title: "Map", href: "/map" },
-    ...(isLoggedIn ? [{ title: "Saved", href: "/saved" }] : [])
+    ...(isLoggedIn && chatted ? [{ title: "Map", href: "/map" }] : []),
+    ...(isLoggedIn && chatted ? [{ title: "Saved", href: "/saved" }] : []),
   ];
+  // { title: "AI Chat", href: "/ai-chat" },
+
 
 
   const handleLogout = () => {

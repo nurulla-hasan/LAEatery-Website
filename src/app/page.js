@@ -4,23 +4,23 @@ import CuisineSection from "@/components/home-container/home-items/CuisineSectio
 import FindGallery from "@/components/home-container/home-items/FindGallery";
 import NearbyRestaurants from "@/components/home-container/home-items/NearbyRestaurants";
 import VibeSection from "@/components/home-container/home-items/VibeSection";
-// import { useEffect, useState } from 'react';
-// import { usePathname, useRouter } from 'next/navigation';
-// import { useSelector } from 'react-redux';
+import { useEffect, useState } from 'react';
+import { usePathname, useRouter } from 'next/navigation';
+import { useSelector } from 'react-redux';
 
 export default function Home() {
 
-  // const hasChatted = useSelector((state) => state.ui.hasChatted);
-  // const router = useRouter();
-  // const pathname = usePathname();
+  const isChatted = useSelector((state) => state.ai.isChatted);
 
-  // useEffect(() => {
-  //   if (pathname === '/' && hasChatted === false) {
-  //     router.replace('/ai-chat');
-  //   }else{
-  //     router.replace('/')
-  //   }
-  // }, [hasChatted, pathname]);
+  const router = useRouter();
+  const pathname = usePathname();
+
+  useEffect(() => {
+    if (pathname === '/' && isChatted === false) {
+      router.replace('/ai-chat-history');
+    }
+  }, [isChatted, pathname, router]);
+  
 
   return (
     <>
