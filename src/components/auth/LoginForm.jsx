@@ -13,7 +13,7 @@ const LoginForm = () => {
 
   const router = useRouter();
   const searchParams = useSearchParams()
-  const redirect = searchParams.get("redirect") || "/"
+  const redirect = searchParams.get("redirect") || "/home"
 
 
   const [showPassword, setShowPassword] = useState(false)
