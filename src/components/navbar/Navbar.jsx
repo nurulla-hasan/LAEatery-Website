@@ -26,7 +26,7 @@ export default function Navbar() {
   const hideLogoBg = isHiddenRoute.includes(pathName)
 
   const navLinks = [
-    { title: "Home", href: "/home" },
+    { title: "Home", href: "/" },
     ...chatted ? [{ title: "AI Picks", href: "/ai-picks" }] : [],
     { title: "About", href: "/about-us" },
     ...(isLoggedIn ? [{ title: "Map", href: "/map" }] : []),
