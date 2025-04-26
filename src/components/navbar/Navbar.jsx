@@ -28,9 +28,9 @@ export default function Navbar() {
   const navLinks = [
     { title: "Home", href: "/home" },
     ...chatted ? [{ title: "AI Picks", href: "/ai-picks" }] : [],
-    // { title: "About", href: "/about-us" },
-    ...(isLoggedIn && chatted ? [{ title: "Map", href: "/map" }] : []),
-    ...(isLoggedIn && chatted ? [{ title: "Saved", href: "/saved" }] : []),
+    { title: "About", href: "/about-us" },
+    ...(isLoggedIn ? [{ title: "Map", href: "/map" }] : []),
+    ...(isLoggedIn ? [{ title: "Saved", href: "/saved" }] : []),
   ];
   // { title: "AI Chat", href: "/ai-chat" },
 
@@ -130,7 +130,7 @@ export default function Navbar() {
 
             {/* Navigation Links - Desktop */}
             <motion.div
-              className={`hidden lg:flex ${hideLogoBg ? "" : "flex-2/5"} items-center justify-center gap-10 bg-white py-4 px-8 rounded-3xl`}
+              className={`hidden lg:flex ${hideLogoBg ? "" : "flex-3/5"} items-center justify-center gap-10 bg-white py-4 px-8 rounded-3xl`}
               variants={navLinksContainerVariants}
               initial="hidden"
               animate="visible"
