@@ -1,8 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Geologica:wght@100..900&display=swap');
 @import "tailwindcss";
 
 :root {
   --font-inter: 'Inter', sans-serif;
   --font-poltawski: 'Poltawski Nowy', serif;
+  --font-geologica: 'Geologica', serif;
   --background: #ffffff;
   --foreground: #171717;
 }
@@ -36,4 +38,8 @@ body {
 
 .font-poltawski {
   font-family: var(--font-poltawski);
+}
+
+.geologica {
+  font-family: var(--font-geologica);
 }

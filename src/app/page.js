@@ -9,6 +9,13 @@ import { useDispatch } from "react-redux"
 import { setChattedTrue } from "@/redux/features/aiSlice"
 import { useRouter } from "next/navigation"
 
+const bgImage = {
+  backgroundImage: 'url(/image/heroBG.png)',
+  backgroundSize: 'cover',
+  backgroundPosition: 'center',
+  height: '90vh',
+};
+
 const Home = () => {
   const dispatch = useDispatch();
   const router = useRouter()
@@ -76,84 +83,86 @@ const Home = () => {
 
 
   return (
-    <div className="min-h-screen py-10">
-      <HomeContainer>
-        <div className="flex flex-col items-center">
-          {/* Logo */}
-          <div className="relative mb-4">
-            <Image src="/image/logo2.png" alt="LA Eatery Logo" width={1920} height={1080} className="object-contain w-[500px]" />
-          </div>
+    <div style={bgImage}>
+      <div className="bg-[#E9E7E3]/93 h-[90vh] overflow-scroll scrl-hide py-10">
+        <HomeContainer>
+          <div className="flex flex-col items-center">
+            {/* Logo */}
+            <div className="relative mb-4">
+              <Image src="/image/logo2.png" alt="LA Eatery Logo" width={1920} height={1080} className="object-contain w-[500px]" />
+            </div>
 
-          {
-            !clickedOnce && (
-              <div>
-                {/* Title */}
-                <h1 className="text-5xl font-semibold text-gray-800 text-center mb-4">LA Restaurant Concierge</h1>
-                <p className="text-2xl text-gray-700 mt-1 mb-6 text-center">-Tailored by AI-</p>
-              </div>
-            )
-          }
+            {
+              !clickedOnce && (
+                <div>
+                  {/* Title */}
+                  <h1 className="text-lg font-normal geologica text-gray-800 text-center mb-4 space-x-4"><span>L A ` S</span><span>R E S T A U R A N T</span> <span> C O N C I E R G E</span></h1>
+                  <p className="text-md text-red-500 geologica mt-1 mb-6 text-center space-x-4">- <span>T A I L O R E D</span>   <span>B Y</span>   <span>A I</span> -</p>
+                </div>
+              )
+            }
 
-          {
-            clickedOnce && (
-              <div>
-                {/* Chat History */}
-                <ChatHistory messages={chatHistory} />
+            {
+              clickedOnce && (
+                <div>
+                  {/* Chat History */}
+                  <ChatHistory messages={chatHistory} />
 
-                {/* Suggestions */}
-                {chatHistory.length <= 2 && (
-                  <div className="flex flex-wrap gap-2 justify-center mb-6">
-                    {suggestions.map((suggestion, index) => (
-                      <SuggestionChip key={index} text={suggestion} onClick={handleSuggestionClick} />
-                    ))}
-                  </div>
-                )}
-              </div>
-            )
-          }
-
-          {/* Chat Input */}
-          {
-            clickedOnce && (
-              <form onSubmit={handleSubmit} className="w-full max-w-2xl mb-8">
-                <div className="bg-white rounded-full shadow-md flex items-center p-2 pl-4">
-                  <Plus className="h-5 w-5 text-gray-500 mr-2" />
-                  <input
-                    type="text"
-                    placeholder="Ask me anything about LA restaurants..."
-                    className="flex-grow py-2 px-2 focus:outline-none text-gray-800"
-                    value={message}
-                    onChange={(e) => setMessage(e.target.value)}
-                  />
-                  {message.trim() ? (
-                    <button
-                      type="submit"
-                      className="p-2 rounded-full bg-gray-800 text-white flex items-center justify-center"
-                    >
-                      <Send className="h-5 w-5" />
-                    </button>
-                  ) : (
-                    <button
-                      type="button"
-                      className="p-2 rounded-full bg-gray-800 text-white flex items-center justify-center"
-                    >
-                      <Mic className="h-5 w-5" />
-                    </button>
+                  {/* Suggestions */}
+                  {chatHistory.length <= 2 && (
+                    <div className="flex flex-wrap gap-2 justify-center mb-6">
+                      {suggestions.map((suggestion, index) => (
+                        <SuggestionChip key={index} text={suggestion} onClick={handleSuggestionClick} />
+                      ))}
+                    </div>
                   )}
                 </div>
-              </form>
-            )
-          }
+              )
+            }
 
-          {/* Discover Section */}
-          <div className="mt-4 text-center">
+            {/* Chat Input */}
+            {
+              clickedOnce && (
+                <form onSubmit={handleSubmit} className="w-full max-w-2xl mb-8">
+                  <div className="bg-white rounded-full shadow-md flex items-center p-2 pl-4">
+                    <Plus className="h-5 w-5 text-gray-500 mr-2" />
+                    <input
+                      type="text"
+                      placeholder="Ask me anything about LA restaurants..."
+                      className="flex-grow py-2 px-2 focus:outline-none text-gray-800"
+                      value={message}
+                      onChange={(e) => setMessage(e.target.value)}
+                    />
+                    {message.trim() ? (
+                      <button
+                        type="submit"
+                        className="p-2 rounded-full bg-gray-800 text-white flex items-center justify-center"
+                      >
+                        <Send className="h-5 w-5" />
+                      </button>
+                    ) : (
+                      <button
+                        type="button"
+                        className="p-2 rounded-full bg-gray-800 text-white flex items-center justify-center"
+                      >
+                        <Mic className="h-5 w-5" />
+                      </button>
+                    )}
+                  </div>
+                </form>
+              )
+            }
 
-            <button onClick={handleExplore} className="bg-[#5C5C5C] cursor-pointer hover:bg-gray-800 text-white py-3 px-8 rounded-full transition-colors">
-              Let’s Explore
-            </button>
+            {/* Discover Section */}
+            <div className="mt-4 text-center">
+
+              <button onClick={handleExplore} className="bg-[#5C5C5C] cursor-pointer hover:bg-gray-800 text-white py-3 px-8 rounded-full transition-colors">
+                Let’s Explore
+              </button>
+            </div>
           </div>
-        </div>
-      </HomeContainer>
+        </HomeContainer>
+      </div>
     </div>
   )
 }

@@ -26,7 +26,7 @@ export default function RootLayoutClient({ children }) {
           {!hideNavbar && (
             <Navbar />
           )}
-          <div className={`min-h-[calc(100vh-88px)] bg-[#E9E7E3] ${hidePadding ? "pt-[0px]" : "md:pt-[104px] pt-[65px]"}`}>
+          <div className={`min-h-[calc(100vh-88px)] bg-[#E9E7E3] container mx-auto max-w-full ${hidePadding ? "pt-[0px]" : "md:pt-[104px] pt-[65px]"}`}>
             {children}
           </div>
           {!hideNavbar && (
