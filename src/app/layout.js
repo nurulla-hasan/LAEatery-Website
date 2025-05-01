@@ -3,7 +3,6 @@ import 'leaflet/dist/leaflet.css';
 import { Toaster } from "react-hot-toast";
 import RootLayoutClient from "./RootLayoutClient";
 import { Inter, Poltawski_Nowy } from 'next/font/google'
-import { ThemeProvider } from "@/context/ThemeContext";
 
 
 const inter = Inter({
@@ -15,8 +14,6 @@ const poltawski = Poltawski_Nowy({
   subsets: ['latin'],
   variable: '--font-poltawski',
 })
-
-
 
 export const metadata = {
   title: "LAEatery",
@@ -31,11 +28,9 @@ export default function RootLayout({ children }) {
           position="top-center"
           reverseOrder={false}
         />
-          <ThemeProvider>
             <div className={`${inter.variable} ${poltawski.variable}`}>
               <RootLayoutClient>{children}</RootLayoutClient>
             </div>
-          </ThemeProvider>
       </body>
     </html>
   );

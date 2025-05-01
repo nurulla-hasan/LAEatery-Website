@@ -83,8 +83,8 @@ const Home = () => {
 
 
   return (
-    <div style={bgImage}>
-      <div className="bg-[#E9E7E3]/93 h-[90vh] overflow-scroll scrl-hide py-10">
+    <div>
+      <div className="h-[90vh] overflow-scroll scrl-hide py-10">
         <HomeContainer>
           <div className="flex flex-col items-center">
             {/* Logo */}
@@ -94,10 +94,14 @@ const Home = () => {
 
             {
               !clickedOnce && (
-                <div>
+                <div className="my-5">
                   {/* Title */}
-                  <h1 className="text-lg font-normal geologica text-gray-800 text-center mb-4 space-x-4"><span>L A ` S</span><span>R E S T A U R A N T</span> <span> C O N C I E R G E</span></h1>
-                  <p className="text-md text-red-500 geologica mt-1 mb-6 text-center space-x-4">- <span>T A I L O R E D</span>   <span>B Y</span>   <span>A I</span> -</p>
+                  <h1 className="text-lg font-light font-geologica tracking-[0.3em] text-gray-800 text-center mb-4 uppercase space-x-5">
+                    <span>L A ’ S</span>   <span>R E S T A U R A N T</span>   <span>C O N C I E R G E</span>
+                  </h1>
+                  <p className="text-md text-red-500 font-geologica tracking-[0.25em] text-center uppercase space-x-5">
+                    – <span>T A I L O R E D</span>  <span>B Y</span>   <span>A I</span> –
+                  </p>
                 </div>
               )
             }
@@ -110,7 +114,7 @@ const Home = () => {
 
                   {/* Suggestions */}
                   {chatHistory.length <= 2 && (
-                    <div className="flex flex-wrap gap-2 justify-center mb-6">
+                    <div className="flex flex-wrap justify-center gap-2 mb-6">
                       {suggestions.map((suggestion, index) => (
                         <SuggestionChip key={index} text={suggestion} onClick={handleSuggestionClick} />
                       ))}
@@ -124,28 +128,28 @@ const Home = () => {
             {
               clickedOnce && (
                 <form onSubmit={handleSubmit} className="w-full max-w-2xl mb-8">
-                  <div className="bg-white rounded-full shadow-md flex items-center p-2 pl-4">
-                    <Plus className="h-5 w-5 text-gray-500 mr-2" />
+                  <div className="flex items-center p-2 pl-4 bg-white rounded-full shadow-md">
+                    <Plus className="w-5 h-5 mr-2 text-gray-500" />
                     <input
                       type="text"
                       placeholder="Ask me anything about LA restaurants..."
-                      className="flex-grow py-2 px-2 focus:outline-none text-gray-800"
+                      className="flex-grow px-2 py-2 text-gray-800 focus:outline-none"
                       value={message}
                       onChange={(e) => setMessage(e.target.value)}
                     />
                     {message.trim() ? (
                       <button
                         type="submit"
-                        className="p-2 rounded-full bg-gray-800 text-white flex items-center justify-center"
+                        className="flex items-center justify-center p-2 text-white bg-gray-800 rounded-full"
                       >
-                        <Send className="h-5 w-5" />
+                        <Send className="w-5 h-5" />
                       </button>
                     ) : (
                       <button
                         type="button"
-                        className="p-2 rounded-full bg-gray-800 text-white flex items-center justify-center"
+                        className="flex items-center justify-center p-2 text-white bg-gray-800 rounded-full"
                       >
-                        <Mic className="h-5 w-5" />
+                        <Mic className="w-5 h-5" />
                       </button>
                     )}
                   </div>
